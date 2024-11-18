@@ -1,0 +1,306 @@
+
+##########################################################################################
+# Page settings
+
+#baseurl = "127.0.0.1:1313"
+baseurl = "https://vblx.github.io/"
+title = "Berasco GmbH"
+languageCode = "de-DE"
+favicon = "favicon.ico"
+
+[params]
+# additional CSS
+custom_css = ["css/red.css"]
+# Meta
+author = ""
+description = ""
+email = ""
+
+# to get this link, register an account at formspree.io
+formspreelink = "https://formspree.io/f/mgveyzod"
+
+# Google Maps Javascript API Key (defaults to not passing a key)
+googleMapsApiKey = ""
+
+##########################################################################################
+# Navigationsleiste
+[params.navigation]
+brand = "Berasco"
+brandslogan = "Hoch- & Tiefbau"
+home = "Start"
+work = "Leistungen"
+testimonials = "Referenzen"
+services = "Services"
+about = "Über uns"
+contact = "Kontakt"
+
+# You can add custom links before or after the default links
+# Assign a weight to define the order:
+
+# prepended links
+#[[menu.prepend]]
+#url = "http://gohugo.io"
+#name = "Hugo"
+#weight = 10
+
+# postpended links
+#[[menu.postpend]]
+#url = "http://gohugo.io"
+#name = "External link"
+#weight = 10
+
+
+##########################################################################################
+# Hero section ("Hero" ist Haupt-titel und -hintergrund ganz oben!)
+[params.hero]
+title = "Wir leben im Zeitalter der Information" # bitte ersetzen!
+subtitle = "Vorraussetzung für den Austausch von Informationen sind funktionierende Kommunikationssysteme und eine sinnvolle, störungsfreie Technik."
+
+# Intro section (erste sektion mit beliebigen info-kacheln)
+# Available icons: https://simplelineicons.github.io/
+[params.intro]
+
+### ERSTE INTRO KACHEL
+[[params.intro.item]]
+title = "Planung"
+description = "Die Planung von Hoch- und Tiefbauprojekten mit einem Kunden erfordert enge Zusammenarbeit und klare Kommunikation. Zunächst werden die Wünsche und Anforderungen des Kunden erfasst, um ein maßgeschneidertes Konzept zu entwickeln."
+url = "#"
+button = "Termin Vereinbaren"
+icon = "icon-bulb"
+img = "img_7.jpg"
+
+### ZWEITE INTRO KACHEL
+[[params.intro.item]]
+title = "Hochbau"
+description = "Hochbau und Tiefbau sind zwei wesentliche Bereiche der Bauindustrie. Beim Hochbau geht es um den Bau von Gebäuden, wie Wohnhäusern, Bürogebäuden oder Türmen."
+url = "#"
+button = "Klick Hier!"
+icon = "icon-layers"
+img = "img_8.jpg"
+
+### DRITTE INTRO KACHEL
+[[params.intro.item]]
+title = "Tiefbau"
+description = "Der Tiefbau hingegen umfasst Arbeiten unterhalb der Erdoberfläche, wie den Bau von Straßen, Brücken, Tunneln und Kanälen. Im Tiefbau müssen die Gegebenheiten des Geländes und die infrastrukturellen Bedürfnisse berücksichtigt werden."
+url = "#"
+button = "Interessiert?"
+icon = "icon-wrench"
+img = "img_10.jpg"
+
+### INTRO VIDEO
+[params.intro.video]
+enable = true
+title = "Watch the video"
+icon = "icon-play2"
+url = "https://vimeo.com/channels/staffpicks/93951774"
+
+# Work section ("Leistungen", grobe Uebersicht)
+[params.work]
+enable = true
+title = "Leistungen"
+description = "Wir bieten Ihnen umfassende Dienstleistungen, alles aus einer Hand."
+footertext = '** Platzhalter Fotos von der <a href="http://berasco.com/" target="_blank">alten Website</a>'
+
+[[params.work.row]]
+img = "work_1.jpg"
+alt = "Image1"
+title = "Tiefbau"
+subtitle = "Kurzbeschreibung..."
+
+[[params.work.row]]
+img = "work_2.jpg"
+alt = "Image2"
+title = "Straßenbau"
+subtitle = "Kurzbeschreibung..."
+
+[[params.work.row]]
+img = "work_3.jpg"
+alt = "Image3"
+title = "Garten- &amp; Landschaftsbau"
+subtitle = "Kurzbeschreibung..."
+
+[[params.work.row]]
+img = "work_4.jpg"
+alt = "Image4"
+title = "Pflasterarbeiten"
+subtitle = "Kurzbeschreibung..."
+
+[[params.work.row]]
+img = "work_5.jpg"
+alt = "Image5"
+title = "Herstellen von Hausanschlüssen"
+subtitle = "Kurzbeschreibung..."
+
+[[params.work.row]]
+img = "work_6.jpg"
+alt = "Image6"
+title = "Kabeleinblasarbeiten"
+subtitle = "Kurzbeschreibung..."
+
+# Testimonials section ("Referenzen")
+[params.testimonials]
+enable = true
+title = "Referenzen"
+description = "Beschreibungstext Referenzen...."
+
+[[params.testimonials.item]]
+quote = "&ldquo;Bespielzitat #1 immer wieder gerne als Kunde hier!&rdquo;"
+person = 'Jean Doe, Amt für Urbane Gestaltung'
+img = "person1.jpg"
+alt = "Person1"
+
+[[params.testimonials.item]]
+quote = "&ldquo;Bespielzitat #2 Baukonstruktion vom Fach die begeistert!&rdquo;"
+person = 'John Doe, Senior UI <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+img = "person2.jpg"
+alt = "Person2"
+
+[[params.testimonials.item]]
+quote = "&ldquo;Bespielzitat #3 sehr, sehr, zufrieden!&rdquo;"
+person = 'Chris Nash, Director <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+img = "person3.jpg"
+alt = "Person3"
+
+# Services section (Detaillierte uebersicht der Leistungen)
+[params.services]
+enable = true
+title = "Services / Leistungen im Detail"
+description = "Beschreibungstext..."
+
+[[params.services.item]]
+title = "Bau &amp; Tiefbau"
+description = "Beschreibungstext..."
+icon = "icon-wrench"
+
+[[params.services.item]]
+title = "Garten- &amp; Landschaftsbau"
+description = "Beschreibungstext..."
+icon = "icon-home"
+
+[[params.services.item]]
+title = "Straßenbau"
+description = "Beschreibungstext..."
+icon = "icon-loop"
+
+[[params.services.item]]
+title = "Pflasterarbeiten"
+description = "Beschreibungstext..."
+icon = "icon-grid"
+
+# About section
+[params.about]
+enable = true
+title = "Über uns"
+description = "Über uns Beschreibung..."
+
+[[params.about.item]]
+name = "Chef Boss"
+position = "Betriebsleiter"
+description = "Beschreibung..."
+img = "person1.jpg"
+alt = "Person1"
+social = [
+["icon-twitter", "#"],
+["icon-facebook", "#"],
+["icon-linkedin", "#"]
+]
+
+[[params.about.item]]
+name = "Jemand Anders"
+position = "Schichtleitung"
+description = "Beschreibung..."
+img = "person2.jpg"
+alt = "Person2"
+social = [
+["icon-twitter", "#"],
+["icon-facebook", "#"],
+["icon-github", "#"]
+]
+
+[[params.about.item]]
+name = "Ange Stellter"
+position = "Arbeiter"
+description = "Beschreibung..."
+img = "person3.jpg"
+alt = "Person3"
+social = [
+["icon-twitter", "#"],
+["icon-facebook", "#"],
+["icon-dribbble", "#"]
+]
+
+# Counters section
+[params.counters]
+enable = true
+title = "Berasco in Zahlen"
+background = "full_image_1.jpg"
+
+[[params.counters.item]]
+description = "Fertiggestellte Projekte"
+icon = "icon-briefcase"
+from = 0
+to = 89
+interval = 50
+speed = 5000
+
+[[params.counters.item]]
+description = "Verlegte Steinplatten"
+icon = "icon-layers"
+from = 0
+to = 2343
+interval = 50
+speed = 5000
+
+[[params.counters.item]]
+description = "Kaffeetassen"
+icon = "icon-cup"
+from = 0
+to = 132
+interval = 50
+speed = 5000
+
+[[params.counters.item]]
+description = "Zufriedene Kunden"
+icon = "icon-people"
+from = 0
+to = 1024
+interval = 50
+speed = 5000
+
+# Contact section
+
+### For static landing pages, you can use https://formspree.io to send the actual email. Each month, visitors can send
+### you up to one thousand emails. Set your email here in hugo.toml, then from the updated site, send yourself an email
+### to test and activate formspree: you'll receive a formspree email with a confirmation link.
+
+[params.contact]
+enable = true
+map = true
+form = true
+title = "Kontakt"
+description = "Kontaktieren Sie uns."
+
+# Available icons: https://simplelineicons.github.io/
+details = [
+["icon-home", "Am Rosengarten 15-16, 14621 Schönwalde-Glien"],
+["icon-phone", "033231-3141 00"],
+["icon-envelope", "info@berasco.de"],
+["icon-globe", '<a href="http://www.berasco.de/" target="_blank">www.berasco.de</a>']
+]
+
+name = "Name"
+email = "Email"
+phone = "Telefon"
+message = "Nachricht"
+button = "Nachricht versenden"
+
+# Footer section
+[params.footer]
+enable = true
+
+copyright = 'Copyright © 2024 Berasco GmbH'
+links = [
+["icon-twitter", "#twitter"],
+["icon-facebook", "https://www.facebook.com/pages/BERASCO-GmbH/1929054204080780"],
+["icon-youtube", "#youtube"]
+]
