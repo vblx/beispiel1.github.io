@@ -29,6 +29,7 @@ brand = "Berasco"
 brandslogan = "Hoch- & Tiefbau"
 home = "Start"
 work = "Leistungen"
+press = "Presse"
 testimonials = "Referenzen"
 services = "Services"
 about = "Über uns"
@@ -137,11 +138,104 @@ alt = "Image6"
 title = "Kabeleinblasarbeiten"
 subtitle = "Kurzbeschreibung..."
 
-# Testimonials section ("Referenzen")
+
+# Presseartikel....
+[params.press]
+enabled = true
+title = "Presse"
+description = "Hier finden Sie Presseartikel über unsere Tätigkeiten."
+
+[[params.press.item]]
+[[params.press.item]]
+[[params.press.item]]
+[[params.press.item]]
+[[params.press.item]]
+
+# Testimonials = "Referenzen" -- "person" ist hier die Referenz; "quote"
+# ist das Zitat, also das was gemacht wurde..
 [params.testimonials]
 enable = true
 title = "Referenzen"
-description = "Beschreibungstext Referenzen...."
+description = "Auszug aus der Referenzliste BERASCO-GmbH"
+
+[[params.testimonials.item]]
+person = 'Breitband für Deutschland MBfD Regensburg 22.08.2016 – 31 .08.2018 <br> Zeilarn, Freyung, Egglham, Triftern'
+quote = "Breitbandausbau: Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Multifunktionsgehäuse, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'FTTX Nahbereich Bayern 01.03.2017 - 28.02.2019 <br> Tettenweis, Malching, Rotthalmünster, Kirchham, Wittibreut, Kößlarn, Bad Füssing'
+quote = "Breitband, Hauseinschlüsse, Multifunktionsgehäuse und Tiefbauarbeiten inkl. Planung, Dokumentation, Netzverteilter, Glasfaser einziehen und einblasen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+FTTX Schleswig Holstein 28.08.2017 – 31.12.2018
+Weidenbach, Todenbüttel, Pinneberg, Elmshorn, Neunkirchen, Ansbach, Neuhaus, Laboe, Lichtenau, Kellinghusen, Kaltenkirchen
+
+quote = "Multifunktionsgehäuse und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelziehleistungen in Kabelkanalanlagen, inkl. Deckenschluss, Cu-Montage und GF Montage, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'FTTX Landkreis Lüneburg 29.03.2018 – 31.05.2019 <br >Nahrendorf, Niepars, Bleckede'
+quote = "Breitbandausbau – Hauseinschlüsse, Multifunktionsgehäuse, NVT und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'FTTX Landkreis Holzminden 13.03.2019 – 31.12.2019 <br> Bodenwerder, Stadtoldendorf, Eschershausen, Delligsen, Alfeld-Leine, Einbeck-Wenzen'
+quote = "Breitbandausbau – Hauseinschlüsse, Multifunktionsgehäuse, NVT und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'FTTX Königswusterhausen 01.06.2019 – 31.12.2019'
+quote = "Breitbandausbau – Hauseinschlüsse, Multifunktionsgehäuse, NVT und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'FTTX Luckau 01.04.2019 – 31.01.2020'
+quote = "Breitbandausbau – Hauseinschlüsse, Multifunktionsgehäuse, NVT und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'FTTX Mecklenburg Vorpommern 01.03.2018 – 31.03.2021 <br> Miltzow, Niepars, Prerow, Richtenberg, Vorland'
+quote = "Breitbandausbau – Hauseinschlüsse, Multifunktionsgehäuse, NVT und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'Störung Schleswig Holstein 22.06.2018  – 30.06.2024 <br>Elmshorn, Hamburg, Hannover, Pinneberg, Lübeck, Glückstadt, Uetersen, Kaltenkirchen, Quickborn'
+quote = "Störungseingang, Mitbearbeitung v. Lageplänen (Megaplan), Störungsbeseitigung (Ortung des Fehlers), Dokumentation, Tiefbau und Kabelzieharbeiten inkl. Planung und Montage, Bauüberwachung, Dokumentation, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'FTTX Landkreis Havelland und Oberhavel 01.04.2019 – 31.03.2023 <br> Ketzin, Fürstenberg, Liebenwalde,Gransee_Seilershof, Gutengermendorf, Löwenberger Land, Marienthal, Menz – Stechlin, Schulzendorf, Zehlendorf, Falkenthal, Glienicke-Nordbahn, Groß Dölln, Groß Schönebeck, Wandlitz'
+quote = "Breitbandausbau – Hauseinschlüsse, Multifunktionsgehäuse, NVT und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'FTTX Landkreis Potsdam-Mittelmark 01.04.2019 – 31.03.2023 Bad Belzig, Beetzsee, Brück, Havelsee, Beetzsee, Beetzseeheide, Belzig-Dippmannsdorf, Golzow, Görzke, Päwesin, Rosenau, Roskow, Wollin, Wusterwitz'
+quote = "Breitbandausbau – Hauseinschlüsse, Multifunktionsgehäuse, NVT und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'FTTX Landkreis Potsdam-Mittelmark 01.12.2020 – 31.12.2022 <br> Groß Kreutz, Kleinmachnow, Niemegk, Raben, Schwielowsee, Töplitz, Wiesenburg Mark, Groß Schönebeck, Wandlitz, Groß Dölln, Falkenthal, Nitzahn, Wustermark, Großwudicke, Seeblick, Schönwalde-Glien, Zollchow bei Rathenow, Börnicke, Premnitz, Rathenow, Tieckow'
+quote = "Breitbandausbau – Hauseinschlüsse, Multifunktionsgehäuse, NVT und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'FTTX Landkreis Oder-Spree 01.12.2021 – 31.12.2022 <br> Bahro, Pfaffendorf_Rietz-Neuendorf, Steinsdorf, Weichensdorf'
+quote = "Breitbandausbau – Hauseinschlüsse, Multifunktionsgehäuse, NVT und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = "FTTX Sylt 17.01.2022 – 31.05.2022"
+quote = "Breitbandausbau – Hauseinschlüsse, Multifunktionsgehäuse, NVT und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = "FTTX Kiel, Neumünster 27.01.2021 – 31.01.2026"
+quote = "Breitbandausbau – Hauseinschlüsse, Multifunktionsgehäuse, NVT und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'FTTH 2023 Timmendorf 11.2022 – 05.2023'
+quote = "Breitbandausbau – Hauseinschlüsse, Multifunktionsgehäuse, NVT und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'FTTH 2023 Lütjenburg 02.2023 – offen'
+quote = "Breitbandausbau – Hauseinschlüsse, Multifunktionsgehäuse, NVT und Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'FTTX SH Entstörung + Regelgeschäft 07.2018 – 06.2028'
+quote = "Instandhaltung und Erweiterung des Kupfernetzes in Schleswig-Holstein Tiefbauarbeiten inkl. Planung, Bauausführung, Dokumentation, Kabelzug und Montage, Glasfaser- sowie Kupferkabel einblasen und einziehen, Oberflächenwiederherstellung mit Asphaltarbeiten"
+
+[[params.testimonials.item]]
+person = 'Stadtwerke Kiel 2021 – 01.12.2022'
+quote = "Neuverlegung Leerrohre für die Straßenbeleuchtung inkl. Bodenaustausch, Gehwegsanierung mit Verdichtungsnachweise und Dokumentation"
+
 
 [[params.testimonials.item]]
 quote = "&ldquo;Bespielzitat #1 immer wieder gerne als Kunde hier!&rdquo;"
@@ -151,12 +245,12 @@ alt = "Person1"
 
 [[params.testimonials.item]]
 quote = "&ldquo;Bespielzitat #2 Baukonstruktion vom Fach die begeistert!&rdquo;"
-person = 'John Doe, Senior UI <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
+person = "John Doe, Senior UI <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
 img = "person2.jpg"
 alt = "Person2"
 
 [[params.testimonials.item]]
-quote = "&ldquo;Bespielzitat #3 sehr, sehr, zufrieden!&rdquo;"
+quote = "Bespielzitat #3 sehr, sehr, zufrieden!"
 person = 'Chris Nash, Director <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <span class="subtext">Creative Director</span>'
 img = "person3.jpg"
 alt = "Person3"
