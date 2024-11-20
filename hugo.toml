@@ -47,7 +47,7 @@ googleMapsApiKey = ""
 ########################################################################
 
 ########################################################################
-# die rote Navigationsleiste oben.
+# SEKTION 1: die rote Navigationsleiste oben.
 ########################################################################
 # Hier koennen (muessen aber nicht) vorhandene Sektionen verlinkt werden.
 # bedeutet: wenn hier eine Sektions-ueberschrift in der Liste fehlt,
@@ -85,13 +85,18 @@ contact = "Kontakt"
 
 
 ########################################################################
+# SEKTION 2
 # "Hero" section (Haupt-titel und -hintergrund ganz oben auf der Seite!)
 [params.hero]
 title = "Wir leben im Zeitalter der Information" # bitte ersetzen!
 subtitle = "Vorraussetzung für den Austausch von Informationen sind funktionierende Kommunikationssysteme und eine sinnvolle, störungsfreie Technik."
 
-# Intro section (erste sektion mit beliebigen info-kacheln)
-# Available icons: https://simplelineicons.github.io/
+########################################################################
+# SEKTION 3: Intro
+# (= aller erste sektion beim scrollen mit den info-kacheln /
+# "highlights")
+## in dieser Sektion werden 2d Icons benutzt, eine liste aller
+## verfuegbaren icons ist hier: https://simplelineicons.github.io/
 [params.intro]
 
 ### ERSTE INTRO KACHEL
@@ -127,8 +132,11 @@ enable = true
 title = "Watch the video"
 icon = "icon-play2"
 url = "https://vimeo.com/channels/staffpicks/93951774"
+########################################################################
 
-# Work section ("Leistungen", grobe Uebersicht)
+
+########################################################################
+# Sektion 4  - "Leistungen"  (intern: "work")
 [params.work]
 enable = true
 title = "Leistungen"
@@ -136,7 +144,11 @@ description = "Wir bieten Ihnen umfassende Dienstleistungen, alles aus einer Han
 footertext = '** Platzhalter Fotos von der <a href="http://berasco.com/" target="_blank">alten Website</a>'
 
 [[params.work.row]]
+# "img" ist natuerlich "image" also ein foto...
 img = "work_1.jpg"
+# "alt" ist der "alt-text" also wenn man mit Mauszeiger ueber das Bild
+# ohne kliken.  Was soll das mit dem "alt-text"? Antwort: Das ist vor
+# allem fuer Menschen mit Sehschwaeche oder Blindheit wichtig!
 alt = "Image1"
 title = "Tiefbau"
 subtitle = "Kurzbeschreibung..."
@@ -170,22 +182,37 @@ img = "work_6.jpg"
 alt = "Image6"
 title = "Kabeleinblasarbeiten"
 subtitle = "Kurzbeschreibung..."
+########################################################################
 
 
-# Presseartikel....
+
+########################################################################
+# SEKTION 5
+# Presseartikel
+#
 [params.press]
 enabled = true
 title = "Presse"
 description = "Hier finden Sie Presseartikel über unsere Tätigkeiten."
 
-[[params.press.item]]
-[[params.press.item]]
-[[params.press.item]]
-[[params.press.item]]
-[[params.press.item]]
+#[[params.press.item]]
+#[[params.press.item]]
+#[[params.press.item]]
+#[[params.press.item]]
+#[[params.press.item]]
+########################################################################
 
+
+
+
+########################################################################
+# SEKTION 6 Referenzes
+#
 # Testimonials = "Referenzen" -- "person" ist hier die Referenz; "quote"
-# ist das Zitat, also das was gemacht wurde..
+# ist das Zitat, also das was gemacht wurde... hier muss unbedingt noch
+# verbesserung her, eine Idee wie man das interessant, attraktiv und
+# nuetzlich einbinden kann
+
 [params.testimonials]
 enable = true
 title = "Referenzen"
@@ -340,8 +367,8 @@ name = "Prokura"
 position = "Geschäftliche Vertretung"
 description = 'Sezer Seymen <br> K. Sliwa <br> R. Balci'
 ### den kram hier drunter brauchen wir nicht, AUSSER wollen
-### Mitarbeiter-Bilder einfuegen, und so sachen wie deren persoenliche
-### facebook page etc. verlinken (das wollen wir eher _NICHT_).
+### Mitarbeiter-Fotos einfuegen, und so sachen wie deren persoenliche
+### facebook page etc. verlinken (das wollen wir HIER eher _NICHT_).
 #
 #img = "person1.jpg"
 #alt = "Person1"
@@ -355,10 +382,6 @@ description = 'Sezer Seymen <br> K. Sliwa <br> R. Balci'
 name = "Controlling"
 position = "Planung, Steuerung und Kontrolle der Unternehmensbereiche"
 description= "K. Sliwa"
-
-# name = "Jemand Anders"
-# position = "Schichtleitung"
-# description = "Beschreibung..."
 # img = "person2.jpg"
 # alt = "Person2"
 # social = [
@@ -391,6 +414,7 @@ social = [
 [params.counters]
 enable = true
 title = "Berasco in Zahlen"
+#title = "Zahlen und Fakten"
 #background = "full_image_1.jpg"
 background = "rezeption_eingangshalle.jpg"
 
@@ -403,7 +427,7 @@ interval = 50
 speed = 5000
 
 [[params.counters.item]]
-description = "Verlegte Steinplatten"
+description = "Angestellte"
 icon = "icon-layers"
 from = 0
 to = 2343
@@ -426,11 +450,27 @@ to = 1024
 interval = 50
 speed = 5000
 
-# Contact section
 
-### For static landing pages, you can use https://formspree.io to send the actual email. Each month, visitors can send
-### you up to one thousand emails. Set your email here in hugo.toml, then from the updated site, send yourself an email
-### to test and activate formspree: you'll receive a formspree email with a confirmation link.
+
+########################################################################
+## "KONTAKT" -- !!!!!!!!!!! das hier ist (ausser der Map/Landkarte
+## unten) die EINZIGE sektion, die "besonders" ist.
+# Hintergrund der Sache: Man kann natuerlich einfach eine Email adresse
+# verlinken und das reicht. Das hier ist aber ein "Kontaktformular".
+# Das ist hier in dem fall (war so im template drin!) ein sogenanntes
+# "Kontakt-Form". Also: Eingabe-felder wo man Direkt auf der Seite eine
+# Nachricht tippen kann, ohne selbst per hand Email schicken zu
+# muessen. Und Das kontakt form(ular) kann man auch OHNE eigene email
+# nutzen.  um das zu ermoeglichen, nutzen wir hier "FORMSPREE", das ist
+# ein Externer Service zum Emailversand. Bis zu 1000 Emails kostenfrei
+# pro Monat.
+########################################################################
+# Contact section
+### For static landing pages, you can use https://formspree.io to send
+### the actual email. Each month, visitors can send you up to one
+### thousand emails. Set your email here in hugo.toml, then from the
+### updated site, send yourself an email to test and activate formspree:
+### you'll receive a formspree email with a confirmation link.
 
 [params.contact]
 enable = true
