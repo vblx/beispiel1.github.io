@@ -21,10 +21,10 @@
           <!-- <a class="navbar-brand" href="index.html">{{ with .Site.Params.navigation.brand }}{{ . | markdownify }}{{ end }}</a> -->
 		  <!-- <a class="navbar-brandslogan" href="index.html">{{ with .Site.Params.navigation.brandslogan }}{{ . | markdownify }}{{ end }}</a> -->
 
-		  <a class="navbar-brand" href="index.html"> <figure><img src="images/logo.gif" alt="official berasco logo"></figure> </a>
+		  <a class="navbar-brand" href="index.html"><img src="images/logo.gif" alt="official berasco logo" style="width: 55vw; min-width: 330px;" /></a>
 
 		</div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div id="navbar" class="navbar-fixed collapse">
           <ul class="nav navbar-nav navbar-right">
 
             {{ range .Site.Menus.prepend }}
