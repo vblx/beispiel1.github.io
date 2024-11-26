@@ -90,8 +90,8 @@ contact = "Kontakt"
 [params.hero]
 
 
-titlekeyword = 'KOMPETENZ'
-title = 'IM HOCH UND TIEFBAU.'
+titlekeyword = 'KOMPETENZ' # leerstelle am ende behalten!
+title = 'IM HOCH- UND TIEFBAU' # der rote punkt is wo anders...
 #subtitle = "Berasco begleitet Sie von der Planung bis zur Realisierung Ihres Projekts. Gemeinsam entwickeln wir individuelle Lösungen, die exakt auf Ihre Bedürfnisse zugeschnittensind. Vertrauen Sie auf unsere Expertise und unser Engagement für Ihre Zufriedenheit."
 
 ########################################################################
