@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
 		li {
 			a {
 				font-family: $font-primary;
-				color: rgba(255,255,255,1);
+				color: rgba(6,6,6,.9);
 				// color: #dadada;
 				position: relative;
 				span {
@@ -236,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
 				}
 				&:hover {
 					// color: $brand-primary;
-					color: $brand-white;
+					color: $brand-black;
 					// color: rgba(255,255,255,1);
 					span {
 						&:before {
