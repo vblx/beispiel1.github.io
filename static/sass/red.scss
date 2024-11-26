@@ -1,4 +1,4 @@
-$font-primary: 'Poppins', Arial, sans-serif;
+$font-primary: 'Poppins-Bold', Arial, sans-serif;
 
 // Overrides
 $grid-gutter-width: 40px !default;
@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
 		li {
 			a {
 				font-family: $font-primary;
-				color: rgba(255,255,255,.5);
+				color: rgba(255,255,255,1);
 				// color: #dadada;
 				position: relative;
 				span {
