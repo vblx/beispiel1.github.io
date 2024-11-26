@@ -89,8 +89,10 @@ contact = "Kontakt"
 # "Hero" section (Haupt-titel und -hintergrund ganz oben auf der Seite!)
 [params.hero]
 
-title = "Ihre Vision, unsere Leidenschaft."
-subtitle = "Berasco begleitet Sie von der Planung bis zur Realisierung Ihres Projekts. Gemeinsam entwickeln wir individuelle Lösungen, die exakt auf Ihre Bedürfnisse zugeschnittensind. Vertrauen Sie auf unsere Expertise und unser Engagement für Ihre Zufriedenheit."
+
+titlekeyword = 'KOMPETENZ'
+title = 'IM HOCH UND TIEFBAU.'
+#subtitle = "Berasco begleitet Sie von der Planung bis zur Realisierung Ihres Projekts. Gemeinsam entwickeln wir individuelle Lösungen, die exakt auf Ihre Bedürfnisse zugeschnittensind. Vertrauen Sie auf unsere Expertise und unser Engagement für Ihre Zufriedenheit."
 
 ########################################################################
 # SEKTION 3: Intro
