@@ -316,7 +316,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	.navbar-default {
 		border: transparent;
-		background: transparent;
+		background: #fff;
+		// background: transparent;
 		@include border-radius(0px);
 
 		// padding-right: 30px;
