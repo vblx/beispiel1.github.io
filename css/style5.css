@@ -378,14 +378,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   overflow: hidden;
 }
+
 #fh5co-home .gradient {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
-  opacity: .2;
+  z-index: 99;
+  opacity: .0; /* invisible gradient!*/
   -webkit-backface-visibility: hidden;
   background-color: #c0c0c0;
   /* IE9, iOS 3.2+ */
