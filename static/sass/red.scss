@@ -108,7 +108,7 @@ body {
 	font-size: 16px;
 	line-height: 1.8;
 	color: lighten($brand-darker, 20%);
-	color: #7f7f7f;
+	color: #303030;
 	background: $brand-bg-color;
 	height: 100%;
 	position: relative;
@@ -231,9 +231,23 @@ h1, h2, h3, h4, h5, h6 {
 				position: relative;
 
 				span {
-					position: relative;
+					-webkit-text-size-adjust: 100%;
+					-webkit-tap-highlight-color: transparent;
+					list-style: none;
+					box-sizing: border-box;
+					text-decoration: none;
 					display: block;
-					padding-bottom: 5px;
+					padding: 10px 15px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					line-height: 20px;
+					font-size: 19px;
+					font-weight: 300;
+					color: rgba(3, 3, 3, 0.9) !important;
+					background-color: $brand-white;
+					transition: 0.3s;
+					font-family: $font-primary;
+					position: relative;
 					&:before {
 						content: "";
 						position: absolute;
