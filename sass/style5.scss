@@ -64,7 +64,7 @@ $form-group-margin-bottom:       30px !default;
 	-webkit-flex-wrap: wrap;
 	-moz-flex-wrap: wrap;
 }
-@mixin angle($pseudo, $flip: false, $angle: 1.5deg) {
+@mixin angle($pseudo, $flip: false, $angle: 0deg) {
   // Possible values for $pseudo are: before, after, both
   @if $pseudo == 'before' or $pseudo == 'after' or $pseudo == 'both' {
     position: relative;
@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
 				}
 				&:hover {
 					// color: $brand-primary;
-					color: $brand-white;
+					color: $brand-black;
 					// color: rgba(255,255,255,1);
 					span {
 						&:before {
@@ -381,7 +381,7 @@ h1, h2, h3, h4, h5, h6 {
 				a {
 					background: transparent;
 					background: none;
-					color: $brand-white;
+					color: $brand-black;
 					span {
 						&:before {
 							visibility: visible;
@@ -533,11 +533,11 @@ h1, h2, h3, h4, h5, h6 {
 // Slant
 .slant {
 	position: absolute;
-	transform: rotate(-1.7deg);
-	-ms-transform: rotate(-1.7deg);
-	-webkit-transform: rotate(-1.7deg);
-	-o-transform: rotate(-1.7deg);
-	-moz-transform: rotate(-1.7deg);
+	transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
 	background-color: #fff;
 	content: "";
 	z-index: 3;
@@ -726,11 +726,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: rgba(255,255,255,.7);
 	&:before, &:after {
 		position: absolute;
-		transform: rotate(-1.7deg);
-		-ms-transform: rotate(-1.7deg);
-		-webkit-transform: rotate(-1.7deg);
-		-o-transform: rotate(-1.7deg);
-		-moz-transform: rotate(-1.7deg);
+		transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
 		background-color: #fff;
 		content: "";
 		z-index: 3;
@@ -752,19 +752,19 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	h3 {
 		font-size: 24px;
-		color: $brand-white;
+		color: $brand-black;
 	}
 	.icon {
 		font-size: 70px;
 		margin-bottom: 30px;
 		@include inline-block;
 		&:before {
-			color: $brand-white;
+			color: $brand-black;
 		}
 	}
 	.section-heading {
 		h2 {
-			color: $brand-white;
+			color: $brand-black;
 			&.left-border {
 				&:after {
 					background: rgba(255,255,255,.3);
@@ -797,11 +797,11 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	&:before, &:after {
 		position: absolute;
-		transform: rotate(-1.7deg);
-		-ms-transform: rotate(-1.7deg);
-		-webkit-transform: rotate(-1.7deg);
-		-o-transform: rotate(-1.7deg);
-		-moz-transform: rotate(-1.7deg);
+		transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
 		background-color: #fff;
 		content: "";
 		z-index: 3;
@@ -956,11 +956,11 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	&:before, &:after {
 		position: absolute;
-		transform: rotate(-1.7deg);
-		-ms-transform: rotate(-1.7deg);
-		-webkit-transform: rotate(-1.7deg);
-		-o-transform: rotate(-1.7deg);
-		-moz-transform: rotate(-1.7deg);
+		transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
 		background-color: #fff;
 		content: "";
 		z-index: 3;
@@ -1236,19 +1236,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 .fh5co-nav-toggle.active i::before {
   top:0;
-  -webkit-transform: rotateZ(45deg);
-     -moz-transform: rotateZ(45deg);
-      -ms-transform: rotateZ(45deg);
-       -o-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(0deg);
+     -moz-transform: rotateZ(0deg);
+      -ms-transform: rotateZ(0deg);
+       -o-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
 }
 .fh5co-nav-toggle.active i::after {
   bottom:0;
-  -webkit-transform: rotateZ(-45deg);
-     -moz-transform: rotateZ(-45deg);
-      -ms-transform: rotateZ(-45deg);
-       -o-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(-0deg);
+     -moz-transform: rotateZ(-0deg);
+      -ms-transform: rotateZ(-0deg);
+       -o-transform: rotateZ(-0deg);
+          transform: rotateZ(-0deg);
 }
 .fh5co-nav-toggle {
   position: absolute;
