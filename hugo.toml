@@ -47,7 +47,7 @@ googleMapsApiKey = ""
 ########################################################################
 
 ########################################################################
-# SEKTION 1: die rote Navigationsleiste oben.
+# SEKTION 1: die Navigationsleiste oben.
 ########################################################################
 # Hier koennen (muessen aber nicht) vorhandene Sektionen verlinkt werden.
 # bedeutet: wenn hier eine Sektions-ueberschrift in der Liste fehlt,
