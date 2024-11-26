@@ -199,17 +199,30 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
-
-
-
-
 	// padding-top: 15px;
 	.navbar {
 		padding-bottom: 0;
 		margin-bottom: 0;
 	}
 	#navbar {
+		-webkit-text-size-adjust: 100%;
+		-webkit-tap-highlight-color: transparent;
+		list-style: none;
+		box-sizing: border-box;
+		text-decoration: none;
+		display: block;
+		padding: 10px 15px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		line-height: 20px;
+		font-size: 19px;
+		font-weight: 300;
+		color: $brand-black;
+		background-color: $brand-white;
+		transition: 0.3s;
+		font-family: $font-primary;
+		position: relative;
+
 		li {
 			a {
 				-webkit-text-size-adjust: 100%;
