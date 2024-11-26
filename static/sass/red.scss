@@ -213,6 +213,8 @@ h1, h2, h3, h4, h5, h6 {
 					position: relative;
 					display: block;
 					padding-bottom: 5px;
+					color: rgba(6,6,6,.9);
+					background-color: $brand-primary;
 					&:before {
 						content: "";
 						position: absolute;
@@ -220,6 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 						height: 2px;
 						bottom: 0;
 						left: 0;
+						color: rgba(6,6,6,.9);
 						background-color: $brand-primary;
 						visibility: hidden;
 						-webkit-transform: scaleX(0);
