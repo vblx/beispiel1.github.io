@@ -57,6 +57,7 @@ googleMapsApiKey = ""
 brand = "Berasco"
 brandslogan = "Hoch- & Tiefbau"
 home = "Start"
+testt = "TEEEST"
 work = "Leistungen"
 press = "Presse"
 testimonials = "Referenzen"
@@ -136,6 +137,10 @@ title = "Watch the video"
 icon = "icon-play2"
 url = "https://vimeo.com/channels/staffpicks/93951774"
 ########################################################################
+
+
+[params.testt]
+enable = true
 
 
 ########################################################################
