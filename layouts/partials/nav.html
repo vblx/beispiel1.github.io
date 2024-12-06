@@ -16,7 +16,7 @@
           <ul class="nav navbar-nav navbar-right">
             {{ range .Site.Menus.prepend }}
             <li>
-		  <a class="external" href="{{ .URL }}">
+			  <a class="external" href="{{ .URL }}">
 				<span style="color:black">{{ .Name | markdownify }}</span>
 			  </a>
 			</li>
@@ -27,23 +27,24 @@
 			  </a>
 			</li>
 			<!-- leistungen popup -->
-            {{ if .Site.Params.work.enable }}
-			<li class="dropdown">
-			  <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			{{ if .Site.Params.work.enable }}
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<span style="color:black"> {{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }} </span>
 			  </a>
-			  <ul class="dropdown-menu">
-				<li><a href="#">{{ with .Site.Params.navigation.work1 }}{{ . | markdownify }}{{ end }}</a></li>
-				<li><a href="#">{{ with .Site.Params.navigation.work2 }}{{ . | markdownify }}{{ end }}</a></li>
-				<li><a href="#">{{ with .Site.Params.navigation.work3 }}{{ . | markdownify }}{{ end }}</a></li>
-			  </ul>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#">{{ with .Site.Params.navigation.work1 }}{{ . | markdownify }}{{ end }}</a>
+				<a class="dropdown-item" href="#">{{ with .Site.Params.navigation.work2 }}{{ . | markdownify }}{{ end }}</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#"> {{ with .Site.Params.navigation.work3 }}{{ . | markdownify }}{{ end }}</a>
+			  </div>
 			</li>
 			<li>
 			  <a href="#" data-nav-section="work">
 				<span style="color:black">{{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }}</span>
 			  </a>
 			</li>
-            {{ end }}
+			{{ end }}
 
 
             {{ if .Site.Params.testimonials.enable }}
