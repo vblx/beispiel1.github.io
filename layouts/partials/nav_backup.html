@@ -26,28 +26,32 @@
 				</span>
 			  </a>
 			</li>
-
-			<!-- <\!-- leistungen popup -\-> -->
-			<!-- {{ if .Site.Params.work.enable }} -->
-			<!-- <li class="nav-item dropdown"> -->
-			<!--   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
-			<!-- 	<span style="color:black"> {{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }} </span> -->
-			<!--   </a> -->
-			<!--   <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
-			<!-- 	<a class="dropdown-item" href="#">{{ with .Site.Params.navigation.work1 }}{{ . | markdownify }}{{ end }}</a> -->
-			<!-- 	<a class="dropdown-item" href="#">{{ with .Site.Params.navigation.work2 }}{{ . | markdownify }}{{ end }}</a> -->
-			<!-- 	<div class="dropdown-divider"></div> -->
-			<!-- 	<a class="dropdown-item" href="#"> {{ with .Site.Params.navigation.work3 }}{{ . | markdownify }}{{ end }}</a> -->
-			<!--   </div> -->
-			<!-- </li> -->
-			<!-- <li> -->
-			<!--   <a href="#" data-nav-section="work"> -->
-			<!-- 	<span style="color:black">{{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }}</span> -->
-			<!--   </a> -->
-			<!-- </li> -->
-			<!-- {{ end }} -->
-
-
+			<!-- leistungen popup -->
+            {{ if .Site.Params.work.enable }}
+			<li>
+			  <a href="#" data-nav-section="work">
+				<span style="color:black">{{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }}</span>
+			  </a>
+			</li>
+            {{ end }}
+			<!-- test popup -->
+            {{ if .Site.Params.testt.enable }}
+			<li>
+			  <a href="#" data-nav-section="testt">
+				<span style="color:black" >{{ with .Site.Params.navigation.testt }}{{ . | markdownify }}{{ end }}</span>
+			  </a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Dropdown link
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="#">Action</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+			  </div>
+			</li>
+            {{ end }}
             {{ if .Site.Params.testimonials.enable }}
             <li>
 			  <a href="#" data-nav-section="testimonials">
