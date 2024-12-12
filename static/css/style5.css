@@ -237,89 +237,6 @@ h6 {
 }
 
 
-/* BEGIN OF MOBILE SCREEN SECTION */
-@media screen and (max-width: 768px) {
-  #fh5co-header {
-    position: absolute;  /* Or position: fixed; if you want it to stay fixed while scrolling */
-    left: 0;
-    top: 0;
-    width: 100%;
-    z-index: 10;
-    -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-    -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-    background: #fff;
-    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-    margin-top: 0;
-  }
-
-  #fh5co-header .navbar-brand {
-	bottom: 10px;
-	color: #fff;
-	display: block;
-	float: left;
-	font-size: 30px;
-	font-weight: 700;
-	height: 55px;
-	left: 20px;
-	line-height: 10px;
-	margin-left: 0px;
-	padding-left: 0px;
-	padding: 17.5px 15px;
-	position: absolute;
-  	margin-right: 0px;
-  	padding-bottom: 0px;
-    margin-bottom: 0px;
-    top: 0px;
-  }
-
-  #fh5co-header #navbar li a {
-    color: rgba(0, 0, 0, 0.5) !important;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-  }
-
-  #fh5co-header #navbar li a:hover {
-    color: #ec0000 !important;
-  }
-
-  #fh5co-header #navbar li a span:before {
-    background: transparent !important;
-  }
-
-  #fh5co-header #navbar li.active a {
-    background: transparent;
-    background: none;
-    color: #ec0000 !important;
-  }
-
-  #fh5co-header #navbar li.active a span:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-
-  #fh5co-topbar {
-	background-color: #222;
-	color: #fff;
-	padding: 0px 0;
-	padding-bottom: 0px;
-	font-size: 10px;
-	z-index: 100;
-  }
-
-  #fh5co-topbar .icon-phone,
-  #fh5co-topbar .icon-clock2 {
-	margin: 0 10px;
-  }
-
-}
-
-
-/* END OF MOBILE SCREEN SECTION */
-
-
 #fh5co-header .navbar {
   margin-bottom: 0;
   margin-top: 0;
@@ -424,6 +341,8 @@ h6 {
   box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   margin-top: 0px;
   top: 0;
+  padding-top: 0px;
+  padding-left: 0px;
 }
 
 #fh5co-header.navbar-fixed-top .navbar-brand {
@@ -1578,6 +1497,92 @@ h6 {
   margin-bottom: 0px;
   padding-bottom: 0;
 }
+
+
+
+/* BEGIN OF MOBILE SCREEN SECTION */
+@media screen and (max-width: 768px) {
+  #fh5co-header {
+    position: absolute;  /* Or position: fixed; if you want it to stay fixed while scrolling */
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+  }
+
+  #fh5co-header .navbar-brand {
+	bottom: 10px;
+	color: #fff;
+	display: block;
+	float: left;
+	font-size: 30px;
+	font-weight: 700;
+	height: 55px;
+	left: 20px;
+	line-height: 10px;
+	margin-left: 0px;
+	padding-left: 0px;
+	padding: 17.5px 15px;
+	position: absolute;
+  	margin-right: 0px;
+  	padding-bottom: 0px;
+    margin-bottom: 0px;
+    top: 0px;
+  }
+
+  #fh5co-header #navbar li a {
+    color: rgba(0, 0, 0, 0.5) !important;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  #fh5co-header #navbar li a:hover {
+    color: #ec0000 !important;
+  }
+
+  #fh5co-header #navbar li a span:before {
+    background: transparent !important;
+  }
+
+  #fh5co-header #navbar li.active a {
+    background: transparent;
+    background: none;
+    color: #ec0000 !important;
+  }
+
+  #fh5co-header #navbar li.active a span:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  #fh5co-topbar {
+	background-color: #222;
+	color: #fff;
+	padding: 0px 0;
+	padding-bottom: 0px;
+	font-size: 10px;
+	z-index: 100;
+  }
+
+  #fh5co-topbar .icon-phone,
+  #fh5co-topbar .icon-clock2 {
+	margin: 0 10px;
+  }
+
+}
+
+/* END OF MOBILE SCREEN SECTION */
+
+
+
 
 
 .btn {
