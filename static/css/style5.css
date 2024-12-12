@@ -244,6 +244,11 @@ h6 {
   padding-top: 0;
 }
 
+
+#fh5co-header #navbar li.dropdown ul.dropdown-menu {
+  left: -5px;
+}
+
 #fh5co-header #navbar li a {
   font-family: "Poppins", Arial, sans-serif;
   color: rgba(255, 255, 255, 0.5);

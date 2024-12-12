@@ -24,16 +24,29 @@
             </a>
           </li>
           {{ if .Site.Params.work.enable }}
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <span>{{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }}<i class="down-arrow"></i></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li> <a href="#" data-nav-section="work"><span>{{ with .Site.Params.navigation.work1 }}{{ . | markdownify }}{{ end }}</span></a></li>
-              <li> <a href="#" data-nav-section="work2"><span>{{ with .Site.Params.navigation.work2 }}{{ . | markdownify }}{{ end }}</span></a></li>
-              <li> <a href="#" data-nav-section="work3"><span>{{ with .Site.Params.navigation.work3 }}{{ . | markdownify }}{{ end }}</span></a></li>
-            </ul>
-          </li>
+
+
+		  <li class="dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			  <span style="color:black">{{ with .Site.Params.navigation.work }}{{ . | markdownify }}<i class="down-arrow"></i> ▾{{ end }}</span>
+			</a>
+			<ul class="dropdown-menu">
+			  <li> <a href="#" data-nav-section="work1">  <span style="color:black"> {{ with .Site.Params.navigation.work1 }}{{ . | markdownify }}{{ end }} </span> </a></li>
+			  <li> <a href="#" data-nav-section="work2">  <span style="color:black"> {{ with .Site.Params.navigation.work2 }}{{ . | markdownify }}{{ end }} </span> </a></li>
+			  <li> <a href="#" data-nav-section="work3">  <span style="color:black"> {{ with .Site.Params.navigation.work3 }}{{ . | markdownify }}{{ end }} </span> </a></li>
+			</ul>
+		  </li>
+
+		  <!-- <li class="dropdown"> -->
+			<!--   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> -->
+			  <!--     <span>{{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }}<i class="down-arrow"></i></span> -->
+			  <!--   </a> -->
+			<!--   <ul class="dropdown-menu"> -->
+			  <!--     <li> <a href="#" data-nav-section="work"><span>{{ with .Site.Params.navigation.work1 }}{{ . | markdownify }}{{ end }}</span></a></li> -->
+			  <!--     <li> <a href="#" data-nav-section="work2"><span>{{ with .Site.Params.navigation.work2 }}{{ . | markdownify }}{{ end }}</span></a></li> -->
+			  <!--     <li> <a href="#" data-nav-section="work3"><span>{{ with .Site.Params.navigation.work3 }}{{ . | markdownify }}{{ end }}</span></a></li> -->
+			  <!--   </ul> -->
+			<!-- </li> -->
           {{ end }}
           {{ if .Site.Params.testimonials.enable }}
           <li>
