@@ -368,6 +368,21 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0s;
 }
 
+
+#fh5co-topbar {
+  background-color: #222;
+  color: #fff;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+
+#fh5co-topbar .icon-phone,
+#fh5co-topbar .icon-clock2 {
+  margin: 0 10px;
+}
+
+
 #fh5co-home {
   background-color: transparent;
   background-size: cover;
@@ -377,10 +392,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #c0c0c0;
   color: #000;
   overflow: hidden;
+  padding-top: 150px;
 }
 
 #fh5co-home .gradient {
   position: absolute;
+  padding-top: 150px;
   top: 0;
   bottom: 0;
   left: 0;
