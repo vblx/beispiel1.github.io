@@ -63,16 +63,16 @@ businessHours = "09:00 - 17:00"
 [params.navigation]
 brand = "Berasco"
 brandslogan = "Hoch- & Tiefbau"
-home = "Start"
-work = "Leistungen"
+home = "START"
+work = "LEISTUNGEN"
 work1 = "Hochbau"
 work2 = "Tiefbau"
 work3 = "Glasfaser"
-press = "Presse"
-testimonials = "Referenzen"
-services = "Services"
-about = "Über uns"
-contact = "Kontakt"
+press = "PRESSE"
+testimonials = "REFERENZEN"
+services = "SERVICES"
+about = "ÜBER UNS"
+contact = "KONTAKT"
 
 #### "prepend" und "postpend" -- damit kann man Links in die Navi-Leiste
 ## einfuegen die NICHT zu unter-sektionen der Seite verlinken, sondern
