@@ -65,11 +65,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   opacity: 1;
   top: 0;
-  margin-top: 20px;
+  margin-top: 42px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header {
-    margin-top: 0;
+    margin-top: 42px;
     background: #fff;
     -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
@@ -104,7 +104,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header .navbar {
   padding-bottom: 0;
-  margin-bottom: 0;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 #fh5co-header #navbar li a {
   font-family: "Poppins", Arial, sans-serif;
@@ -163,6 +164,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   font-weight: 700;
   padding-left: 0;
+  margin-bottom: 0px;
+  bottom: 15px;
   color: #fff;
 }
 #fh5co-header.navbar-fixed-top {
