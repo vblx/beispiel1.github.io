@@ -268,120 +268,45 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 #fh5co-header {
-  // position: relative;
-  position: absolute;
-  z-index: 99;
-  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 50px;
   opacity: 1;
+  padding: 0px 0;
+  position: absolute;
   top: 0;
-  margin-top: 40px;
-
-
-  @media screen and (max-width: $screen-sm) {
-	margin-top: 0;
-	background: $brand-white;
-	-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-	-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-	-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-	box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-	.navbar-brand {
-	  color: $brand-primary!important;
-	}
-	#navbar {
-	  li {
-		a {
-		  color: rgba(0,0,0,.9)!important;
-		  @include transition(.3s);
-		  &:hover {
-			color: $brand-primary!important;
-		  }
-		  span {
-			&:before {
-			  background: transparent!important;
-			}
-		  }
-		}
-		&.active {
-		  a {
-			background: transparent;
-			background: none;
-			color: $brand-primary!important;
-			span {
-			  &:before {
-				visibility: visible;
-				-webkit-transform: scaleX(1);
-				transform: scaleX(1);
-			  }
-			}
-		  }
-		}
-	  }
-	}
-  }
-  // padding-top: 15px;
-  .navbar {
-	padding-bottom: 0;
-	margin-bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+@media screen and (max-width: $screen-sm) {
+  margin-top: 0;
+  background: $brand-white;
+  -webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+  -moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+  -ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+  box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+  .navbar-brand {
+	color: $brand-primary!important;
   }
   #navbar {
 	li {
 	  a {
-		font-family: $font-primary;
-		color: rgba(255,255,255,.5);
-		position: relative;
-		// text-transform: uppercase;
-		font-size: 19px;
-		font-weight: 300;
-		// @include transition(.5s);
-		span {
-		  position: relative;
-		  display: block;
-		  padding-bottom: 2px;
-		  &:before {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			bottom: 0;
-			left: 0;
-			background-color: rgba(255,255,255,.5);
-			visibility: hidden;
-			-webkit-transform: scaleX(0);
-			-moz-transform: scaleX(0);
-			-ms-transform: scaleX(0);
-			-o-transform: scaleX(0);
-			transform: scaleX(0);
-			-webkit-transition: all 0.3s ease-in-out 0s;
-			-moz-transition: all 0.3s ease-in-out 0s;
-			-ms-transition: all 0.3s ease-in-out 0s;
-			-o-transition: all 0.3s ease-in-out 0s;
-			transition: all 0.3s ease-in-out 0s;
-		  }
-		}
+		color: rgba(0,0,0,.9)!important;
+		@include transition(.3s);
 		&:hover {
-		  // color: $brand-primary;
-		  color: $brand-black;
-		  // color: rgba(255,255,255,1);
-		  span {
-			&:before {
-			  visibility: visible;
-			  -webkit-transform: scaleX(1);
-			  -moz-transform: scaleX(1);
-			  -ms-transform: scaleX(1);
-			  -o-transform: scaleX(1);
-			  transform: scaleX(1);
-			}
+		  color: $brand-primary!important;
+		}
+		span {
+		  &:before {
+			background: transparent!important;
 		  }
 		}
-
 	  }
 	  &.active {
 		a {
 		  background: transparent;
 		  background: none;
-		  color: $brand-black;
+		  color: $brand-primary!important;
 		  span {
 			&:before {
 			  visibility: visible;
@@ -393,91 +318,168 @@ h1, h2, h3, h4, h5, h6 {
 	  }
 	}
   }
-  .navbar-brand {
-	float: left;
-	display: block;
-	font-size: 30px;
-	font-weight: 700;
-	padding-left: 0;
-	color: $brand-white;
-
-  }
-  &.navbar-fixed-top {
-	position: fixed!important;
-	background: $brand-white;
-	-webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-	-moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-	-ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-	box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
-	margin-top: 0px;
-	top: 0;
-	.navbar-brand {
-	  color: $brand-primary;
-	}
-	#navbar {
-	  li {
-		a {
-		  color: rgba(0,0,0,.5);
-		  @include transition(.3s);
-		  &:hover {
-			color: $brand-primary;
+}
+// padding-top: 15px;
+.navbar {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#navbar {
+  li {
+	a {
+	  font-family: $font-primary;
+	  color: rgba(255,255,255,.5);
+	  position: relative;
+	  // text-transform: uppercase;
+	  font-size: 19px;
+	  font-weight: 300;
+	  // @include transition(.5s);
+	  span {
+		position: relative;
+		display: block;
+		padding-bottom: 2px;
+		&:before {
+		  content: "";
+		  position: absolute;
+		  width: 100%;
+		  height: 2px;
+		  bottom: 0;
+		  left: 0;
+		  background-color: rgba(255,255,255,.5);
+		  visibility: hidden;
+		  -webkit-transform: scaleX(0);
+		  -moz-transform: scaleX(0);
+		  -ms-transform: scaleX(0);
+		  -o-transform: scaleX(0);
+		  transform: scaleX(0);
+		  -webkit-transition: all 0.3s ease-in-out 0s;
+		  -moz-transition: all 0.3s ease-in-out 0s;
+		  -ms-transition: all 0.3s ease-in-out 0s;
+		  -o-transition: all 0.3s ease-in-out 0s;
+		  transition: all 0.3s ease-in-out 0s;
+		}
+	  }
+	  &:hover {
+		// color: $brand-primary;
+		color: $brand-black;
+		// color: rgba(255,255,255,1);
+		span {
+		  &:before {
+			visibility: visible;
+			-webkit-transform: scaleX(1);
+			-moz-transform: scaleX(1);
+			-ms-transform: scaleX(1);
+			-o-transform: scaleX(1);
+			transform: scaleX(1);
 		  }
 		}
-		&.active {
-		  a {
-			background: transparent;
-			background: none;
-			color: $brand-primary;
-			span {
-			  &:before {
-				visibility: visible;
-				-webkit-transform: scaleX(1);
-				transform: scaleX(1);
-				background-color: $brand-primary;
-			  }
+	  }
+
+	}
+	&.active {
+	  a {
+		background: transparent;
+		background: none;
+		color: $brand-black;
+		span {
+		  &:before {
+			visibility: visible;
+			-webkit-transform: scaleX(1);
+			transform: scaleX(1);
+		  }
+		}
+	  }
+	}
+  }
+}
+.navbar-brand {
+  float: left;
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  padding-left: 0;
+  color: $brand-white;
+
+}
+&.navbar-fixed-top {
+  position: fixed!important;
+  background: $brand-white;
+  -webkit-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+  -moz-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+  -ms-box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+  box-shadow: 0 0 9px 0 rgba(0,0,0,.1);
+  margin-top: 0px;
+  top: 0;
+  .navbar-brand {
+	color: $brand-primary;
+  }
+  #navbar {
+	li {
+	  a {
+		color: rgba(0,0,0,.5);
+		@include transition(.3s);
+		&:hover {
+		  color: $brand-primary;
+		}
+	  }
+	  &.active {
+		a {
+		  background: transparent;
+		  background: none;
+		  color: $brand-primary;
+		  span {
+			&:before {
+			  visibility: visible;
+			  -webkit-transform: scaleX(1);
+			  transform: scaleX(1);
+			  background-color: $brand-primary;
 			}
 		  }
 		}
 	  }
 	}
   }
-  .navbar-default {
-	border: transparent;
-	background: transparent;
-	@include border-radius(0px);
-	@media screen and (max-width: $screen-sm) {
-	  margin-top: 0px;
-	  padding-right: 0px;
-	  padding-left: 0px;
-	}
-	.brandslogan {
-	  margin: 28px 0 0 15px;
-	  float: left;
-	  letter-spacing: 2px;
-	  color: #adadad;
-	  em {
-		color: $brand-primary;
-		font-style: normal;
-	  }
+}
+.navbar-default {
+  border: transparent;
+  background: transparent;
+  @include border-radius(0px);
+  @media screen and (max-width: $screen-sm) {
+	margin-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+  }
+  .brandslogan {
+	margin: 28px 0 0 15px;
+	float: left;
+	letter-spacing: 2px;
+	color: #adadad;
+	em {
+	  color: $brand-primary;
+	  font-style: normal;
 	}
   }
-  a {
-	@include transition(.0s);
-  }
+}
+a {
+  @include transition(.0s);
+}
 
 }
 
 #fh5co-topbar {
   background-color: #222;
   color: #fff;
-  padding: 5px 0;
+  padding: 55px 0;
   font-size: 14px;
+  z-index: 100;
 }
 
 #fh5co-topbar .icon-phone,
 #fh5co-topbar .icon-clock2 {
   margin: 0 10px;
 }
+
+
 
 
 #fh5co-home {

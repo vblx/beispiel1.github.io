@@ -6,11 +6,11 @@
   font-style: normal;
 }
 /* =======================================================
-*
-* 	Template Style
-*	Edit this section
-*
-* ======================================================= */
+ *
+ * 	Template Style
+ *	Edit this section
+ *
+ * ======================================================= */
 body {
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 300;
@@ -197,12 +197,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #fh5co-header {
-  position: absolute;
-  z-index: 99;
-  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 50px;
   opacity: 1;
+  padding: 10px 0;
+  position: absolute;
   top: 0;
-  margin-top: 40px;
+  width: 100%;
+  z-index: 99;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header {
@@ -241,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header .navbar {
   padding-bottom: 0;
-  margin-bottom: 0;
+  margin-bottom: 1110;
 }
 #fh5co-header #navbar li a {
   font-family: "Poppins", Arial, sans-serif;
@@ -368,20 +370,19 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0s;
 }
 
-
 #fh5co-topbar {
   background-color: #222;
   color: #fff;
-  padding: 5px 0;
+  padding: 0px 0;
+  padding-bottom: 4px;
   font-size: 14px;
+  z-index: 100;
 }
-
 
 #fh5co-topbar .icon-phone,
 #fh5co-topbar .icon-clock2 {
   margin: 0 10px;
 }
-
 
 #fh5co-home {
   background-color: transparent;

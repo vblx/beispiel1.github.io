@@ -1,27 +1,8 @@
-<style>
-
-#fh5co-topbar {
-  background-color: #222;
-  color: #fff;
-  padding: 5px 0;
-  font-size: 14px;
-}
-
-
-#fh5co-topbar .icon-phone,
-#fh5co-topbar .icon-clock2 {
-  margin: 0 10px;
-}
-
-</style>
-
 <div id="fh5co-topbar">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <p class="to-animate">
-          <i class="icon-phone"></i> {{ .Site.Params.topbar.phoneNumber }} <i class="icon-clock2"></i> {{ .Site.Params.topbar.businessHours }}
-        </p>
+		  <span>Rufen Sie uns gerne an: <i class="icon-phone"></i>{{ with .Site.Params.topbar.phoneNumber  }}{{ . | markdownify }}{{ end }}</span>
       </div>
     </div>
   </div>

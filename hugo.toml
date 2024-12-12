@@ -58,6 +58,7 @@ googleMapsApiKey = ""
 [params.topbar]
 enable = true
 phoneNumber = "033231-3141 00"
+businessHours = "09:00 - 17:00"
 
 [params.navigation]
 brand = "Berasco"
