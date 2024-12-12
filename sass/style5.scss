@@ -27,11 +27,11 @@ $form-group-margin-bottom:       30px !default;
 
 // Mixin
 @mixin transition($transition) {
-	-moz-transition:    $transition ease;
-	-o-transition:      $transition ease;
-	-webkit-transition: $transition ease;
-	-ms-transition: 		$transition ease;
-	transition:         $transition ease;
+	-moz-transition:    $transition none;
+	-o-transition:      $transition none;
+	-webkit-transition: $transition none;
+	-ms-transition: 		$transition none;
+	transition:         $transition none;
 }
 @mixin inline-block() {
 	display:-moz-inline-stack;
@@ -199,9 +199,9 @@ $form-group-margin-bottom:       30px !default;
 // Template Base
 body {
 	font-family: $font-primary;
-	font-weight: 300;
-	font-size: 20px;
-	line-height: 1.5;
+	font-weight: 420;
+	font-size: 18px;
+	line-height: 1.8;
 	color: lighten($brand-darker, 20%);
 	color: #7f7f7f;
 	background: $brand-bg-color;
@@ -215,6 +215,9 @@ a {
 	&:hover, &:active, &:focus {
 		color: $brand-primary;
 		outline: none;
+		-webkit-transition: none !important;
+		-o-transition: none !important;
+		transition: none !important;
 	}
 }
 p {
@@ -336,9 +339,12 @@ h1, h2, h3, h4, h5, h6 {
 			color: rgba(255,255,255,.5);
 			position: relative;
 			// text-transform: uppercase;
-			font-size: 19px;
+			font-size: 18px;
 			font-weight: 300;
 			// @include transition(.5s);
+			-webkit-transition: none !important;
+			-o-transition: none !important;
+			transition: none !important;
 			span {
 				position: relative;
 				display: block;
@@ -357,11 +363,14 @@ h1, h2, h3, h4, h5, h6 {
 					-ms-transform: scaleX(0);
 					-o-transform: scaleX(0);
 					transform: scaleX(0);
-					-webkit-transition: all 0.3s ease-in-out 0s;
-					-moz-transition: all 0.3s ease-in-out 0s;
-					-ms-transition: all 0.3s ease-in-out 0s;
-					-o-transition: all 0.3s ease-in-out 0s;
-					transition: all 0.3s ease-in-out 0s;
+					// -webkit-transition: all 0.3s ease-in-out 0s;
+					// -moz-transition: all 0.3s ease-in-out 0s;
+					// -ms-transition: all 0.3s ease-in-out 0s;
+					// -o-transition: all 0.3s ease-in-out 0s;
+					// transition: all 0.3s ease-in-out 0s;
+					-webkit-transition: none !important;
+					-o-transition: none !important;
+					transition: none !important;
 				}
 			}
 			&:hover {
@@ -538,7 +547,7 @@ a {
 			}
 		}
 		h1 {
-			font-size: 90px;
+			font-size: 95px;
 			font-weight: 900;;
 			color: rgba(255,255,255,1);
 			margin: 0 0 20px 0;
@@ -1231,7 +1240,7 @@ a {
 		text-transform: uppercase;
 		text-indent:-55px;
 		background: $brand-primary;
-		transition: all .2s ease-out;
+		// transition: all .2s ease-out;
 		&::before, &::after {
 			content:'';
 			width: 25px;
@@ -1481,10 +1490,10 @@ a {
 
 // Menu bar Animate
 .fh5co-animated {
-	-webkit-animation-duration: .3s;
-	animation-duration: .3s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
+	// -webkit-animation-duration: .3s;
+	// animation-duration: .3s;
+	// -webkit-animation-fill-mode: both;
+	// animation-fill-mode: both;
 }
 
 
@@ -1505,3 +1514,10 @@ a {
 // 		@include inline-block;
 // 	}
 // }
+
+
+#fh5co-header #navbar li a {
+  -webkit-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
