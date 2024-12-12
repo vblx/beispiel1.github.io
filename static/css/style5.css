@@ -250,14 +250,11 @@ h6 {
   position: relative;
   font-size: 16px;
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 0;
-  margin-left: 0;
-  padding-bottom: 0;
-  padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
+
+  -webkit-transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
+  -o-transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
+  transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
+
   -webkit-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
@@ -268,14 +265,11 @@ h6 {
   color: rgba(1, 0, 0, 1);
   position: relative;
   display: block;
-  padding-right: 0;
-  padding-left: 0;
-  padding-bottom: 0;
-  padding-top: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 0;
-  margin-left: 0;
+
+  -webkit-transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
+  -o-transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
+  transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
+
   -webkit-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
@@ -283,10 +277,6 @@ h6 {
 
 #fh5co-header #navbar li a span:before {
 
-  padding-bottom: 0;
-  padding-top: 0;
-  margin-top: 0;
-  margin-bottom: 0;
 
   content: "";
   position: absolute;
@@ -314,14 +304,11 @@ h6 {
 
 #fh5co-header #navbar li a:hover {
   color: #fff;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-left: 0px;
+
+  -webkit-transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
+  -o-transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
+  transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
+
   -webkit-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
@@ -335,10 +322,11 @@ h6 {
   -o-transform: none;
   transform: none;
 
-  padding-bottom: 0px;
-  padding-top: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  -webkit-transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
+  -o-transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
+  transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
+
+
   -webkit-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
