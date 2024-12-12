@@ -1,95 +1,75 @@
-<header role="banner" id="fh5co-header">
+<header role="banner" id="fh5co-header" style="background-color: rgba(255, 255, 255, 0.8);">
   <div class="container">
-    <!-- <div class="row"> -->
-      <nav class="navbar navbar-default">
-        <div class="navbar-header">
-          <!-- Mobile Toggle Menu Button -->
-          <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-			<i>
-			</i>
-		  </a>
-		  <a class="navbar-brand" href="index.html">
-			<img src="images/logo.gif" alt="official berasco logo" style="width: 7vw; min-width: 100px" />
-		  </a>
-		</div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            {{ range .Site.Menus.prepend }}
-            <li>
-			  <a class="external" href="{{ .URL }}">
-				<span style="color:black">{{ .Name | markdownify }}</span>
-			  </a>
-			</li>
-			{{ end }}
-            <li class="active">
-			  <a href="#" data-nav-section="home" ><span style="color:black"> {{ with .Site.Params.navigation.home }}{{ . | markdownify }}{{ end }}
-				</span>
-			  </a>
-			</li>
-
-			<!-- leistungen popup -->
-			{{ if .Site.Params.work.enable }}
-
-
-			<!-- <li class="nav-item dropdown"> -->
-			<!--   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
-			<!-- 	<span style="color:black"> {{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }} </span> -->
-			<!--   </a> -->
-
-
-			<!--   <div class="dropdown-menu" aria-labelledby="navbarDropdown"> -->
-			<!-- 	<a class="dropdown-item" href="#">{{ with .Site.Params.navigation.work1 }}{{ . | markdownify }}{{ end }}</a> -->
-			<!-- 	<a class="dropdown-item" href="#">{{ with .Site.Params.navigation.work2 }}{{ . | markdownify }}{{ end }}</a> -->
-			<!-- 	<div class="dropdown-divider"></div> -->
-			<!-- 	<a class="dropdown-item" href="#"> {{ with .Site.Params.navigation.work3 }}{{ . | markdownify }}{{ end }}</a> -->
-			<!--   </div> -->
-
-			<!-- </li> -->
-
-			<li>
-			  <a href="#" data-nav-section="work">
-				<span style="color:black">{{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }}</span>
-			  </a>
-			</li>
-			{{ end }}
-
-
-            {{ if .Site.Params.testimonials.enable }}
-            <li>
-			  <a href="#" data-nav-section="testimonials">
-				<span style="color:black">{{ with .Site.Params.navigation.testimonials }}{{ . | markdownify }}{{ end }}</span>
-			</a></li>
-            {{ end }}
-            {{ if .Site.Params.services.enable }}
-            <li>
-			  <a href="#" data-nav-section="services">
-				<span style="color:black">{{ with .Site.Params.navigation.services }}{{ . | markdownify }}{{ end }}</span>
-			  </a>
-			</li>
-            {{ end }}
-            {{ if .Site.Params.about.enable }}
-            <li>
-			  <a href="#" data-nav-section="about">
-				<span style="color:black">{{ with .Site.Params.navigation.about }}{{ . | markdownify }}{{ end }}</span>
-			  </a>
-			</li>
-            {{ end }}
-            {{ if .Site.Params.contact.enable }}
-            <li>
-			  <a href="#" data-nav-section="contact"> <span style="color:black">{{ with .Site.Params.navigation.contact }}{{ . | markdownify }}{{ end }}</span>
-			  </a>
-			</li>
-            {{ end }}
-            {{ range .Site.Menus.postpend }}
-            <li>
-			  <a class="external" href="{{ .URL }}">
-				<span style="color:black">{{ .Name | markdownify }}</span>
-			  </a>
-			</li>
-            {{ end }}
-          </ul>
-        </div>
-      </nav>
-      <!-- </div> -->
+    <nav class="navbar navbar-default">
+      <div class="navbar-header">
+        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <i></i>
+        </a>
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.gif" alt="official berasco logo" style="width: 7vw; min-width: 100px" />
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          {{ range .Site.Menus.prepend }}
+          <li>
+            <a class="external" href="{{ .URL }}">
+              <span style="color:black">{{ .Name | markdownify }}</span>
+            </a>
+          </li>
+          {{ end }}
+          <li class="active">
+            <a href="#" data-nav-section="home" ><span style="color:black"> {{ with .Site.Params.navigation.home }}{{ . | markdownify }}{{ end }}
+              </span>
+            </a>
+          </li>
+          {{ if .Site.Params.work.enable }}
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <span style="color:black"> {{ with .Site.Params.navigation.work }}{{ . | markdownify }}{{ end }} </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li> <a href="#" data-nav-section="work1">  <span style="color:black"> {{ with .Site.Params.navigation.work1 }}{{ . | markdownify }}{{ end }} </span> </a></li>
+              <li> <a href="#" data-nav-section="work2">  <span style="color:black"> {{ with .Site.Params.navigation.work2 }}{{ . | markdownify }}{{ end }} </span> </a></li>
+              <li> <a href="#" data-nav-section="work3">  <span style="color:black"> {{ with .Site.Params.navigation.work3 }}{{ . | markdownify }}{{ end }} </span> </a></li>
+            </ul>
+          </li>
+          {{ end }}
+          {{ if .Site.Params.testimonials.enable }}
+          <li>
+            <a href="#" data-nav-section="testimonials">
+              <span style="color:black">{{ with .Site.Params.navigation.testimonials }}{{ . | markdownify }}{{ end }}</span>
+          </a></li>
+          {{ end }}
+          {{ if .Site.Params.services.enable }}
+          <li>
+            <a href="#" data-nav-section="services">
+              <span style="color:black">{{ with .Site.Params.navigation.services }}{{ . | markdownify }}{{ end }}</span>
+            </a>
+          </li>
+          {{ end }}
+          {{ if .Site.Params.about.enable }}
+          <li>
+            <a href="#" data-nav-section="about">
+              <span style="color:black">{{ with .Site.Params.navigation.about }}{{ . | markdownify }}{{ end }}</span>
+            </a>
+          </li>
+          {{ end }}
+          {{ if .Site.Params.contact.enable }}
+          <li>
+            <a href="#" data-nav-section="contact"> <span style="color:black">{{ with .Site.Params.navigation.contact }}{{ . | markdownify }}{{ end }}</span>
+            </a>
+          </li>
+          {{ end }}
+          {{ range .Site.Menus.postpend }}
+          <li>
+            <a class="external" href="{{ .URL }}">
+              <span style="color:black">{{ .Name | markdownify }}</span>
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </nav>
   </div>
 </header>

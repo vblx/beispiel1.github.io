@@ -35,6 +35,7 @@ custom_css = ["css/red.css"]
 author = ""
 description = ""
 email = ""
+
 # to get this link, register an account at formspree.io
 formspreelink = "https://formspree.io/f/mgveyzod"
 # Google Maps Javascript API Key (defaults to not passing a key)
@@ -53,6 +54,11 @@ googleMapsApiKey = ""
 # bedeutet: wenn hier eine Sektions-ueberschrift in der Liste fehlt,
 # dann ist diese sektion NICHT in der Navi-Leiste drin, unabhaengig
 # davon ob die sektion auf der seite existiert oder nicht.
+
+[params.topbar]
+enable = true
+phoneNumber = "033231-3141 00"
+
 [params.navigation]
 brand = "Berasco"
 brandslogan = "Hoch- & Tiefbau"

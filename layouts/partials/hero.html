@@ -1,16 +1,149 @@
-<section id="fh5co-home" data-section="home" style="background-image: url(images/hero-img.jpg);" data-stellar-background-ratio="0.5">
+<section id="fh5co-home" data-section="home" data-stellar-background-ratio="0.5" style="min-height: 80vh;">
+  <div class="hero-image-slideshow">
+    <div class="hero-image" style="background-image: url(images/hero-img1.jpg);"></div>
+    <div class="hero-image" style="background-image: url(images/hero-img2.jpg);"></div>
+    <div class="hero-image" style="background-image: url(images/hero-img3.jpg);"></div>
+  </div>
   <div class="gradient"></div>
-  <div class="container">
-	<div class="text-wrap">
-	  <div class="text-inner">
-		<div class="row">
-		  <div class="col-md-8 col-md-offset-2">
-			<h1 align="left" class="to-animate"><span style="color:red">{{ with .Site.Params.hero.titlekeyword }}{{ . | markdownify }}{{ end }} </span>{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}<span style="color:red">.</span></h1>
-			<h2 class="to-animate">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h2>
-		  </div>
-		</div>
-	  </div>
-	</div>
+  <div class="hero-gradient"></div> <div class="container">
+    <div class="text-wrap">
+      <div class="text-inner">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1 align="left" class="to-animate"><span style="color:red">{{ with .Site.Params.hero.titlekeyword }}{{ . | markdownify }}{{ end }} </span>{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}<span style="color:red">.</span></h1>
+            <h2 class="to-animate">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="slant"></div>
 </section>
+
+<style>
+  .hero-image-slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+  }
+
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .hero-image.active {
+    opacity: 1;
+  }
+
+  #fh5co-home {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #fh5co-home .gradient {
+    opacity: 0;
+  }
+
+  #fh5co-home h1,
+  #fh5co-home h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+  /* Adjust navbar positioning */
+  #fh5co-header {
+    position: absolute;
+    /* Or position: fixed; if you want it to stay fixed while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  #fh5co-header .navbar-brand {
+    position: absolute;
+    left: 20px;
+  }
+
+  #fh5co-header .navbar-collapse {
+    padding-left: 120px;
+  }
+
+  #fh5co-home .text-wrap {
+    text-align: left;
+
+  }
+
+  #fh5co-home .hero-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+
+    z-index: 1;
+
+  }
+
+  #fh5co-home h1 {
+    font-size: 4em;
+
+    margin-bottom: 0;
+
+  }
+
+  #fh5co-home h2 {
+    font-size: 1.7em;
+
+    margin-top: 10px;
+
+  }
+
+
+  #fh5co-header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+
+  }
+</style>
+
+
+<script>
+  const heroImages = document.querySelectorAll('.hero-image');
+  let currentImage = 0;
+
+  function showImage(index) {
+    heroImages.forEach((image, i) => {
+      if (i === index) {
+        image.classList.add('active');
+      } else {
+        image.classList.remove('active');
+      }
+    });
+  }
+
+  function nextImage() {
+    currentImage = (currentImage + 1) % heroImages.length;
+    showImage(currentImage);
+  }
+
+  // Initial display
+  showImage(currentImage);
+
+  // Start the slideshow
+  setInterval(nextImage, 5000); // Change 5000 to your desired interval in milliseconds
+</script>
