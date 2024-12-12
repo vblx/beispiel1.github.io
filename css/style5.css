@@ -16,7 +16,7 @@ body {
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.2;
   color: #777777;
   color: #7f7f7f;
   background: #fff;
@@ -252,8 +252,12 @@ h6 {
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
   padding-bottom: 0;
   padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
   -webkit-transition: none !important;
   -o-transition: none !important;
   transition: none !important;
@@ -292,11 +296,11 @@ h6 {
   left: 0;
   background-color: rgba(255, 255, 255, 0.5);
   visibility: hidden;
-  /* -webkit-transform: scaleX(0); */
-  /* -moz-transform: scaleX(0); */
-  /* -ms-transform: scaleX(0); */
-  /* -o-transform: scaleX(0); */
-  /* transform: scaleX(0); */
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
   /* -webkit-transition: all 0.3s ease-in-out 0s; */
   /* -moz-transition: all 0.3s ease-in-out 0s; */
   /* -ms-transition: all 0.3s ease-in-out 0s; */
@@ -325,11 +329,11 @@ h6 {
 
 #fh5co-header #navbar li a:hover span:before {
   visibility: visible;
-  /* -webkit-transform: scaleX(1); */
-  /* -moz-transform: scaleX(1); */
-  /* -ms-transform: scaleX(1); */
-  /* -o-transform: scaleX(1); */
-  /* transform: scaleX(1); */
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
 
   padding-bottom: 0px;
   padding-top: 0px;
@@ -349,8 +353,8 @@ h6 {
 }
 #fh5co-header #navbar li.active a span:before {
   visibility: visible;
-  /* -webkit-transform: scaleX(1); */
-  /* transform: scaleX(1); */
+  /* -webkit-transform: none; */
+  /* transform: none; */
 }
 #fh5co-header .navbar-collapse {
   padding-top: 70px;
@@ -390,8 +394,8 @@ h6 {
 
 #fh5co-header.navbar-fixed-top #navbar li.active a span:before {
   visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+  -webkit-transform: none;
+  transform: none;
   background-color: #ec0000;
 }
 
@@ -1578,8 +1582,8 @@ h6 {
 
   #fh5co-header #navbar li.active a span:before {
     visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+    -webkit-transform: none;
+    transform: none;
   }
 
   #fh5co-topbar {
