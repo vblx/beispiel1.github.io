@@ -1,4 +1,4 @@
-$font-primary: 'Poppins-Bold', Arial, sans-serif;
+$font-primary: 'Poppins', Arial, sans-serif;
 
 // Overrides
 $grid-gutter-width: 40px !default;
@@ -32,11 +32,11 @@ $form-group-margin-bottom:       30px !default;
 
 // Mixin
 @mixin transition($transition) {
-    -moz-transition:    $transition ease-in;
-    -o-transition:      $transition ease-in;
-    -webkit-transition: $transition ease-in;
-    -ms-transition: 	$transition ease-in;
-    transition:         $transition ease-in;
+    -moz-transition:    $transition none;
+    -o-transition:      $transition none;
+    -webkit-transition: $transition none;
+    -ms-transition: 	$transition none;
+    transition:         $transition none;
 }
 @mixin inline-block() {
 	display:-moz-inline-stack;
@@ -104,8 +104,8 @@ $form-group-margin-bottom:       30px !default;
 // Template Base
 body {
 	font-family: $font-primary;
-	font-weight: 400;
-	font-size: 16px;
+	font-weight: 420;
+	font-size: 18px;
 	line-height: 1.8;
 	color: lighten($brand-darker, 20%);
 	color: #303030;
@@ -168,6 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 		#navbar {
 			li {
 				a {
+					font-weight: bold;
 					color: rgba(0,0,0,.9)!important;
 					@include transition(.3s);
 					&:hover {
@@ -187,8 +188,8 @@ h1, h2, h3, h4, h5, h6 {
 						span {
 							&:before {
 								visibility: visible;
-								-webkit-transform: scaleX(1);
-								transform: scaleX(1);
+								// -webkit-transform: scaleX(0.2);
+								// transform: scaleX(0.2);
 							}
 						}
 					}
@@ -203,27 +204,34 @@ h1, h2, h3, h4, h5, h6 {
 	.navbar {
 		padding-bottom: 0px;
 		margin-bottom: 0px;
-				padding-top: 0px;
+		padding-top: 0px;
 		margin-top: 0px;
 	}
 	#navbar {
-		-webkit-text-size-adjust: 100%;
 		-webkit-tap-highlight-color: transparent;
-		list-style: none;
-		box-sizing: border-box;
-		text-decoration: none;
-		display: block;
-		padding: 10px 15px;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		line-height: 20px;
-		font-size: 19px;
-		font-weight: 300;
-		color: $brand-black;
+		-webkit-text-size-adjust: 100%;
 		background-color: $brand-white;
-		transition: 0.3s;
+		box-sizing: border-box;
+		//		color: $brand-black;
+		color: rgba(1, 0, 0, 1);
+		display: block;
 		font-family: $font-primary;
+		font-size: 18px;
+		font-weight: 200;
+		font-weight: bold;
+		line-height: 20px;
+		list-style: none;
+		margin-bottom: 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 0;
+		padding-bottom: 0;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 0;
 		position: relative;
+		text-decoration: none;
+		transition: 0.3s;
 
 		li {
 			a {
@@ -234,35 +242,47 @@ h1, h2, h3, h4, h5, h6 {
 				text-decoration: none;
 				display: block;
 				padding: 10px 15px;
-				padding-top: 10px;
-				padding-bottom: 10px;
+				padding-top: 0;
+				padding-bottom: 0;
 				line-height: 20px;
-				font-size: 19px;
-				font-weight: 300;
-				color: rgba(0, 0, 0, 0.5) !important;
+				font-size: 18px;
+				font-weight: bold;
+				color: rgba(24, 22, 21, 0.5);
+//				color: rgba(0, 0, 0, 0.5) !important;
 				background-color: $brand-white;
-				transition: 0.3s;
+				transition: 0.15s;
 				font-family: $font-primary;
 				position: relative;
+				-webkit-transition: none !important;
+				-o-transition: none !important;
+				transition: none !important;
 
 				span {
-					-webkit-text-size-adjust: 100%;
 					-webkit-tap-highlight-color: transparent;
-					list-style: none;
+					-webkit-text-size-adjust: 100%;
+					background-color: $brand-white;
 					box-sizing: border-box;
-					text-decoration: none;
+					color: rgba(3, 3, 3, 0.9) !important;
 					display: block;
-					padding: 10px 15px;
-					padding-top: 10px;
-					padding-bottom: 10px;
-					line-height: 20px;
+					font-family: $font-primary;
 					font-size: 19px;
 					font-weight: 300;
-					color: rgba(3, 3, 3, 0.9) !important;
-					background-color: $brand-white;
-					transition: 0.3s;
-					font-family: $font-primary;
+					line-height: 20px;
+					list-style: none;
+					margin-bottom: 0;
+					margin-left: 0;
+					margin-right: 0;
+					margin-top: 0;
+					padding-bottom:  0;
+					padding-left: 0;
+					padding-right: 0;
+					padding-top: 0;
+					padding: 0 0;
 					position: relative;
+					text-decoration: none;
+					-webkit-transition: none !important;
+					-o-transition: none !important;
+					transition: none !important;
 					&:before {
 						content: "";
 						position: absolute;
@@ -273,16 +293,19 @@ h1, h2, h3, h4, h5, h6 {
 						left: 0;
 						right: 0;
 						visibility: hidden;
-						-webkit-transform: scaleX(0);
-						-moz-transform: scaleX(0);
-						-ms-transform: scaleX(0);
-						-o-transform: scaleX(0);
-						transform: scaleX(0);
-						-webkit-transition: all 0.3s ease-in-out 0s;
-						-moz-transition: all 0.3s ease-in-out 0s;
-						-ms-transition: all 0.3s ease-in-out 0s;
-						-o-transition: all 0.3s ease-in-out 0s;
-						transition: all 0.3s ease-in-out 0s;
+						// -webkit-transform: scaleX(0);
+						// -moz-transform: scaleX(0);
+						// -ms-transform: scaleX(0);
+						// -o-transform: scaleX(0);
+						// transform: scaleX(0);
+						// -webkit-transition: all 0.3s ease-in-out 0s;
+						// -moz-transition: all 0.3s ease-in-out 0s;
+						// -ms-transition: all 0.3s ease-in-out 0s;
+						// -o-transition: all 0.3s ease-in-out 0s;
+						// transition: all 0.3s ease-in-out 0s;
+						-webkit-transition: none !important;
+						-o-transition: none !important;
+						transition: none !important;
 					}
 				}
 				&:hover {
@@ -292,11 +315,11 @@ h1, h2, h3, h4, h5, h6 {
 					span {
 						&:before {
 							visibility: visible;
-							-webkit-transform: scaleX(1);
-							-moz-transform: scaleX(1);
-							-ms-transform: scaleX(1);
-							-o-transform: scaleX(1);
-							transform: scaleX(1);
+							// -webkit-transform: scaleX(0);
+							// -moz-transform: scaleX(0);
+							// -ms-transform: scaleX(0);
+							// -o-transform: scaleX(0);
+							// transform: scaleX(0);
 						}
 					}
 				}
@@ -310,8 +333,8 @@ h1, h2, h3, h4, h5, h6 {
 					span {
 						&:before {
 							visibility: visible;
-							-webkit-transform: scaleX(1);
-							transform: scaleX(1);
+							-webkit-transform: scaleX(0);
+							transform: scaleX(0);
 						}
 					}
 				}
@@ -361,8 +384,8 @@ h1, h2, h3, h4, h5, h6 {
 						span {
 							&:before {
 								visibility: visible;
-								-webkit-transform: scaleX(1);
-								transform: scaleX(1);
+								-webkit-transform: scaleX(0);
+								transform: scaleX(0);
 							}
 						}
 					}
@@ -793,7 +816,7 @@ h1, h2, h3, h4, h5, h6 {
 		width: 25px;
 		height: 3px;
 		color: $brand-primary;
-		font:bold 14px/.4 Helvetica;
+		font:normal 14px/.4 Poppins;
 		text-transform: uppercase;
 		text-indent:-55px;
 		background: $brand-primary;
@@ -817,29 +840,29 @@ h1, h2, h3, h4, h5, h6 {
 	bottom: -7px;
 }
 .fh5co-nav-toggle:hover i::before {
-	top: -10px;
+	top: -1px;
 }
 .fh5co-nav-toggle:hover i::after {
-	bottom: -10px;
+	bottom: -1px;
 }
 .fh5co-nav-toggle.active i {
 	background: transparent;
 }
 .fh5co-nav-toggle.active i::before {
 	top:0;
-	-webkit-transform: rotateZ(45deg);
-    -moz-transform: rotateZ(45deg);
-    -ms-transform: rotateZ(45deg);
-    -o-transform: rotateZ(45deg);
-    transform: rotateZ(45deg);
+	-webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
 }
 .fh5co-nav-toggle.active i::after {
 	bottom:0;
-	-webkit-transform: rotateZ(-45deg);
-    -moz-transform: rotateZ(-45deg);
-    -ms-transform: rotateZ(-45deg);
-    -o-transform: rotateZ(-45deg);
-    transform: rotateZ(-45deg);
+	-webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
 }
 .fh5co-nav-toggle {
 	position: absolute;
@@ -1256,8 +1279,8 @@ h1, h2, h3, h4, h5, h6 {
 
 // Menu Animate
 .fh5co-animated {
-	-webkit-animation-duration: .3s;
-	animation-duration: .3s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
+	// -webkit-animation-duration: .3s;
+	// animation-duration: .3s;
+	// -webkit-animation-fill-mode: both;
+	// animation-fill-mode: both;
 }

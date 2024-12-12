@@ -11,6 +11,8 @@
  *	Edit this section
  *
  * ======================================================= */
+
+
 body {
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 400;
@@ -84,6 +86,8 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+	font-weight: normal;
+    font-size: 12;
   }
   #fh5co-header #navbar li a:hover {
     color: #ec0000 !important;
@@ -104,18 +108,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 #fh5co-header .navbar {
   padding-bottom: 0;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 #fh5co-header #navbar li a {
   font-family: "Poppins", Arial, sans-serif;
+ /* ALSO FOR BURGER MENU! */
+  font-weight: 600;
+  font-size: larger;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
   color: rgba(255, 255, 255, 0.5);
   position: relative;
 }
 #fh5co-header #navbar li a span {
   position: relative;
   display: block;
-  padding-bottom: 2px;
+   padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 #fh5co-header #navbar li a span:before {
   content: "";
@@ -164,8 +178,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 30px;
   font-weight: 700;
   padding-left: 0;
+  padding-right: 0;
   margin-bottom: 0px;
-  bottom: 15px;
+  bottom: 0;
   color: #fff;
 }
 #fh5co-header.navbar-fixed-top {
