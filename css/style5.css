@@ -225,7 +225,7 @@ h6 {
   margin-top: 42px;
   padding-bottom: 15px 0;
   padding-top: 15px 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255);
   left: 0;
   opacity: 1;
   padding: 10px 0;
@@ -1300,6 +1300,7 @@ h6 {
   float: left;
   width: 100%;
   padding-bottom: 50px;
+  padding-top: 4px;
   margin-bottom: 50px;
   clear: both;
 }
@@ -1595,6 +1596,21 @@ h6 {
 
 }
 
+
+@media screen and (max-width: 768px) {
+  /* Keep existing mobile styles and add: */
+  #fh5co-home .text-wrap {
+    padding-right: 15px;  /* Change from 420px to match container padding */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #fh5co-home .text-inner {
+    width: 100%;
+    padding-right: 15px;
+  }
+}
+
 /* END OF MOBILE SCREEN SECTION */
 
 
@@ -1710,6 +1726,10 @@ h6 {
   position: relative;
 }
 
+
+
+
+
 @media screen and (max-width: 768px) {
   #map {
     height: 200px;
@@ -1816,5 +1836,92 @@ h6 {
   opacity: 1;
 }
 
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.container {
+  width: 100%;
+  max-width: 100vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-x: hidden;
+}
+
+/* Fix burger menu behavior */
+.navbar-collapse {
+  max-width: 100vw;
+}
+
+/* Ensure content stays within viewport */
+section {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
+/* Remove all redundant media queries and add this consolidated one at the end */
+@media screen and (max-width: 768px) {
+  html, body {
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  #fh5co-header {
+    position: fixed;
+    width: 100vw;
+    max-width: 100vw;
+    left: 0;
+    margin: 0;
+    top: 42px;
+    z-index: 1000;
+  }
+
+  .navbar-collapse {
+    width: 100%;
+    max-width: 100vw;
+    padding: 15px;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    background: #fff;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  section {
+    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #fh5co-home {
+    padding-top: 120px;
+  }
+
+  .carousel-container {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}
 
 /*# sourceMappingURL=style5.css.map */
