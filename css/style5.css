@@ -591,57 +591,71 @@ h6 {
 }
 
 
+
 #fh5co-intro {
-  position: relative;
-  top: 52px;
-  margin-top: -100px;
-  z-index: 10;
-  padding-bottom: 7em;
-  padding: 4em 0;
-  background: #f8f9fa;
+  padding: 6em 0;
+  background: #fafafa;
 }
 
-
-
+/* Description tile (first tile) */
 .intro-description {
-  padding: 2em;
+  padding: 0 2em 2em 0;
 }
 
 .intro-description h3 {
-  font-size: 1.8em;
+  font-size: 2em;
+  font-weight: 600;
   margin-bottom: 1em;
+  color: #000;
+  line-height: 1.2;
 }
 
+.intro-description p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Numbered tiles */
 .intro-tile {
   background: #fff;
-  padding: 2em;
+  padding: 2.5em;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
   height: 100%;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .tile-number {
   color: #ec0000;
-  font-size: 2.5em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
+  font-size: 2.8em;
+  font-weight: 700;
+  margin-bottom: 0.8em;
+  font-family: "Poppins", sans-serif;
 }
 
 .intro-tile h4 {
-  font-size: 1.4em;
+  font-size: 1.5em;
   margin-bottom: 1em;
+  color: #000;
+  font-weight: 600;
 }
 
 .intro-tile p {
-  font-size: 1em;
+  color: #666;
   line-height: 1.6;
+  font-size: 1em;
+  margin: 0;
 }
 
-
-@media screen and (max-width: 768px) {
-  #fh5co-intro {
-    padding-bottom: 3em;
+/* Grid adjustments */
+@media (min-width: 768px) {
+  .intro-tile {
+    min-height: 280px;
   }
 }
+
+
+
 
 #fh5co-intro>div {
   display: -webkit-box;

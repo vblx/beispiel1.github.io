@@ -635,6 +635,8 @@ a {
 	width: 101%;
 }
 
+
+// old intro css
 #fh5co-intro {
 	position: relative;
 	bottom: 0;
@@ -860,7 +862,69 @@ a {
 	}
 }
 
-#fh5co-counters {
+// new intro css
+#fh5co-intro {
+  padding: 6em 0;
+  background: #fafafa;
+
+  .intro-description {
+    padding: 0 2em 2em 0;
+
+    h3 {
+      font-size: 2em;
+      font-weight: 600;
+      margin-bottom: 1em;
+      color: $brand-black;
+      line-height: 1.2;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.6;
+    }
+  }
+
+  .intro-tile {
+    background: $brand-white;
+    padding: 2.5em;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    height: 100%;
+
+    .tile-number {
+      color: #ec0000;
+      font-size: 2.8em;
+      font-weight: 700;
+      margin-bottom: 0.8em;
+      font-family: $font-primary;
+    }
+
+    h4 {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+      color: $brand-black;
+      font-weight: 600;
+    }
+
+    p {
+      color: #666;
+      line-height: 1.6;
+      font-size: 1em;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-sm) {
+  .intro-tile {
+    min-height: 280px;
+  }
+}
+
+
+
+  #fh5co-counters {
 	background: $brand-primary;
 	overflow: hidden;
 	background-color: transparent;
