@@ -1,23 +1,21 @@
-<section id="fh5co-intro">
+<section id="fh5co-intro" class="bg-gray-50">
   <div class="container">
-	<div class="row row-bottom-padded-lg">
-
-	  {{ range .Site.Params.intro.item }}
-	  <div class="fh5co-block to-animate" style="background-image: url(images/{{ .img }});">
-		<div class="overlay-darker"></div>
-		<div class="overlay"></div>
-		<div class="fh5co-text">
-		  <i class="fh5co-intro-icon {{ .icon }}"></i>
-		  <h2>{{ .title }}</h2>
-		  <p>{{ .description }}</p>
-		  {{ if .button}}
-		  <p><a href="{{ .url }}" class="btn btn-primary">{{ .button}}</a></p>
-		  {{ end }}
-
-
-		</div>
-	  </div>
-	  {{ end }}
-	</div>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="intro-description">
+          <h3>{{ .Site.Params.intro.title }}</h3>
+          <p>{{ .Site.Params.intro.description }}</p>
+        </div>
+      </div>
+      {{ range $index, $element := .Site.Params.intro.items }}
+      <div class="col-md-4 mb-4">
+        <div class="intro-tile">
+          <div class="tile-number">{{ printf "%02d" (add $index 1) }}</div>
+          <h4>{{ .title }}</h4>
+          <p>{{ .description }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
   </div>
 </section>
