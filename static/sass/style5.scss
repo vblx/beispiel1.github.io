@@ -388,7 +388,7 @@ h1, h2, h3, h4, h5, h6 {
 	li {
 		a {
 			font-family: $font-primary;
-			color: rgba(255,255,255,.5);
+			color: rgba(255,255,255);
 			position: relative;
 			// text-transform: uppercase;
 			font-size: 18px;
@@ -408,7 +408,7 @@ h1, h2, h3, h4, h5, h6 {
 					height: 2px;
 					bottom: 0;
 					left: 0;
-					background-color: rgba(255,255,255,.5);
+					background-color: rgba(255,255,255);
 					visibility: hidden;
 					-webkit-transform: scaleX(0);
 					-moz-transform: scaleX(0);
@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5, h6 {
 			&:hover {
 				// color: $brand-primary;
 				color: $brand-black;
-				// color: rgba(255,255,255,1);
+				// color: rgba(255,255,255);
 				span {
 					&:before {
 						visibility: visible;
