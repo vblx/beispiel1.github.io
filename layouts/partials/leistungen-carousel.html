@@ -1,4 +1,3 @@
-<!-- leistungen-carousel.html -->
 <section id="fh5co-work" data-section="work">
   <div class="container">
     <div class="row">
@@ -158,6 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const indicators = document.querySelectorAll('.carousel-indicators button');
   const prevBtn = document.querySelector('.carousel-nav.prev');
   const nextBtn = document.querySelector('.carousel-nav.next');
+  const dropdownLinks = document.querySelectorAll('.dropdown-menu a[data-nav-section]');
   let currentSlide = 0;
   let autoplayInterval;
 
@@ -207,48 +207,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Handle navigation menu clicks
-  document.querySelectorAll('[data-nav-section="work1"], [data-nav-section="work2"], [data-nav-section="work3"]').forEach(link => {
-    link.addEventListener('click', (e) => {
-      const section = e.target.getAttribute('data-nav-section');
-      const slideIndex = Array.from(slides).findIndex(slide => slide.getAttribute('data-slide') === section);
-      if (slideIndex !== -1) {
-        stopAutoplay();
-        updateSlide(slideIndex);
-        startAutoplay();
-      }
+  // Dropdown menu navigation
+  dropdownLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const section = this.getAttribute('data-nav-section');
+      const slideIndex = {
+        'work1': 1,
+        'work2': 2,
+        'work3': 3
+      }[section] || 0;
+
+      stopAutoplay();
+      updateSlide(slideIndex);
+      startAutoplay();
+
+      document.getElementById('fh5co-work').scrollIntoView({ behavior: 'smooth' });
     });
   });
 
   // Initialize
   updateSlide(0);
   startAutoplay();
-});
-
-// Navigation menu integration
-document.addEventListener('DOMContentLoaded', function() {
-  const dropdownLinks = document.querySelectorAll('.dropdown-menu a[data-nav-section]');
-
-  dropdownLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-
-      // Get the section identifier (work1, work2, work3)
-      const section = e.target.closest('a').getAttribute('data-nav-section');
-
-      // Find corresponding slide index
-      const slideIndex = {
-        'work1': 1,  // Hochbau
-        'work2': 2,  // Tiefbau
-        'work3': 3   // Glasfaser
-      }[section] || 0;
-
-      // Update carousel
-      updateSlide(slideIndex);
-
-      // Scroll to section
-      document.getElementById('fh5co-work').scrollIntoView({ behavior: 'smooth' });
-    });
-  });
 });
 </script>
