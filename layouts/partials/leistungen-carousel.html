@@ -224,4 +224,31 @@ document.addEventListener('DOMContentLoaded', function() {
   updateSlide(0);
   startAutoplay();
 });
+
+// Navigation menu integration
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdownLinks = document.querySelectorAll('.dropdown-menu a[data-nav-section]');
+
+  dropdownLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      // Get the section identifier (work1, work2, work3)
+      const section = e.target.closest('a').getAttribute('data-nav-section');
+
+      // Find corresponding slide index
+      const slideIndex = {
+        'work1': 1,  // Hochbau
+        'work2': 2,  // Tiefbau
+        'work3': 3   // Glasfaser
+      }[section] || 0;
+
+      // Update carousel
+      updateSlide(slideIndex);
+
+      // Scroll to section
+      document.getElementById('fh5co-work').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+});
 </script>
