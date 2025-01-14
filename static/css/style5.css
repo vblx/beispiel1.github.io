@@ -597,10 +597,39 @@ h6 {
   background: #fafafa;
 }
 
-/* Description tile (first tile) */
-.intro-description {
-  padding: 0 2em 2em 0;
+
+
+/* Grid container */
+.intro-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 2rem;
+ margin-bottom: 2rem;
 }
+
+/* Description tile and numbered tiles */
+.intro-description,
+.intro-tile {
+ height: 100%;
+}
+
+/* Common tile styles */
+.intro-tile {
+ background: #fff;
+ padding: 2.5em;
+ box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+ border-radius: 4px;
+ display: flex;
+ flex-direction: column;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+ .intro-grid {
+   grid-template-columns: 1fr;
+ }
+}
+
 
 .intro-description h3 {
   font-size: 2em;
@@ -613,16 +642,6 @@ h6 {
 .intro-description p {
   color: #666;
   line-height: 1.6;
-}
-
-/* Numbered tiles */
-.intro-tile {
-  background: #fff;
-  padding: 2.5em;
-  margin-bottom: 2em;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  border-radius: 4px;
-  height: 100%;
 }
 
 .tile-number {
