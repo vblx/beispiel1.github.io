@@ -20,9 +20,8 @@
     {{ partial "intro.html" .}}
 
 	{{ if .Site.Params.work.enable }}
-    {{ partial "work.html" .}}
-    {{ end }}
-
+	{{ partial "leistungen-carousel.html" .}}
+	{{ end }}
 
 	{{ if .Site.Params.testimonials.enable }}
     {{ partial "testimonials.html" .}}
