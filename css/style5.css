@@ -527,8 +527,8 @@ h6 {
 
 #fh5co-home .text-inner h1 {
   /* font-size: 50px; */
-  font-size: 4em;
-  font-weight: 750;
+  font-size: 3em;
+  font-weight: 650;
   margin-bottom: 0;
   color: white;
   margin: 0 0 100px 0;
@@ -547,7 +547,7 @@ h6 {
 }
 #fh5co-home h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 4em;
+  font-size: 3em;
   margin-bottom: 10px;
 }
 #fh5co-home h2 {
