@@ -24,7 +24,7 @@
             </a>
           </li>
 
-		  <!-- "Leistungen" drop-down menu -->
+		  <!-- work = "old Leistungen" drop-down menu -->
 		  {{ if .Site.Params.work.enable }}
 		  <li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -36,6 +36,35 @@
 			  <li><a href="#fh5co-work" data-nav-section="work3"><span>{{ .Site.Params.navigation.work3 }}</span></a></li>
 			</ul>
 		  </li>
+		  {{ end }}
+
+		  <!-- new  "Leistungen" drop-down menu -->
+		  {{ if .Site.Params.leistungen.enable }}
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#leistungen" role="button">
+			  {{ .navtitle }}
+			</a>
+			<ul class="dropdown-menu">
+			  {{ range .Site.Params.leistungen.sections }}
+              <li>
+                <a class="dropdown-item" href="#leistungen" onclick="scrollAndOpen('{{ .id }}')">
+                  {{ .title }}
+                </a>
+              </li>
+			  {{ end }}
+			</ul>
+		  </li>
+
+
+		  <script>
+			function scrollAndOpen(sectionId) {
+				const section = document.querySelector('.leistungen-section');
+				section.scrollIntoView({ behavior: 'smooth' });
+				setTimeout(() => {
+					toggleSection(sectionId);
+				}, 500);
+			}</script>
+
 		  {{ end }}
 
           {{ if .Site.Params.testimonials.enable }}

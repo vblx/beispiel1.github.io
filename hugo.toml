@@ -198,6 +198,7 @@ subtitle = "Kurzbeschreibung..."
 [params.leistungen]
 enable = true
 title = "Unsere Leistungen:"
+navtitle = "Leistungen"
 subtitle = "Professionelle Baukompetenz für Ihre Projekte"
 
 [[params.leistungen.sections]]
