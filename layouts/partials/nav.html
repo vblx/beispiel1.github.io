@@ -24,7 +24,7 @@
             </a>
           </li>
 
-		  <!-- work = "old Leistungen" drop-down menu -->
+		  <!-- work = "old Leistungen" drop-down menu (see js folder) -->
 		  {{ if .Site.Params.work.enable }}
 		  <li class="dropdown">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -42,19 +42,18 @@
 		  {{ if .Site.Params.leistungen.enable }}
 		  <li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="#leistungen" role="button">
-			  {{ .Site.Params.leistungen.navtitle | markdownify }}
+			  <span style="color:black"> {{ with .Site.Params.leistungen.navtitle }}{{ . | markdownify }} <i class="down-arrow"></i> ▾{{ end }} </span>
 			</a>
 			<ul class="dropdown-menu">
 			  {{ range .Site.Params.leistungen.sections }}
               <li>
                 <a class="dropdown-item" href="#leistungen" onclick="scrollAndOpen('{{ .id }}')">
-                  {{ .title }}
+                  {{ .navtitle }}
                 </a>
               </li>
 			  {{ end }}
 			</ul>
 		  </li>
-
 
 		  <script>
 			function scrollAndOpen(sectionId) {
@@ -63,7 +62,8 @@
 				setTimeout(() => {
 					toggleSection(sectionId);
 				}, 500);
-			}</script>
+			}
+		  </script>
 
 		  {{ end }}
 

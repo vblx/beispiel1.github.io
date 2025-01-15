@@ -204,28 +204,32 @@ subtitle = "Professionelle Baukompetenz für Ihre Projekte"
 [[params.leistungen.sections]]
 id = "tiefbau"
 title = "Tiefbau"
+navtitle = "Tiefbau"
 content = "Content for Tiefbau section..."
 
 [[params.leistungen.sections]]
 id = "strassenbau"
 title = "Straßenbau"
+navtitle = "Straßenbau"
 content = "Content for Straßenbau section..."
 
 [[params.leistungen.sections]]
 id = "kabel"
 title = "Einzug von Kabel und Microrohr"
+navtitle = "Kabel"
 content = "Content for Kabel section..."
 
 [[params.leistungen.sections]]
 id = "verlegung"
 title = "Verlegung von Kabel-, Rohr und Speedverband"
+navtitle = "Verlegung"
 content = "Content for Verlegung section..."
 
 [[params.leistungen.sections]]
 id = "pflaster"
 title = "Pflasterarbeiten"
+navtitle = "Pflasterarbeiten"
 content = "Content for Pflasterarbeiten section..."
-
 
 
 ########################################################################
