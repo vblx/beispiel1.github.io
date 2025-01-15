@@ -55,21 +55,6 @@
 			</ul>
 		  </li>
 
-		  <script>
-			function scrollAndOpen(sectionId, event) {
-				event.preventDefault();
-				const mobileMenu = document.querySelector('.navbar-collapse');
-				mobileMenu.classList.remove('show');
-				const section = document.querySelector('.leistungen-section');
-				section.scrollIntoView({ behavior: 'smooth' });
-
-				setTimeout(() => {
-					toggleSection(sectionId);
-				}, 500);
-			}
-		  </script>
-
-
 		  {{ end }}
 
 		  {{ if .Site.Params.testimonials.enable }}
