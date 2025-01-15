@@ -1,30 +1,27 @@
 <div class="leistungen-section">
-    <h1>{{ .Site.Params.leistungen.title }}</h1>
-    <h2>{{ .Site.Params.leistungen.subtitle }}</h2>
-
+  <h1>{{ .Site.Params.leistungen.title }}</h1>
+  <h2>{{ .Site.Params.leistungen.subtitle }}</h2>
+  <div>
+    {{ range .Site.Params.leistungen.sections }}
     <div>
-        {{ range .Site.Params.leistungen.sections }}
-        <div>
-            <button onclick="toggleSection('{{ .id }}')">
-                <span class="section-title">{{ .title }}</span>
-                <svg data-section="{{ .id }}" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M7 10l5 5 5-5z"/>
-                </svg>
-            </button>
-            <div id="{{ .id }}-content" class="section-content hidden">
-                {{ .content | markdownify }}
-            </div>
-        </div>
-        {{ end }}
+      <button onclick="toggleSection('{{ .id }}')">
+        <span class="section-title">{{ .title }}</span>
+        <svg data-section="{{ .id }}" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M7 10l5 5 5-5z"/>
+        </svg>
+      </button>
+      <div id="{{ .id }}-content" class="section-content hidden">
+        {{ .content | markdownify }}
+      </div>
     </div>
+    {{ end }}
+  </div>
 </div>
-
 <script>
-function toggleSection(sectionId) {
-    const content = document.getElementById(sectionId + '-content');
-    const arrow = document.querySelector(`svg[data-section="${sectionId}"]`);
-
-    content.classList.toggle('hidden');
-    arrow.classList.toggle('rotate-180');
-}
+  function toggleSection(sectionId) {
+      const content = document.getElementById(sectionId + '-content');
+      const arrow = document.querySelector(`svg[data-section="${sectionId}"]`);
+      content.classList.toggle('hidden');
+      arrow.classList.toggle('rotate-180');
+  }
 </script>
