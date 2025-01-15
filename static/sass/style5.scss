@@ -1,4 +1,4 @@
-$font-primary: 'Source Sans Pro', Arial, sans-serif;
+$font-primary: 'Poppins', Arial, sans-serif;
 
 // Overrides
 $grid-gutter-width: 40px !default;
@@ -7,9 +7,6 @@ $padding-base-vertical: 14px !default;
 
 $brand-primary: #A4D792 !default;
 $brand-secondary: #21825C !default;
-
-
-
 $brand-white: #fff;
 $brand-black: #000;
 $brand-darker: #444;
@@ -27,11 +24,11 @@ $form-group-margin-bottom:       30px !default;
 
 // Mixin
 @mixin transition($transition) {
-	-moz-transition:    $transition none;
-	-o-transition:      $transition none;
-	-webkit-transition: $transition none;
-	-ms-transition: 		$transition none;
-	transition:         $transition none;
+	-moz-transition:    $transition .3s;
+	-o-transition:      $transition .3s;
+	-webkit-transition: $transition .3s;
+	-ms-transition: 		$transition .3s;
+	transition:         $transition .3s;
 }
 @mixin inline-block() {
 	display:-moz-inline-stack;
@@ -51,13 +48,6 @@ $form-group-margin-bottom:       30px !default;
 	-moz-border-radius: $radius;
 	-ms-border-radius: $radius;
 	border-radius: $radius;
-}
-@mixin flex() {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
 }
 @mixin flexwrap() {
 	flex-wrap: wrap;
@@ -211,7 +201,7 @@ body {
 }
 a {
 	color: $brand-primary;
-	@include transition(.5s);
+	@include transition(.3s);
 	&:hover, &:active, &:focus {
 		color: $brand-primary;
 		outline: none;
@@ -270,7 +260,9 @@ h1, h2, h3, h4, h5, h6 {
 	@include angle(both, true);
 }
 
-#fh5co-header {
+
+// header stuff
+	#fh5co-header {
 	background-color: rgba(255, 255, 255, 0.8);
 	margin-top: 42px;
 	opacity: 1;
@@ -283,7 +275,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* BEGIN MOBILE SCREEN SECTION */
 @media screen and (max-width: 768px) {
   #fh5co-header {
     position: fixed;
@@ -296,6 +287,8 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
   }
 
+
+// navbar
   #navbar {
     display: none;
     position: absolute;
@@ -377,7 +370,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(-45deg);
   }
 }
-/* END MOBILE SCREEN SECTION */
 
 // padding-top: 15px;
 .navbar {
@@ -393,7 +385,7 @@ h1, h2, h3, h4, h5, h6 {
 			// text-transform: uppercase;
 			font-size: 18px;
 			font-weight: 300;
-			// @include transition(.5s);
+			// @include transition(.3s);
 			-webkit-transition: none !important;
 			-o-transition: none !important;
 			transition: none !important;
@@ -532,6 +524,8 @@ a {
 }
 
 
+
+// topbar
 #fh5co-topbar {
 	background-color: #222;
 	color: #fff;
@@ -546,6 +540,8 @@ a {
 }
 
 
+
+// home section
 #fh5co-home {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
 	background-color: transparent;
@@ -591,7 +587,7 @@ a {
 		a {
 			color: rgba(255,255,255,1);
 			border-bottom: 1px dashed rgba(255,255,255,.5);
-			@include transition(.5s);
+			@include transition(.3s);
 			&:hover, &:active, &:focus {
 				text-decoration: none;
 				color: rgba(255,255,255,1);
@@ -636,7 +632,7 @@ a {
 }
 
 
-// old intro css
+// old intro scss
 #fh5co-intro {
 	position: relative;
 	bottom: 0;
@@ -696,7 +692,7 @@ a {
 			bottom: 0;
 			left: 0;
 			right: 0;
-			@include transition(.5s);
+			@include transition(.3s);
 		}
 		> .fh5co-text {
 			position: relative;
@@ -742,7 +738,7 @@ a {
 }
 
 
-
+// video in old intro section
 .watch-video {
 	text-align: center;
 	width: 100%;
@@ -862,7 +858,7 @@ a {
 	}
 }
 
-// new intro css
+// new intro scss
 #fh5co-intro {
   padding: 6em 0;
   background: #fafafa;
@@ -921,7 +917,6 @@ a {
     min-height: 280px;
   }
 }
-
 
 
   #fh5co-counters {
@@ -1192,6 +1187,81 @@ a {
 	}
 }
 
+#fh5co-work {
+  padding: 6em 0;
+  background: $brand-white;
+
+  .work-title {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 0.5em;
+    color: $brand-black;
+  }
+
+  .work-subtitle {
+    font-size: 1.5em;
+    text-align: center;
+    color: #666;
+    margin-bottom: 3em;
+  }
+
+  .work-sections {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .work-section {
+    border-bottom: 1px solid #eee;
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5em 0;
+      cursor: pointer;
+
+      h4 {
+        font-size: 1.2em;
+        margin: 0;
+        color: $brand-black;
+      }
+
+      .arrow {
+        color: #ec0000;
+        transform: rotate(0deg);
+        transition: transform 0.3s ease;
+      }
+    }
+
+    .section-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    &.active {
+      .arrow {
+        transform: rotate(180deg);
+      }
+
+      .section-content {
+        max-height: 500px;
+        padding-bottom: 1.5em;
+      }
+    }
+  }
+
+  @media screen and (max-width: $screen-sm) {
+    .work-title {
+      font-size: 2.5em;
+    }
+
+    .work-subtitle {
+      font-size: 1.2em;
+    }
+  }
+}
+
 .fh5co-person {
 	border: 2px solid lighten($brand-black, 95%);
 	padding: 80px 30px 30px 30px;
@@ -1241,7 +1311,7 @@ a {
 	}
 }
 .btn {
-	@include transition(.5s);
+	@include transition(.3s);
 	&:hover, &:active, &:focus {
 		outline: none;
 	}
@@ -1328,7 +1398,6 @@ a {
 .btn {
 	@include transition(.3s);
 }
-
 
 
 // Burger Menu
