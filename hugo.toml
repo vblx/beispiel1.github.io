@@ -143,9 +143,9 @@ enable = true
 
 
 ########################################################################
-# Sektion 4  - "Leistungen"  (intern: "work")
+# Sektion 4a  - "Leistungen"  (intern: "work") -- ALTE SEKTION
 [params.work]
-enable = true
+enable = false
 title = "Leistungen"
 description = "Berasco: Ihr zuverlässiger Partner für Kommunikationsinfrastruktur. Wir bieten Ihnen ein umfassendes Leistungsspektrum, von der individuellen Beratung bis zur fachgerechten Installation von Glasfaserkabeln. Dank modernster Technik und langjähriger Erfahrung realisieren wir Ihre Projekte effizient und zuverlässig. Ob Tiefbau, Straßenbau oder der Anschluss von Wohngebäuden – wir finden für jede Herausforderung die optimale Lösung."
 footertext = "Berasco verbindet Sie mit der Zukunft. Wir schaffen die digitale Infrastruktur von morgen. Schnell, zuverlässig, maßgeschneidert."
@@ -190,6 +190,40 @@ alt = "Image6"
 title = "Kabeleinblasarbeiten"
 subtitle = "Kurzbeschreibung..."
 ########################################################################
+
+
+########################################################################
+# Sektion 4b  -  -- NEUE SEKTION
+
+[params.leistungen]
+enable = true
+title = "Unsere Leistungen:"
+subtitle = "Professionelle Baukompetenz für Ihre Projekte"
+
+[[params.leistungen.sections]]
+id = "tiefbau"
+title = "Tiefbau"
+content = "Content for Tiefbau section..."
+
+[[params.leistungen.sections]]
+id = "strassenbau"
+title = "Straßenbau"
+content = "Content for Straßenbau section..."
+
+[[params.leistungen.sections]]
+id = "kabel"
+title = "Einzug von Kabel und Microrohr"
+content = "Content for Kabel section..."
+
+[[params.leistungen.sections]]
+id = "verlegung"
+title = "Verlegung von Kabel-, Rohr und Speedverband"
+content = "Content for Verlegung section..."
+
+[[params.leistungen.sections]]
+id = "pflaster"
+title = "Pflasterarbeiten"
+content = "Content for Pflasterarbeiten section..."
 
 
 
