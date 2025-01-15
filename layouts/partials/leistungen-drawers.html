@@ -1,20 +1,86 @@
-<section id="fh5co-work" data-section="work">
-  <div class="container">
-    <h2 class="work-title">{{ .Site.Params.work.title }}</h2>
-    <h3 class="work-subtitle">{{ .Site.Params.work.description }}</h3>
+<div class="max-w-4xl mx-auto px-4 py-12">
+    <h1 class="text-4xl font-bold text-center mb-2">Unsere Leistungen:</h1>
+    <h2 class="text-xl text-center mb-12">Professionelle Baukompetenz für Ihre Projekte</h2>
 
-    <div class="work-sections">
-      {{ range $index, $element := .Site.Params.work.sections }}
-      <div class="work-section" data-section-id="{{ $index }}">
-        <div class="section-header">
-          <h4>{{ .title }}</h4>
-          <span class="arrow">↓</span>
+    <div class="space-y-4">
+        <div class="border-b border-gray-200">
+            <button onclick="toggleSection('tiefbau')" class="w-full flex justify-between items-center py-4 text-left hover:bg-gray-50">
+                <span class="text-xl font-medium">Tiefbau</span>
+                <svg class="w-6 h-6 text-red-500 transform transition-transform" data-section="tiefbau" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M7 10l5 5 5-5z"/>
+                </svg>
+            </button>
+            <div id="tiefbau-content" class="hidden">
+                <div class="p-4">
+                    Content for Tiefbau section...
+                </div>
+            </div>
         </div>
-        <div class="section-content">
-          <p>{{ .description }}</p>
+
+        <div class="border-b border-gray-200">
+            <button onclick="toggleSection('strassenbau')" class="w-full flex justify-between items-center py-4 text-left hover:bg-gray-50">
+                <span class="text-xl font-medium">Straßenbau</span>
+                <svg class="w-6 h-6 text-red-500 transform transition-transform" data-section="strassenbau" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M7 10l5 5 5-5z"/>
+                </svg>
+            </button>
+            <div id="strassenbau-content" class="hidden">
+                <div class="p-4">
+                    Content for Straßenbau section...
+                </div>
+            </div>
         </div>
-      </div>
-      {{ end }}
+
+        <div class="border-b border-gray-200">
+            <button onclick="toggleSection('kabel')" class="w-full flex justify-between items-center py-4 text-left hover:bg-gray-50">
+                <span class="text-xl font-medium">Einzug von Kabel und Microrohr</span>
+                <svg class="w-6 h-6 text-red-500 transform transition-transform" data-section="kabel" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M7 10l5 5 5-5z"/>
+                </svg>
+            </button>
+            <div id="kabel-content" class="hidden">
+                <div class="p-4">
+                    Content for Kabel section...
+                </div>
+            </div>
+        </div>
+
+        <div class="border-b border-gray-200">
+            <button onclick="toggleSection('verlegung')" class="w-full flex justify-between items-center py-4 text-left hover:bg-gray-50">
+                <span class="text-xl font-medium">Verlegung von Kabel-, Rohr und Speedverband</span>
+                <svg class="w-6 h-6 text-red-500 transform transition-transform" data-section="verlegung" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M7 10l5 5 5-5z"/>
+                </svg>
+            </button>
+            <div id="verlegung-content" class="hidden">
+                <div class="p-4">
+                    Content for Verlegung section...
+                </div>
+            </div>
+        </div>
+
+        <div class="border-b border-gray-200">
+            <button onclick="toggleSection('pflaster')" class="w-full flex justify-between items-center py-4 text-left hover:bg-gray-50">
+                <span class="text-xl font-medium">Pflasterarbeiten</span>
+                <svg class="w-6 h-6 text-red-500 transform transition-transform" data-section="pflaster" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M7 10l5 5 5-5z"/>
+                </svg>
+            </button>
+            <div id="pflaster-content" class="hidden">
+                <div class="p-4">
+                    Content for Pflasterarbeiten section...
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
+</div>
+
+<script>
+function toggleSection(sectionId) {
+    const content = document.getElementById(sectionId + '-content');
+    const arrow = document.querySelector(`svg[data-section="${sectionId}"]`);
+
+    content.classList.toggle('hidden');
+    arrow.classList.toggle('rotate-180');
+}
+</script>
