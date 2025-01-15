@@ -363,7 +363,7 @@ alt = "Person3"
 
 # Services section (alternative uebersicht Leistungen, oder sonstiges)
 [params.services]
-enable = true
+enable = false
 title = "Services"
 description = "Hier kann man noch eine sektion hinmachen"
 

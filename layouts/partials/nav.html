@@ -63,6 +63,7 @@
               <span>{{ with .Site.Params.navigation.testimonials }}{{ . | markdownify }}{{ end }}</span>
           </a></li>
           {{ end }}
+
           {{ if .Site.Params.services.enable }}
           <li>
             <a href="#" data-nav-section="services">
@@ -71,6 +72,7 @@
           </li>
           {{ end }}
           {{ if .Site.Params.about.enable }}
+
           <li>
             <a href="#" data-nav-section="about">
               <span>{{ with .Site.Params.navigation.about }}{{ . | markdownify }}{{ end }}</span>
