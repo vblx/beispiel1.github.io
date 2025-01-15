@@ -1,20 +1,18 @@
-<div class="max-w-4xl mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center mb-2">{{ .Site.Params.leistungen.title }}</h1>
-    <h2 class="text-xl text-center mb-12">{{ .Site.Params.leistungen.subtitle }}</h2>
+<div class="leistungen-section">
+    <h1>{{ .Site.Params.leistungen.title }}</h1>
+    <h2>{{ .Site.Params.leistungen.subtitle }}</h2>
 
-    <div class="space-y-4">
+    <div>
         {{ range .Site.Params.leistungen.sections }}
-        <div class="border-b border-gray-200">
-            <button onclick="toggleSection('{{ .id }}')" class="w-full flex justify-between items-center py-4 text-left hover:bg-gray-50">
-                <span class="text-xl font-medium">{{ .title }}</span>
-                <svg class="w-6 h-6 text-red-500 transform transition-transform" data-section="{{ .id }}" viewBox="0 0 24 24">
+        <div>
+            <button onclick="toggleSection('{{ .id }}')">
+                <span class="section-title">{{ .title }}</span>
+                <svg data-section="{{ .id }}" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M7 10l5 5 5-5z"/>
                 </svg>
             </button>
-            <div id="{{ .id }}-content" class="hidden">
-                <div class="p-4">
-                    {{ .content | markdownify }}
-                </div>
+            <div id="{{ .id }}-content" class="section-content hidden">
+                {{ .content | markdownify }}
             </div>
         </div>
         {{ end }}
