@@ -1,7 +1,6 @@
-{{ if .Site.Params.angebot.enable }}
-<section id="fh5co-work" class="fh5co-section-gray">
+<section id="angebot-section" style="padding: 6em 0; background: #fff;">
   <div class="container">
-    <div class="row">
+    <div class="row" style="display: flex; align-items: center;">
       <!-- Image Column -->
       <div class="col-md-6">
         {{ $image := resources.Get .Site.Params.angebot.img }}
@@ -9,33 +8,31 @@
         <img
           src="{{ .RelPermalink }}"
           alt="{{ .Site.Params.angebot.alt }}"
-          class="img-responsive"
-          width="100%"
-          height="auto"
+          style="width: 100%; height: auto; border-radius: 4px;"
           >
         {{ end }}
       </div>
 
       <!-- Content Column -->
       <div class="col-md-6">
-        <div class="section-heading">
-          <h2 class="left-border">{{ .Site.Params.angebot.title }}</h2>
-        </div>
+        <div style="padding-left: 2em;">
+          <h2 style="font-size: 2em; margin-bottom: 1em; color: #000; font-family: 'Poppins-Bold', Arial, sans-serif;">
+            {{ .Site.Params.angebot.title }}
+          </h2>
 
-        <p class="section-subtitle">
-          {{ .Site.Params.angebot.description }}
-        </p>
+          <p style="color: #7f7f7f; font-size: 18px; line-height: 1.6; margin-bottom: 2em;">
+            {{ .Site.Params.angebot.description }}
+          </p>
 
-        <p>
           <a
             href="/kontakt"
-            class="btn btn-primary"
+            class="btn"
+            style="background-color: #ec0000; color: #fff; padding: 1em 2em; border: none; border-radius: 4px; text-transform: none; font-weight: normal; letter-spacing: normal;"
             >
             {{ .Site.Params.angebot.button }}
           </a>
-        </p>
+        </div>
       </div>
     </div>
   </div>
 </section>
-{{ end }}
