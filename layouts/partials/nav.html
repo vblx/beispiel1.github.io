@@ -55,19 +55,33 @@
 			</ul>
 		  </li>
 
-		  <script>
-			function scrollAndOpen(sectionId) {
-				const section = document.querySelector('.leistungen-section');
-				section.scrollIntoView({ behavior: 'smooth' });
-				setTimeout(() => {
-					toggleSection(sectionId);
-				}, 500);
-			}
-		  </script>
+	<script>
+	  function scrollAndOpen(sectionId) {
+		  // Close dropdown menu
+		  const dropdownToggle = document.querySelector('.nav-link.dropdown-toggle');
+		  const dropdownMenu = document.querySelector('.dropdown-menu');
+		  const mobileMenu = document.querySelector('.navbar-collapse');
 
-		  {{ end }}
+		  // Close desktop dropdown
+		  dropdownMenu.classList.remove('show');
+		  dropdownToggle.setAttribute('aria-expanded', 'false');
 
-          {{ if .Site.Params.testimonials.enable }}
+		  // Close mobile menu if open
+		  mobileMenu.classList.remove('show');
+
+		  // Scroll and open section
+		  const section = document.querySelector('.leistungen-section');
+		  section.scrollIntoView({ behavior: 'smooth' });
+
+		  setTimeout(() => {
+			  toggleSection(sectionId);
+		  }, 500);
+	  }
+	</script>
+
+	{{ end }}
+
+    {{ if .Site.Params.testimonials.enable }}
           <li>
             <a href="#" data-nav-section="testimonials">
               <span>{{ with .Site.Params.navigation.testimonials }}{{ . | markdownify }}{{ end }}</span>
