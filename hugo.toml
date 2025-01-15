@@ -142,8 +142,19 @@ description = "We handle all the research, negotiations, and paperwork for you, 
 enable = true
 
 
+[params.angebot]
+enable = true
+title = "Fordern Sie Ihr individuelles Angebot an!"
+description = "Wie plant man ein Bauprojekt?  Wir unterstützen Sie von der ersten Idee bis zur Umsetzung. Teilen Sie uns Ihre Anforderungen mit, und wir erstellen Ihnen ein maßgeschneidertes Angebot – unverbindlich und transparent."
+button = "Angebot einfordern"
+img = "bagger.png"
+alt = "Baumaschine im Einsatz"
+
+
+
 ########################################################################
-# Sektion 4a  - "Leistungen"  (intern: "work") -- ALTE SEKTION
+### DIESE SEKTION IS NICHT AKTIV! -> runterscrollen zu 4b
+# Sektion 4a  - "Leistungen"  (intern: "work") -- ALTE SEKTION (deaktiv)
 [params.work]
 enable = false
 title = "Leistungen"
@@ -192,9 +203,10 @@ subtitle = "Kurzbeschreibung..."
 ########################################################################
 
 
+
+
 ########################################################################
 # Sektion 4b  -  -- NEUE SEKTION
-
 [params.leistungen]
 enable = true
 title = "Unsere Leistungen:"

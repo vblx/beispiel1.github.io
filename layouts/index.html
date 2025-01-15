@@ -21,6 +21,10 @@
     {{ partial "intro.html" .}}
 
 	{{ if .Site.Params.leistungen.enable }}
+	{{ partial "sections/angebot.html" . }}
+	{{ end }}
+
+	{{ if .Site.Params.leistungen.enable }}
 	{{ partial "leistungen-drawers.html" .}}
 	{{ end }}
 

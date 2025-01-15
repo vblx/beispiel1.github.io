@@ -1,0 +1,41 @@
+{{ if .Site.Params.angebot.enable }}
+<section id="fh5co-work" class="fh5co-section-gray">
+  <div class="container">
+    <div class="row">
+      <!-- Image Column -->
+      <div class="col-md-6">
+        {{ $image := resources.Get .Site.Params.angebot.img }}
+        {{ with $image }}
+        <img
+          src="{{ .RelPermalink }}"
+          alt="{{ .Site.Params.angebot.alt }}"
+          class="img-responsive"
+          width="100%"
+          height="auto"
+          >
+        {{ end }}
+      </div>
+
+      <!-- Content Column -->
+      <div class="col-md-6">
+        <div class="section-heading">
+          <h2 class="left-border">{{ .Site.Params.angebot.title }}</h2>
+        </div>
+
+        <p class="section-subtitle">
+          {{ .Site.Params.angebot.description }}
+        </p>
+
+        <p>
+          <a
+            href="/kontakt"
+            class="btn btn-primary"
+            >
+            {{ .Site.Params.angebot.button }}
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
