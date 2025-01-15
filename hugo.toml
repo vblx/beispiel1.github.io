@@ -322,11 +322,11 @@ person = 'Chris Tian, Anwohner Neubausiedlung'
 img = "person3.jpg"
 alt = "Person3"
 
-# Services section (Detaillierte uebersicht der Leistungen)
+# Services section (alternative uebersicht Leistungen, oder sonstiges)
 [params.services]
 enable = true
-title = "Leistungen"
-description = "Beschreibungstext..."
+title = "Services"
+description = "Hier kann man noch eine sektion hinmachen"
 
 [[params.services.item]]
 title = "Bau &amp; Tiefbau"

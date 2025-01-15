@@ -1,0 +1,36 @@
+sektionen und andere "partials", in reihenfolge
+
+* head
+nicht sichtbar, hier alle globalen styles und scripts drin
+* topbar
+schmaler balken ganz oben mit telefon nummer drin
+* navbar
+* hero
+Hintergrund-slideshow und "startseite" ganz oben mit "gradient" effekt
+* pre-intro sektion (simpler text)
+* intro sektion
+text in kacheln mit roten nummern, nicht anklickbar
+diese sektion ist NICHT in der navbar drin,- extra?
+-- ist mMn okay weil navbar besser nicht visuell ueberfluten!
+* "leistungen" sektion -- wichtigste sektion der seite!!
+* testimonials
+noch aus der vorlage, ist NICHT im Figma design drin, hier kann man
+einfach entweder die sektion komplett rausnehmen, oder mMn von der alten
+Seite ein paar "presse" artikel einfuegen!
+* "services" sektion
+.. ist auch NICHT im Figma, kann man einfach loeschen / deaktivieren.
+oder auch was nuetzliches draus machen (text, icons, +rote farbe = ???).
+* about / ueber uns
+obvious section is obvious.  hier noch hand anlegen damit das
+stimmt... die Alte seite ist hier extra-doof, muss irgendwie stimmen.
+* counters / B. in zahlen
+-- animation-spielerei aber nette darstellung fuer statistiken zum
+"angeben"... evtl mehr nach oben wenn's genutzt wird?
+* kontakt
+obvious.  hier muss aber noch "formspree" account angelegt werden damit
+die emails auch ankommen! siehe hugo.toml
+* footer
+"Copyright © 2024 Berasco GmbH" und der facebook-link
+* js
+ready-made javascript bausteine die hier zum einsatz kommen.
+davon ist NIX selbst gemacht oder angepasst.
