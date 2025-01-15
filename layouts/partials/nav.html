@@ -42,7 +42,7 @@
 		  {{ if .Site.Params.leistungen.enable }}
 		  <li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" href="#leistungen" role="button">
-			  {{ .Site.Params.leistungen.navtitle}
+			  {{ .Site.Params.leistungen.navtitle | markdownify }}
 			</a>
 			<ul class="dropdown-menu">
 			  {{ range .Site.Params.leistungen.sections }}
