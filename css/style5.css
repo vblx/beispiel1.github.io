@@ -1290,6 +1290,69 @@ h6 {
   text-decoration: none !important;
 }
 
+
+#fh5co-work {
+  padding: 6em 0;
+  background: #fff;
+}
+
+.work-title {
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.work-subtitle {
+  font-size: 1.5em;
+  text-align: center;
+  color: #666;
+  margin-bottom: 3em;
+}
+
+.work-sections {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.work-section {
+  border-bottom: 1px solid #eee;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0;
+  cursor: pointer;
+}
+
+.section-header h4 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.arrow {
+  color: #ec0000;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.section-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.work-section.active .arrow {
+  transform: rotate(180deg);
+}
+
+.work-section.active .section-content {
+  max-height: 500px;
+  padding-bottom: 1.5em;
+}
+
+
 .fh5co-person {
   border: 2px solid #f2f2f2;
   padding: 80px 30px 30px 30px;
