@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    // Handle both desktop and mobile dropdowns
+    // Close on outside clicks
     $(document).on('click', function(e) {
         if (!$(e.target).closest('.dropdown').length) {
             $('.dropdown').removeClass('open');
@@ -7,15 +7,18 @@ $(document).ready(function() {
         }
     });
 
-    // Toggle mobile menu on burger click
+    // Close on any nav item click
+    $('.navbar-nav a').on('click', function() {
+        $('.navbar-collapse').collapse('hide');
+    });
+
+    // Handle burger toggle
     $('.js-fh5co-nav-toggle').on('click', function() {
         $('.navbar-collapse').toggleClass('in');
     });
 
     function scrollAndOpen(sectionId, event) {
         event.preventDefault();
-
-        // Close all dropdowns and mobile menu
         $('.dropdown').removeClass('open');
         $('.navbar-collapse').collapse('hide');
 
@@ -25,4 +28,4 @@ $(document).ready(function() {
     }
 
     window.scrollAndOpen = scrollAndOpen;
-})
+});
