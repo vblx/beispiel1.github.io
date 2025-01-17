@@ -30,7 +30,7 @@ favicon = "favicon.ico"
 
 [params]
 # additional CSS
-custom_css = ["css/red.css", "css/main.css"]
+custom_css = ["css/red.css"]
 # Meta
 author = ""
 description = ""
