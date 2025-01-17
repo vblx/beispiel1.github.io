@@ -218,8 +218,7 @@ id = "tiefbau"
 title = "Tiefbau"
 subtitle = "- die Basis für jedes erfolgreiche Bauprojekt"
 navtitle = "Tiefbau"
-content = """
-- Grundstein für stabile und langlebige Bauwerke
+content = """- Grundstein für stabile und langlebige Bauwerke
 - Errichtung von Fundamenten
 - Verlegung von Versorgungsleitungen
 - Bau von Straßen und Kanälen
@@ -233,26 +232,81 @@ contentLast="Berasco – Ihr Partner für hochwertige Tiefbaulösungen."
 [[params.leistungen.sections]]
 id = "strassenbau"
 title = "Straßenbau"
+subtitle = "– Verbindungen schaffen, die halten"
 navtitle = "Straßenbau"
-content = "Content for Straßenbau section..."
+content = """- Basis für Mobilität und Infrastruktur
+- Innovative Technologien und Materialien
+- Langlebige und sichere Straßen
+- Neubau, Sanierung, und Ausbau
+- Straßen für heutige und zukünftige Anforderungen
+- Präzise und pünktliche Umsetzung
+- Höchste Qualität garantiert
+"""
+contentLast="Berasco – Ihr verlässlicher Partner im Straßenbau."
+
+
+[[params.leistungen.sections]]
+
+id = "hochbau"
+title = "Hochbau"
+subtitle = "– Bauwerke, die begeistern"
+navtitle = "Hochbau"
+content = """- Planung und Bau von Gebäuden
+- Errichtung von Industrie- und Bürogebäuden
+- Modernisierung von Bauwerken
+- Umsetzung nachhaltiger Konzepte
+- Termingerechte Ausführung
+- Individuelle Gestaltung
+- Koordination der Gewerke
+Berasco – Ihr Experte für Hochbau.
+"""
+contentLast="Berasco – Ihr Experte für Hochbau."
+
 
 [[params.leistungen.sections]]
 id = "kabel"
-title = "Einzug von Kabel und Microrohr"
+title = "Kabel und Microrohr"
+subtitle = "– Präzision bis ins Detail"
 navtitle = "Kabel"
-content = "Content for Kabel section..."
-
-[[params.leistungen.sections]]
-id = "verlegung"
-title = "Verlegung von Kabel-, Rohr und Speedverband"
-navtitle = "Verlegung"
-content = "Content for Verlegung section..."
+content = """- Rückgrat moderner Versorgungssysteme
+- Präzise und zukunftssichere Verlegung
+- Modernste Technologien im Einsatz
+- Erfahrung auch bei komplexen Projekten
+- Termingerechte und störungsfreie Umsetzung
+- Lösungen für Glasfaser-, Strom- und andere Leitungen
+- Individuelle und maßgeschneiderte Ansätze
+"""
+contentLast="Berasco – Ihr Partner für professionelle Lösungen."
 
 [[params.leistungen.sections]]
 id = "pflaster"
 title = "Pflasterarbeiten"
+subtitle = "– Ästhetik und Funktionalität"
 navtitle = "Pflasterarbeiten"
-content = "Content for Pflasterarbeiten section..."
+content = """- Langlebige und belastbare Flächen
+- Für Wege, Plätze, Einfahrten und Terrassen
+- Präzise und optisch ansprechende Ergebnisse
+- Hochwertige Materialien im Einsatz
+- Sorgfältige und fachgerechte Verlegung
+- Individuelle Gestaltung und Pflasterauswahl
+"""
+contentLast="Berasco – Ihre Experten für Pflasterarbeiten mit Stil."
+
+
+[[params.leistungen.sections]]
+id = "sanierung"
+title = "Sanierungsarbeiten"
+subtitle = "– Werterhalt und Qualität"
+navtitle = "Sanierung"
+content = """- Fachgerechte Instandsetzung
+- Werterhalt und längere Lebensdauer
+- Sanierung von Fassaden, Dächern und Innenbereichen
+- Moderne Technologien und Materialien
+- Behebung von Witterungs- und Alterungsschäden
+- Individuelle und nachhaltige Lösungen
+- Präzise und pünktliche Ausführung
+"""
+contentLast="Berasco – Ihr Partner für Sanierungsarbeiten."
 
 
 ########################################################################
@@ -267,10 +321,8 @@ description = "Hier finden Sie Presseartikel über unsere Tätigkeiten."
 #[[params.press.item]]
 #[[params.press.item]]
 #[[params.press.item]]
-#[[params.press.item]]
-#[[params.press.item]]
+# ...... beliebig viele items hier halt
 ########################################################################
-
 
 
 
@@ -384,31 +436,31 @@ person = 'Chris Tian, Anwohner Neubausiedlung'
 img = "person3.jpg"
 alt = "Person3"
 
-# Services section (alternative uebersicht Leistungen, oder sonstiges)
-[params.services]
-enable = false
-title = "Services"
-description = "Hier kann man noch eine sektion hinmachen"
+# # Services section (alternative uebersicht Leistungen, oder sonstiges)
+# [params.services]
+# enable = false
+# title = "Services"
+# description = "Hier kann man noch eine sektion hinmachen"
 
-[[params.services.item]]
-title = "Bau &amp; Tiefbau"
-description = "Beschreibungstext..."
-icon = "icon-wrench"
+# [[params.services.item]]
+# title = "Bau &amp; Tiefbau"
+# description = "Beschreibungstext..."
+# icon = "icon-wrench"
 
-[[params.services.item]]
-title = "Garten- &amp; Landschaftsbau"
-description = "Beschreibungstext..."
-icon = "icon-home"
+# [[params.services.item]]
+# title = "Garten- &amp; Landschaftsbau"
+# description = "Beschreibungstext..."
+# icon = "icon-home"
 
-[[params.services.item]]
-title = "Straßenbau"
-description = "Beschreibungstext..."
-icon = "icon-loop"
+# [[params.services.item]]
+# title = "Straßenbau"
+# description = "Beschreibungstext..."
+# icon = "icon-loop"
 
-[[params.services.item]]
-title = "Pflasterarbeiten"
-description = "Beschreibungstext..."
-icon = "icon-grid"
+# [[params.services.item]]
+# title = "Pflasterarbeiten"
+# description = "Beschreibungstext..."
+# icon = "icon-grid"
 
 
 ###############################################################################
