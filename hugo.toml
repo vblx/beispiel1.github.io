@@ -562,7 +562,8 @@ enable = true
 title = "Unser Unternehmen"
 description = "Erleben Sie Berasco in Aktion."
 icon = "icon-play2"
-url = "https://vimeo.com/1047922301/a96de50b7e"
+url = "https://player.vimeo.com/video/1047922301"
+#https://vimeo.com/1047922301/a96de50b7e
 
 
 
