@@ -216,8 +216,19 @@ subtitle = "Professionelle Baukompetenz für Ihre Projekte"
 [[params.leistungen.sections]]
 id = "tiefbau"
 title = "Tiefbau"
+subtitle = "- die Basis für jedes erfolgreiche Bauprojekt"
 navtitle = "Tiefbau"
-content = "Content for Tiefbau section..."
+content = """
+- Grundstein für stabile und langlebige Bauwerke
+- Errichtung von Fundamenten
+- Verlegung von Versorgungsleitungen
+- Bau von Straßen und Kanälen
+- Präzision und Zuverlässigkeit
+- Einsatz modernster Technik
+- Effiziente und termingerechte Umsetzung
+- Nachhaltige und zukunftssichere Lösungen
+"""
+contentLast="Berasco – Ihr Partner für hochwertige Tiefbaulösungen."
 
 [[params.leistungen.sections]]
 id = "strassenbau"
