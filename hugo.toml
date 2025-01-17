@@ -561,6 +561,10 @@ button = "Nachricht versenden"
 enable = true
 title = "Unser Unternehmen"
 description = "Erleben Sie Berasco in Aktion."
+icon = "icon-play2"
+url = "https://vimeo.com/1047922301/a96de50b7e"
+
+
 
 # Footer section
 [params.footer]
