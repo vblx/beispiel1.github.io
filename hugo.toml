@@ -152,55 +152,55 @@ alt = "Baumaschine im Einsatz"
 
 
 
-########################################################################
-### DIESE SEKTION IS NICHT AKTIV! -> runterscrollen zu 4b
-# Sektion 4a  - "Leistungen"  (intern: "work") -- ALTE SEKTION (deaktiv)
-[params.work]
-enable = false
-title = "Leistungen"
-description = "Berasco: Ihr zuverlässiger Partner für Kommunikationsinfrastruktur. Wir bieten Ihnen ein umfassendes Leistungsspektrum, von der individuellen Beratung bis zur fachgerechten Installation von Glasfaserkabeln. Dank modernster Technik und langjähriger Erfahrung realisieren wir Ihre Projekte effizient und zuverlässig. Ob Tiefbau, Straßenbau oder der Anschluss von Wohngebäuden – wir finden für jede Herausforderung die optimale Lösung."
-footertext = "Berasco verbindet Sie mit der Zukunft. Wir schaffen die digitale Infrastruktur von morgen. Schnell, zuverlässig, maßgeschneidert."
+# ########################################################################
+# ### DIESE SEKTION IS NICHT AKTIV! -> runterscrollen zu 4b
+# # Sektion 4a  - "Leistungen"  (intern: "work") -- ALTE SEKTION (deaktiv)
+# [params.work]
+# enable = false
+# title = "Leistungen"
+# description = "Berasco: Ihr zuverlässiger Partner für Kommunikationsinfrastruktur. Wir bieten Ihnen ein umfassendes Leistungsspektrum, von der individuellen Beratung bis zur fachgerechten Installation von Glasfaserkabeln. Dank modernster Technik und langjähriger Erfahrung realisieren wir Ihre Projekte effizient und zuverlässig. Ob Tiefbau, Straßenbau oder der Anschluss von Wohngebäuden – wir finden für jede Herausforderung die optimale Lösung."
+# footertext = "Berasco verbindet Sie mit der Zukunft. Wir schaffen die digitale Infrastruktur von morgen. Schnell, zuverlässig, maßgeschneidert."
 
-[[params.work.row]]
-# "img" ist natuerlich "image" also ein foto...
-img = "work_1.jpg"
-# "alt" ist der "alt-text" also wenn man mit Mauszeiger ueber das Bild
-# ohne kliken.  Was soll das mit dem "alt-text"? Antwort: Das ist vor
-# allem fuer Menschen mit Sehschwaeche oder Blindheit wichtig!
-alt = "Image1"
-title = "Tiefbau"
-subtitle = "Kurzbeschreibung..."
+# [[params.work.row]]
+# # "img" ist natuerlich "image" also ein foto...
+# img = "work_1.jpg"
+# # "alt" ist der "alt-text" also wenn man mit Mauszeiger ueber das Bild
+# # ohne kliken.  Was soll das mit dem "alt-text"? Antwort: Das ist vor
+# # allem fuer Menschen mit Sehschwaeche oder Blindheit wichtig!
+# alt = "Image1"
+# title = "Tiefbau"
+# subtitle = "Kurzbeschreibung..."
 
-[[params.work.row]]
-img = "work_2.jpg"
-alt = "Image2"
-title = "Straßenbau"
-subtitle = "Kurzbeschreibung..."
+# [[params.work.row]]
+# img = "work_2.jpg"
+# alt = "Image2"
+# title = "Straßenbau"
+# subtitle = "Kurzbeschreibung..."
 
-[[params.work.row]]
-img = "work_3.jpg"
-alt = "Image3"
-title = "Garten- & Landschaftsbau"
-subtitle = "Kurzbeschreibung..."
+# [[params.work.row]]
+# img = "work_3.jpg"
+# alt = "Image3"
+# title = "Garten- & Landschaftsbau"
+# subtitle = "Kurzbeschreibung..."
 
-[[params.work.row]]
-img = "work_4.jpg"
-alt = "Image4"
-title = "Pflasterarbeiten"
-subtitle = "Kurzbeschreibung..."
+# [[params.work.row]]
+# img = "work_4.jpg"
+# alt = "Image4"
+# title = "Pflasterarbeiten"
+# subtitle = "Kurzbeschreibung..."
 
-[[params.work.row]]
-img = "work_5.jpg"
-alt = "Image5"
-title = "Herstellen von Hausanschlüssen"
-subtitle = "Kurzbeschreibung..."
+# [[params.work.row]]
+# img = "work_5.jpg"
+# alt = "Image5"
+# title = "Herstellen von Hausanschlüssen"
+# subtitle = "Kurzbeschreibung..."
 
-[[params.work.row]]
-img = "work_6.jpg"
-alt = "Image6"
-title = "Kabeleinblasarbeiten"
-subtitle = "Kurzbeschreibung..."
-########################################################################
+# [[params.work.row]]
+# img = "work_6.jpg"
+# alt = "Image6"
+# title = "Kabeleinblasarbeiten"
+# subtitle = "Kurzbeschreibung..."
+# ########################################################################
 
 
 
