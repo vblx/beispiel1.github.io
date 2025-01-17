@@ -2037,5 +2037,49 @@ h6 {
   opacity: 1;
 }
 
+#fh5co-video {
+  padding: 7em 0;
+  background: #f4f4f4;
+  position: relative;
+}
+
+#fh5co-video .video-wrapper {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-video {
+    padding: 3em 0;
+  }
+}
+
+
+
+
+
+
+
+#fh5co-video {
+  padding: 7em 0;
+  background: #f4f4f4;
+  position: relative;
+}
+
+#fh5co-video .video-wrapper {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-video {
+    padding: 3em 0;
+  }
+}
+
 
 /*# sourceMappingURL=style5.css.map */

@@ -44,6 +44,10 @@
     {{ partial "counters.html" .}}
     {{ end }}
 
+	{{ if .Site.Params.video.enable }}
+	{{ partial "video.html" . }}
+	{{ end }}
+
 	{{ if .Site.Params.contact.enable }}
     {{ partial "contact.html" .}}
     {{ end }}

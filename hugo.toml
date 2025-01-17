@@ -553,6 +553,15 @@ phone = "Telefon"
 message = "Nachricht"
 button = "Nachricht versenden"
 
+
+#############
+# video sektion
+
+[params.video]
+enable = true
+title = "Unser Unternehmen"
+description = "Erleben Sie Berasco in Aktion."
+
 # Footer section
 [params.footer]
 enable = true
