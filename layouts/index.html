@@ -20,21 +20,17 @@
     {{ partial "pre-intro.html" .}}
     {{ partial "intro.html" .}}
 
-	{{ if .Site.Params.leistungen.enable }}
+	{{ if .Site.Params.angebot.enable }}
 	{{ partial "angebot-anfordern.html" . }}
 	{{ end }}
 
 	{{ if .Site.Params.leistungen.enable }}
-	{{ partial "leistungen-drawers.html" .}}
+	{{ partial "leistungen.html" .}}
 	{{ end }}
 
 	{{ if .Site.Params.testimonials.enable }}
     {{ partial "testimonials.html" .}}
 	{{ end }}
-
-	<!-- {{ if .Site.Params.services.enable }} -->
-    <!-- {{ partial "services.html" .}} -->
-	<!-- {{ end }} -->
 
 	{{ if .Site.Params.about.enable }}
     {{ partial "about.html" .}}

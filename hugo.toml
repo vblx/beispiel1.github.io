@@ -337,7 +337,7 @@ description = "Hier finden Sie Presseartikel über unsere Tätigkeiten."
 [params.testimonials]
 enable = true
 title = "Referenzen"
-description = "Auszug aus der Referenzliste BERASCO-GmbH"
+description = "Referenzliste BERASCO-GmbH"
 
 # [[params.testimonials.item]]
 # person = 'Breitband für Deutschland MBfD Regensburg 22.08.2016 – 31 .08.2018 <br> Zeilarn, Freyung, Egglham, Triftern'
