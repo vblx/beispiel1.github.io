@@ -41,21 +41,22 @@
 		  <!-- new  "Leistungen" drop-down menu -->
 		  {{ if .Site.Params.leistungen.enable }}
 		  <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#leistungen" role="button">
-			  <span style="color:black"> {{ with .Site.Params.leistungen.navtitle }}{{ . | markdownify }} <i class="down-arrow"></i> ▾{{ end }} </span>
+			<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			  <span style="color:black">{{ with .Site.Params.leistungen.navtitle }}{{ . | markdownify }} ▾{{ end }}</span>
 			</a>
 			<ul class="dropdown-menu">
 			  {{ range .Site.Params.leistungen.sections }}
-              <li>
+			  <li>
 				<a class="dropdown-item" href="#leistungen" onclick="scrollAndOpen('{{ .id }}', event)">
-                  {{ .navtitle }}
-                </a>
-              </li>
+				  {{ .navtitle }}
+				</a>
+			  </li>
 			  {{ end }}
 			</ul>
 		  </li>
-
 		  {{ end }}
+
+
 
 		  {{ if .Site.Params.testimonials.enable }}
           <li>
