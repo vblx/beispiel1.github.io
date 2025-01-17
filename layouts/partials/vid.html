@@ -1,9 +1,11 @@
 <div class="row watch-video text-center">
-  <span>Watch Video</span>
-  <a href="https://vimeo.com/1047922301/a96de50b7e" class="popup-vimeo btn-video">
-    <i class="icon-play2"></i>
+  <span>{{ with .Site.Params.video.title }}{{ . | markdownify }}{{ end }}</span>
+  <a href="//vimeo.com/1047922301" class="popup-vimeo btn-video">
+    <i class="{{ with .Site.Params.video.icon }}{{ . }}{{ end }}"></i>
   </a>
+  <p>{{ with .Site.Params.video.description }}{{ . | markdownify }}{{ end }}</p>
 </div>
+
 
 
 <!-- <section id="fh5co-video" data-section="video" class="animated"> -->
