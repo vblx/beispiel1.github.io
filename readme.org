@@ -34,3 +34,13 @@ die emails auch ankommen! siehe hugo.toml
 * js
 ready-made javascript bausteine die hier zum einsatz kommen.
 davon ist NIX selbst gemacht oder angepasst.
+
+
+
+* VIDEO
+
+If you ever need to update the video or add new ones, just make sure to:
+
+Get the basic Vimeo video ID (the numbers). Get the hash parameter (the
+part after the slash in your original URL) Update these in both the HTML
+link and the JavaScript configuration

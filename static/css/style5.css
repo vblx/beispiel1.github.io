@@ -434,8 +434,11 @@ h6 {
 }
 
 #fh5co-topbar {
-  background-color: #222;
+  background-color: #2A3443;
   color: #fff;
+
+  height: 57px;
+
   padding: 0px 0;
   padding-bottom: 4px;
   font-size: 12px;
