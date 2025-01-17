@@ -846,6 +846,52 @@ h6 {
   transform: scale(1.1);
 }
 
+
+
+.watch-video {
+    margin-top: 40px;
+    display: block;
+    width: 100%;
+}
+
+.watch-video .btn-video {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 2px solid #ec0000;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 0px;
+    display: table;
+    text-align: center;
+    position: relative;
+}
+
+.watch-video .btn-video i {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    color: #ec0000;
+    right: -9px;
+}
+
+.watch-video .btn-video:hover {
+    border-color: #ec0000;
+}
+
+.watch-video .btn-video:hover i {
+    color: #ec0000;
+    transform: scale(1.1);
+}
+
+
+
+
 #fh5co-services,
 #fh5co-testimonials,
 #fh5co-counters,
@@ -2055,42 +2101,6 @@ h6 {
     padding: 3em 0;
   }
 }
-
-
-
-#fh5co-video {
-  padding: 7em 0;
-  background: #f4f4f4;
-  position: relative;
-  z-index: 1;  /* Ensure proper stacking context */
-}
-
-#fh5co-video .video-wrapper {
-  position: relative;
-  z-index: 2;  /* Ensure video is above other elements */
-  background: #fff;
-  padding: 20px;
-  border-radius: 4px;
-}
-
-#fh5co-video .video-wrapper iframe {
-  display: block;  /* Ensure iframe is displayed as block */
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;  /* Make sure iframe is on top */
-  background: #000;  /* Black background for video */
-}
-
-#fh5co-video .video-wrapper > div {
-  width: 100%;
-  height: 0;
-  position: relative;
-  overflow: hidden;  /* Ensure content doesn't spill */
-}
-
 
 
 /*# sourceMappingURL=style5.css.map */
