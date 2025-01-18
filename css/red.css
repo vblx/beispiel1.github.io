@@ -158,5 +158,11 @@ html body .btn.btn-primary:focus {
 html body .text-center { text-align: center !important; }
 html body .mb-4 { margin-bottom: 40px !important; }
 html body .mt-4 { margin-top: 40px !important; }
-html body .bg-gray-50 { background-color: var(--light-bg) !important; }
+
+
+/*-----WEGEN INTRO-TILE !!!!!!!!!
+html body .bg-gray-50 { background-color: var(--light-bg) !important; } */
+html body .bg-gray-50 { background-color: #F4F4F4  !important; }
+
+
 /*# sourceMappingURL=red.css.map */
