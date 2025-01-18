@@ -353,9 +353,6 @@ h6 {
 }
 
 
-/* BERASCO LOGO STYLE IST IN NAV.HTML
-style="width: 7vw; min-width: 100px" />
- */
 
 
 
@@ -441,17 +438,21 @@ style="width: 7vw; min-width: 100px" />
 }
 
 
-#fh5co-header.navbar-logo {
-  top: 67px;
-  left: 139px;
-  gap: 0px;
-  opacity: 0px;
+/* BERASCO LOGO STYLE IST IN NAV.HTML !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+style="width: 7vw; min-width: 100px" />
+ */
 
-  width: 126.08px;
-  height: 89px;
+/* #fh5co-header.navbar-logo { */
+/*   top: 67px; */
+/*   left: 139px; */
+/*   gap: 0px; */
+/*   opacity: 0px; */
 
-  /* transform: scale(0.7); */
-}
+/*   width: 126.08px; */
+/*   height: 89px; */
+
+/*   /\* transform: scale(0.7); *\/ */
+/* } */
 
 
 /* #fh5co-header a { */
