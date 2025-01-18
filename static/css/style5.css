@@ -223,23 +223,6 @@ h6 {
 
 
 
-/* NAVBAR */
-#fh5co-header {
-  margin-top: 42px;
-  padding-bottom: 15px 0;
-  padding-top: 15px 0;
-  background-color: rgba(255, 255, 255);
-  left: 0;
-  opacity: 1;
-  padding: 10px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 101px;
-  z-index: 10;
-
-}
-
 #fh5co-header .navbar {
   margin-bottom: 0;
   margin-top: 0;
@@ -376,14 +359,36 @@ style="width: 7vw; min-width: 100px" />
 
 #fh5co-header.navbar-logo {
   color: #ec0000;
-  transform: scale(1);
-  width: 126.08px;
-  height: 89px;
+
   top: 67px;
   left: 139px;
   gap: 0px;
   opacity: 0px;
+
+  width: 126.08px;
+  height: 89px;
+
+  transform: scale(0.7);
 }
+
+
+/* NAVBAR */
+#fh5co-header {
+  margin-top: 42px;
+  padding-bottom: 15px 0;
+  padding-top: 15px 0;
+  background-color: rgba(255, 255, 255);
+  left: 0;
+  opacity: 1;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 101px;
+  z-index: 10;
+
+}
+
 
 #fh5co-header.navbar-fixed-top .navbar-brand {
   color: #ec0000;
