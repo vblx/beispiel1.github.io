@@ -2037,25 +2037,35 @@ h6 {
   }
 
 
-/* BERASCO LOGO MOBILE VERSION */
+  /* BERASCO LOGO MOBILE VERSION */
   #fh5co-header .navbar-brand {
-	bottom: 10px;
-	color: #fff;
-	display: block;
-	float: left;
-	font-size: 30px;
-	font-weight: 700;
-	height: 55px;
-	left: 20px;
-	line-height: 10px;
-	margin-left: 0px;
-	padding-left: 0px;
-	padding: 17.5px 15px;
-	position: absolute;
-  	margin-right: 0px;
-  	padding-bottom: 0px;
-    margin-bottom: 0px;
-    top: 0px;
+	/* bottom: 10px; */
+	/* color: #fff; */
+	/* display: block; */
+	/* float: left; */
+	/* font-size: 30px; */
+	/* font-weight: 700; */
+	/* height: 55px; */
+	/* left: 20px; */
+	/* line-height: 10px; */
+	/* margin-left: 0px; */
+	/* padding-left: 0px; */
+	/* padding: 17.5px 15px; */
+	/* position: absolute; */
+  	/* margin-right: 0px; */
+  	/* padding-bottom: 0px; */
+    /* margin-bottom: 0px; */
+    /* top: 0px; */
+
+	color: #ec0000;
+	transform: scale(1);
+	width: 126.08px;
+	height: 89px;
+	top: 67px;
+	left: 139px;
+	gap: 0px;
+	opacity: 0px;
+
   }
 
   #fh5co-header #navbar li a {
