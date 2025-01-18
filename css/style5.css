@@ -357,17 +357,7 @@ h6 {
 style="width: 7vw; min-width: 100px" />
  */
 
-#fh5co-header.navbar-logo {
-  top: 67px;
-  left: 139px;
-  gap: 0px;
-  opacity: 0px;
 
-  width: 126.08px;
-  height: 89px;
-
-  /* transform: scale(0.7); */
-}
 
 
 /* NAVBAR */
@@ -449,6 +439,20 @@ style="width: 7vw; min-width: 100px" />
   color: #ff0000;
   font-style: normal;
 }
+
+
+#fh5co-header.navbar-logo {
+  top: 67px;
+  left: 139px;
+  gap: 0px;
+  opacity: 0px;
+
+  width: 126.08px;
+  height: 89px;
+
+  /* transform: scale(0.7); */
+}
+
 
 /* #fh5co-header a { */
 /* } */
