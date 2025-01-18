@@ -2211,18 +2211,27 @@ style="width: 7vw; min-width: 100px" />
   background: #fff;
 }
 
+
 .angebot-section {
   background-color: #FF0000;
   color: white;
   text-align: center;
-  padding: 6rem 0;
+
+  /* Exact dimensions from Figma */
+  width: 1440px;
+  height: 535px;
+  margin: 0 auto; /* Center the section */
+  position: relative;
+  top: 2243px;
 }
 
 .angebot-section .container {
   max-width: 900px;
   margin: 0 auto;
+  padding: 80px 0; /* Adjust padding to work within the fixed height */
 }
 
+/* Rest of the CSS remains the same */
 .angebot-section h2 {
   color: white;
   font-size: 2.5rem;
