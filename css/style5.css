@@ -262,7 +262,6 @@ h6 {
   display: block;
 
 
-
   -webkit-transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
   -o-transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
   transition-property: color, background-color, border-color, text-decoration, visibility, opacity, box-shadow, transform;
@@ -1436,6 +1435,24 @@ style="width: 7vw; min-width: 100px" />
 .section-header h4 {
   font-size: 1.2em;
   margin: 0;
+}
+
+.icon-arrow-up {
+  color: #ec0000;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.icon-arrow-down {
+  display: inline-block;
+  color: #ec0000;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.icon-arrow-down.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
 }
 
 .arrow {
