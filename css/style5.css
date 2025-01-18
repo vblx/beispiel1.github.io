@@ -1397,6 +1397,12 @@ style="width: 7vw; min-width: 100px" />
 /*   text-decoration: none !important; */
 /* } */
 
+#fh5co-work {
+  padding: 6em 0;
+  background: #fff;
+}
+
+
 
 /* #fh5co-work { */
 /*   padding: 6em 0; */
@@ -2191,13 +2197,19 @@ style="width: 7vw; min-width: 100px" />
 }
 
 
-.angebot-section {
-  background-color: #FF0000 !important;
-  font-weight: bold;
+#fh5co-work {
+  padding: 6em 0;
+  background: #fff;
+}
 
+
+angebot-section {
+  background-color: #FF0000;
+  font-weight: bold;
   color: white;
   padding: 4rem 0;
 }
+
 
 .angebot-section h2 {
   color: white;
