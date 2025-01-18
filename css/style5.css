@@ -13,16 +13,26 @@
  *
  * ======================================================= */
 body {
-  font-family: "Poppins", Arial, sans-serif;
-  font-weight: 300;
+
   font-size: 18px;
   line-height: 1.2;
-  color: #777777;
   color: #7f7f7f;
   background: #ffffff;
   height: 100%;
   position: relative;
 }
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #777777;
+  color: #7f7f7f;
+  background: #fff;
+  height: 100%;
+  position: relative;
+}
+
 
 a {
   color: #ec0000;

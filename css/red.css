@@ -8,12 +8,12 @@
 }
 
 /* Typography Overrides - High Specificity */
-html body {
-  font-family: var(--font-primary) !important;
-  font-size: 18px;
-  line-height: 1.5;
-  color: var(--text-color);
-}
+/* html body { */
+/*   font-family: var(--font-primary) !important; */
+/*   font-size: 18px; */
+/*   line-height: 1.5; */
+/*   color: var(--text-color); */
+/* } */
 
 html body h1,
 html body h2,
@@ -74,6 +74,7 @@ body #fh5co-home .text-inner h1 {
 }
 
 #fh5co-pre-intro .section-title {
+  font-family: "Poppins-Bold", Arial, sans-serif;
   font-size: 48px;
   font-weight: 700;
   line-height: 1.2;
