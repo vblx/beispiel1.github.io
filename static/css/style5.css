@@ -370,7 +370,8 @@ h6 {
 }
 
 
-#fh5co-header.navbar-brand {
+/* BERASCO LOGO */
+#fh5co-header.navbar-brand > img {
   color: #ec0000;
   transform: scale(1);
   width: 126.08px;
