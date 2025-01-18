@@ -370,8 +370,11 @@ h6 {
 }
 
 
-/* BERASCO LOGO */
-#fh5co-header.navbar-brand > img {
+/* BERASCO LOGO STYLE IST IN NAV.HTML
+style="width: 7vw; min-width: 100px" />
+ */
+
+#fh5co-header.navbar-logo {
   color: #ec0000;
   transform: scale(1);
   width: 126.08px;
