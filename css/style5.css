@@ -358,8 +358,6 @@ style="width: 7vw; min-width: 100px" />
  */
 
 #fh5co-header.navbar-logo {
-  color: #ec0000;
-
   top: 67px;
   left: 139px;
   gap: 0px;
@@ -368,7 +366,7 @@ style="width: 7vw; min-width: 100px" />
   width: 126.08px;
   height: 89px;
 
-  transform: scale(0.7);
+  /* transform: scale(0.7); */
 }
 
 
@@ -452,8 +450,8 @@ style="width: 7vw; min-width: 100px" />
   font-style: normal;
 }
 
-#fh5co-header a {
-}
+/* #fh5co-header a { */
+/* } */
 
 #fh5co-home .hero-gradient {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
