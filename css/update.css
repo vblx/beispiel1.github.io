@@ -1,0 +1,142 @@
+/* Enhanced Navigation Styles */
+#fh5co-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+  height: auto;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Logo styles */
+.navbar-brand {
+  position: relative;
+  left: 0;
+  transform: none;
+  padding: 15px 0;
+  margin-left: 15px;
+}
+
+.navbar-brand img {
+  height: 60px;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+/* Navigation menu */
+#navbar {
+  padding: 0;
+}
+
+#navbar ul.nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+#navbar li a {
+  color: #333;
+  font-weight: 500;
+  padding: 30px 15px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+#navbar li a:hover,
+#navbar li a:focus {
+  color: var(--primary-color);
+}
+
+/* Active state indicator */
+#navbar li.active a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+/* Dropdown styles */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  padding: 10px 0;
+}
+
+.dropdown-item {
+  padding: 8px 20px;
+  color: #333;
+  font-weight: 400;
+}
+
+.dropdown-item:hover {
+  background: #f8f9fa;
+  color: var(--primary-color);
+}
+
+/* Mobile menu */
+@media (max-width: 768px) {
+  #navbar {
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  #navbar.show {
+    max-height: 500px;
+  }
+
+  #navbar ul.nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #navbar li a {
+    padding: 10px 0;
+    width: 100%;
+    display: block;
+  }
+
+  .navbar-brand {
+    padding: 10px 0;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+  }
+}
+
+/* Topbar improvements */
+#fh5co-topbar {
+  background: #2A3443;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  #fh5co-topbar {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+
+  #fh5co-topbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
