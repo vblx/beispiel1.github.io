@@ -8,12 +8,12 @@
 }
 
 /* Typography Overrides - High Specificity */
-/* html body { */
-/*   font-family: var(--font-primary) !important; */
-/*   font-size: 18px; */
-/*   line-height: 1.5; */
-/*   color: var(--text-color); */
-/* } */
+html body {
+  font-family: var(--font-primary) !important;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
 
 html body h1,
 html body h2,
@@ -34,7 +34,7 @@ html body h6 {
 #fh5co-header #navbar li a {
   font-family: var(--font-primary);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* Hero Section - Specific Selectors */
@@ -47,49 +47,6 @@ body #fh5co-home .text-inner h1 {
   font-family: var(--font-primary);
   font-size: 4em;
   font-weight: 700;
-  font-family: Poppins;
-  font-size: 70px;
-  font-weight: 700;
-  line-height: 76px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-
-}
-
-
-
-/* preIntro section*/
-
-
-#fh5co-pre-intro {
-  padding: 80px 0;
-}
-
-#fh5co-pre-intro .container {
-  max-width: 1440px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#fh5co-pre-intro .section-title {
-  font-family: "Poppins-Bold", Arial, sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 40px;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#fh5co-pre-intro .section-subtitle {
-  font-size: 18px;
-  line-height: 1.6;
-  color: var(--text-color);
-  max-width: 1000px;
-  margin: 0 auto 24px;
 }
 
 /* Intro Section - BEM Style Naming */
@@ -126,18 +83,18 @@ html body .btn.btn-primary:focus {
   border-color: #cc0000;
 }
 
-/* /\* Services Section - Namespaced *\/ */
-/* .leistungen-section { */
-/*   padding: 100px 0; */
-/*   max-width: 1200px; */
-/*   margin: 0 auto; */
-/* } */
+/* Services Section - Namespaced */
+.leistungen-section {
+  padding: 100px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-/* .leistungen-section__title { */
-/*   font-size: 2.8em; */
-/*   text-align: center; */
-/*   margin-bottom: 20px; */
-/* } */
+.leistungen-section__title {
+  font-size: 2.8em;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 /* Media Queries - Last */
 @media screen and (max-width: 768px) {
@@ -158,11 +115,5 @@ html body .btn.btn-primary:focus {
 html body .text-center { text-align: center !important; }
 html body .mb-4 { margin-bottom: 40px !important; }
 html body .mt-4 { margin-top: 40px !important; }
-
-
-/*-----WEGEN INTRO-TILE !!!!!!!!!
-html body .bg-gray-50 { background-color: var(--light-bg) !important; } */
-html body .bg-gray-50 { background-color: #F4F4F4  !important; }
-
-
+html body .bg-gray-50 { background-color: var(--light-bg) !important; }
 /*# sourceMappingURL=red.css.map */
