@@ -1,0 +1,17 @@
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --primary-color: #ec0000;
+    --text-color: #303030;
+    --heading-color: #000;
+    --light-bg: #fafafa;
+    --font-primary: "Poppins", Arial, sans-serif;
+    font-family: var(--font-primary) !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 76px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    box-sizing: border-box;
+    color: red;
