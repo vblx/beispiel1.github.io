@@ -1,27 +1,36 @@
 <section id="fh5co-angebot" style="background-color: #EE0000; color: #FFF; height:535px;">
   <div class="container">
     <div class="row">
-      <!-- Image Column -->
-      <div class="col-md-6">
-        {{ $image := resources.Get .Site.Params.angebot.img }}
-        {{ with $image }}
-        <img
-          src="{{ .RelPermalink }}"
-          alt="Baumaschine im Einsatz"
-          class="img-responsive"
-          >
-        {{ end }}
-      </div>
-      <!-- Content Column -->
-      <div class="col-md-6">
-        <h2 style="color:#FFF;">{{ .Site.Params.angebot.title }}</h2>
-        <p>{{ .Site.Params.angebot.description }}</p>
-        <p>
-          <a href="/kontakt" class="btn btn-primary">
-            {{ .Site.Params.angebot.button }}
-          </a>
-        </p>
-      </div>
+
+
+	  <!-- Image Column -->
+
+	  <!--
+		  <div class="col-md-6">
+			{{ $image := resources.Get .Site.Params.angebot.img }}
+			{{ with $image }}
+			<img
+			  src="{{ .RelPermalink }}"
+			  alt="Baumaschine im Einsatz"
+			  class="img-responsive"
+			  >
+			{{ end }}
+		  </div> -->
+
+		  <!-- Content Column -->
+		  <div style="color:#FFF; text-align:center; margin-top: 150px;">
+			<h2 style="color:#FFF; text-align:center;">
+			  {{ .Site.Params.angebot.title }}
+			</h2>
+			<br/>
+			{{ .Site.Params.angebot.description }}
+			<br/>
+			<br/>
+			<br/>
+			<a href="#" data-nav-section="contact" class="btn btn-invert" >
+			  {{ .Site.Params.angebot.button }}
+			</a>
+		  </div>
     </div>
   </div>
 </section>
