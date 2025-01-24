@@ -1,0 +1,80 @@
+.main-container {
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+  height: 896px;
+  margin: 0 auto;
+}
+
+.rectangle {
+  position: relative;
+  width: 1440px;
+  height: 57px;
+  margin: 0 0 0 0;
+  background: #2a3342;
+  border-top: 0.5px solid #a6a6ab;
+  z-index: 9;
+}
+
+.rectangle-2 {
+  position: relative;
+  margin: 0 0 0 0;
+  no-repeat: center;
+  background-size: cover;
+  z-index: 1;
+  overflow: visible auto;
+}
+
+.flex-row-a {
+  position: relative;
+  width: 1016.792px;
+  height: 223px;
+  margin: 369px 0 0 144px;
+  z-index: 3;
+}
+
+.kompetenz-im-hoch-tiefbau {
+  position: absolute;
+  width: 580px;
+  height: 223px;
+  top: 110px;
+  left: 50%;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 76px;
+  text-align: left;
+  transform: translate(-87.65%, 0);
+  z-index: 3;
+}
+.kompetenz {
+  position: relative;
+  color: #ee0000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 76px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.im-hoch-und-tiefbau {
+  position: relative;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 76px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.dot {
+  position: relative;
+  color: #ee0000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 76px;
+  text-align: left;
+  text-transform: uppercase;
+}

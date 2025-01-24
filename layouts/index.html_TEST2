@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Hero Section</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%; /* Ensure the body stretches to full viewport height */
+    }
+    #fh5co-home {
+      height: 100vh; /* Full viewport height */
+      background-image: url('images/hero-img.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+  <section id="fh5co-home" data-section="home">
+
+
+
+
+<script src="js/leistungen.js"></script>
+<link rel="stylesheet" href="css/dropdown.css">
+
+<!-- Final Dropdown Solution: Modern Vertical Dropdown with Complementary Colors -->
+<li class="active nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" data-nav-section="leistungen" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{ with .Site.Params.leistungen.navtitle }}
+    {{ . | markdownify }}
+    {{ end }}
+    <img class="navbar-arrow-down-container" src="images/arrow-down.png"/>
+  </a>
+  <ul class="dropdown-menu leistungen-menu-font">
+    {{ range .Site.Params.leistungen.sections }}
+    <li>
+      <a class="dropdown-item" href="#" onclick="scrollAndOpen('{{ .id }}', event)">
+        {{ .navtitle }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</li>
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="css/dropdown.css">
+<li class="dropdown">
+  <a href="#" class="nav-link dropdown-toggle">
+	{{ with .Site.Params.leistungen.navtitle }}
+	{{ . | markdownify }}
+	{{ end }}
+	<img class="navbar-arrow-down-container" src="images/arrow-down.png"/>
+  </a>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#" onclick="scrollAndOpen('service-1', event)">Service 1</a></li>
+    <li><a class="dropdown-item" href="#" onclick="scrollAndOpen('service-2', event)">Service 2</a></li>
+    <li><a class="dropdown-item" href="#" onclick="scrollAndOpen('service-3', event)">Service 3</a></li>
+  </ul>
+</li>
+
+<script>
+  $(document).ready(function() {
+      $('.dropdown-menu').parent().on('show.bs.dropdown', function(e) {
+          $(this).find('.dropdown-menu').first().stop(true, true).slideDown(200);
+      });
+
+      $('.dropdown-menu').parent().on('hide.bs.dropdown', function(e) {
+          $(this).find('.dropdown-menu').first().stop(true, true).slideUp(100);
+      });
+  });
+</script>

@@ -1,0 +1,58 @@
+<section id="fh5co-home" data-section="home" style="background-image: url(images/hero-img.jpg);" data-stellar-background-ratio="0.5">
+  <div class="gradient"></div>
+  <div class="container">
+	<div class="text-wrap">
+	  <div class="text-inner">
+		<div class="row">
+		  <div class="col-md-8 col-md-offset-0">
+			<h1 align="left" class="to-animate"><span style="color:red">{{ with .Site.Params.hero.titlekeyword }}{{ . | markdownify }}{{ end }} </span>{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}<span style="color:red">.</span></h1>
+			<h2 class="to-animate">{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h2>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <div class="slant"></div>
+</section>
+
+
+
+
+
+
+
+
+
+    text-align: center;
+    text-decoration-skip-ink: none;
+    text-underline-position: from-font;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 1px;
+
+    float: left;
+    width: 100%;
+
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    --primary-color: #ec0000;
+    --text-color: #303030;
+    --heading-color: #000;
+    --light-bg: #fafafa;
+    --font-primary: "Poppins", Arial, sans-serif;
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+    color: #fff;
+
+
+font-family: Poppins-Bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    text-decoration-skip-ink: none;
+    text-underline-position: from-font;
+    box-sizing: border-box;
