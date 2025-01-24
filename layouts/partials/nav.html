@@ -1,102 +1,91 @@
+<link rel="stylesheet" href="css/navbar.css">
+
 <header role="banner" id="fh5co-header">
-  <div class="container">
-    <nav class="navbar navbar-default">
-      <div class="navbar-header">
-        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <i></i>
-        </a>
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logo.png" alt="Berasco Firmenlogo" style="width: 126.08px; height: 89px;  position: relative;  min-width: 100px" />
-        </a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          {{ range .Site.Menus.prepend }}
-          <li>
-            <a class="external" href="{{ .URL }}">
-              <span>{{ .Name | markdownify }}</span>
-            </a>
-          </li>
-          {{ end }}
-          <li class="active">
-            <a href="#" data-nav-section="home" ><span> {{ with .Site.Params.navigation.home }}{{ . | markdownify }}{{ end }}
-              </span>
-            </a>
-          </li>
+  <nav class="navbar navbar-default">
 
-		  <!-- work = "old Leistungen" drop-down menu (see js folder) -->
-		  {{ if .Site.Params.work.enable }}
-		  <li class="dropdown">
-			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-			  <span style="color:black">{{ with .Site.Params.navigation.work }}{{ . | markdownify }}<i class="down-arrow"></i> ▾{{ end }}</span>
-			</a>
-			<ul class="dropdown-menu">
-			  <li><a href="#fh5co-work" data-nav-section="work1"><span>{{ .Site.Params.navigation.work1 }}</span></a></li>
-			  <li><a href="#fh5co-work" data-nav-section="work2"><span>{{ .Site.Params.navigation.work2 }}</span></a></li>
-			  <li><a href="#fh5co-work" data-nav-section="work3"><span>{{ .Site.Params.navigation.work3 }}</span></a></li>
-			</ul>
-		  </li>
-		  {{ end }}
+	<!-- HEADER DIV + LOGO -------------------------------------------->
+	<div class="navbar-header">
+	  <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle
+						 navbar-brand" data-toggle="collapse" data-target="#navbar"
+		 aria-expanded="false" aria-controls="navbar"/>
+      <a class="navbar-brand" href="index.html">
+		<div class="logo-container">
+		  <img class="berasco-logo" src="images/logo.png"
+			   alt="Berasco-Firmenlogo"/>
+		</div>
+      </a>
+    </div>
 
-		  <!-- new  "Leistungen" drop-down menu -->
-		  {{ if .Site.Params.leistungen.enable }}
-		  <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			  <span style="color:black">{{ with .Site.Params.leistungen.navtitle }}{{ . | markdownify }} ▾{{ end }}</span>
-			</a>
-			<ul class="dropdown-menu">
-			  {{ range .Site.Params.leistungen.sections }}
-			  <li>
-				<a class="dropdown-item" href="#leistungen" onclick="scrollAndOpen('{{ .id }}', event)">
-				  {{ .navtitle }}
-				</a>
-			  </li>
-			  {{ end }}
-			</ul>
-		  </li>
-		  {{ end }}
+	<!-- NAVBAR DIV --------------------------------------------------->
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right navbar-container">
+
+		<!-- START ---------------------------------------------------->
+        <li class="active nav-item">
+          <a class="nav-link" href="#" data-nav-section="home" >
+			<span>
+			  {{ with .Site.Params.navigation.home }}
+			  {{ . | markdownify }}{{ end }}
+			</span>
+          </a>
+        </li>
+
+		<!-- LEISTUNGEN DROPDOWN ------ BROKEN ------------------------>
+		<link rel="stylesheet" href="css/dropdown.css">
+		<li class="active nav-item dropdown">
+
+		  <a href="#" class="nav-link dropdown-toggle"
+			 data-nav-section="leistungen" onclick="scrollAndOpen('tiefbau', event)" >
+			{{ with .Site.Params.leistungen.navtitle }}
+			{{ . | markdownify }}
+			{{ end }}
+			<img class="navbar-arrow-down-container"
+				 src="images/arrow-down.png"/>
+		  </a>
+		<!--   <ul class="dropdown-menu leistungen-menu-font"> -->
+		<!-- 	{{ range .Site.Params.leistungen.sections }} -->
+		<!-- 	<li> -->
+		<!-- 	  <a class="dropdown-item" href="#" -->
+		<!-- 		 onclick="scrollAndOpen('{{ .id }}', event)"> -->
+		<!-- 		{{ .navtitle }} -->
+		<!-- 	  </a> -->
+		<!-- 	</li> -->
+		<!-- 	{{ end }} -->
+		<!--   </ul> -->
+		</li>
 
 
+		<!-- NAVBAR ITEM: REFERENZEN ---------------------------------->
+		{{ if .Site.Params.testimonials.enable }}
+        <li>
+		  <a href="#" data-nav-section="testimonials">
+			<span>{{ with .Site.Params.navigation.testimonials }}
+			  {{ . | markdownify }}{{ end }}</span>
+		</a></li>
+        {{ end }}
 
-		  <!-- {{ if .Site.Params.testimonials.enable }} -->
-          <!-- <li> -->
-			<!--   <a href="#" data-nav-section="testimonials"> -->
-			  <!--     <span>{{ with .Site.Params.navigation.testimonials }}{{ . | markdownify }}{{ end }}</span> -->
-			  <!-- </a></li> -->
-          <!-- {{ end }} -->
-
-          <!-- {{ if .Site.Params.services.enable }} -->
-          <!-- <li> -->
-			<!--   <a href="#" data-nav-section="services"> -->
-			  <!--     <span>{{ with .Site.Params.navigation.services }}{{ . | markdownify }}{{ end }}</span> -->
-			  <!--   </a> -->
-			<!-- </li> -->
-          <!-- {{ end }} -->
+        {{ if .Site.Params.services.enable }}
+        <li>
+		  <a href="#" data-nav-section="services">
+			<span>{{ with .Site.Params.navigation.services }}
+			  {{ . | markdownify }}{{ end }}</span>
+		  </a>
+		</li>
+        {{ end }}
 
 
-          {{ if .Site.Params.about.enable }}
+		<!-- NAVBAR ITEM: KONTAKT ------------------------------------->
+        <li>
+		  <a href="#" data-nav-section="contact">
+			<span>
+			  {{ with .Site.Params.navigation.contact }}
+			  {{ . | markdownify }}{{ end }}
+			</span>
+		  </a>
+        </li>
+      </ul>
 
-          <li>
-            <a href="#" data-nav-section="about">
-              <span>{{ with .Site.Params.navigation.about }}{{ . | markdownify }}{{ end }}</span>
-            </a>
-          </li>
-          {{ end }}
-          {{ if .Site.Params.contact.enable }}
-          <li>
-            <a href="#" data-nav-section="contact"> <span>{{ with .Site.Params.navigation.contact }}{{ . | markdownify }}{{ end }}</span>
-            </a>
-          </li>
-          {{ end }}
-          {{ range .Site.Menus.postpend }}
-          <li>
-            <a class="external" href="{{ .URL }}">
-              <span>{{ .Name | markdownify }}</span>
-            </a>
-          </li>
-          {{ end }}
-        </ul>
-      </div>
-    </nav>
-  </div>
+    </div> <!-- NAVBAR DIV END ---------------------------------------->
+
+  </nav>
 </header>

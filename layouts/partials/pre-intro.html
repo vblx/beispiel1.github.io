@@ -1,10 +1,28 @@
-<section id="fh5co-pre-intro" class="bg-white py-12">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
-        <h2 class="section-title">{{ .Site.Params.preIntro.title }}</h2>
-        <p class="section-subtitle">{{ .Site.Params.preIntro.description }}</p>
-      </div>
+<section id="fh5co-pre-intro">
+  <link rel="stylesheet" href="css/pre-intro.css">
+  <div class="main-container-preintro">
+    <div class="pattern">
+      <div class="frame"></div>
     </div>
-  </div>
+
+	<span class="welcome-message"> {{ .Site.Params.preIntro.title}} </span>
+
+    <div class="building-projects">
+      <span class="passion-precision">
+		{{ .Site.Params.preIntro.description }} <br /><br />
+	  </span>
+	  <span class="best-deserved">Setzen Sie auf Berasco – weil Ihr Projekt nur das Beste verdient.</span>
+    </div>
+
 </section>
+
+
+<!--   <div class="container"> -->
+  <!--     <div class="row"> -->
+	<!--       <div class="col-md-8 col-md-offset-2 text-center"> -->
+
+	  <!--         <p class="section-subtitle">{{ .Site.Params.preIntro.description }}</p> -->
+	  <!--       </div> -->
+	<!--     </div> -->
+  <!--   </div> -->
+<!-- </section> -->

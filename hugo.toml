@@ -71,7 +71,6 @@ work3 = "Glasfaser"
 press = "PRESSE"
 testimonials = "REFERENZEN"
 services = "SERVICES"
-about = "ÜBER UNS"
 contact = "KONTAKT"
 
 #### "prepend" und "postpend" -- damit kann man Links in die Navi-Leiste
@@ -109,47 +108,70 @@ title = 'IM HOCH- UND TIEFBAU' # der rote punkt is wo anders...
 # (= aller erste sektion beim scrollen mit den info-kacheln /
 # "highlights")
 
+
+
+
 [params.preIntro]
-title = "Wir leben im Zeitalter der Information"
-description = "Voraussetzung für den Austausch von Informationen sind funktionierende Kommunikationssysteme und eine sinnvolle, störungsfreie Technik."
+enable = true
+title = "Willkommen bei Berasco – Ihrem Partner für anspruchsvolle Bauprojekte!"
+
+description = """Mit Leidenschaft und Präzision realisieren wir
+		langlebige Bauwerke,die höchsten Ansprüchen genügen. Ob Hoch-
+		oder Tiefbau – wir stehen für Qualität, Zuverlässigkeit und
+		innovative Lösungen. Unser Team begleitet Sie von der Idee bis
+		zur Fertigstellung. Gemeinsam schaffen wir Lebensräume, die
+		Funktionalität und Ästhetik verbindet."""
+
+postDescription = "Setzen Sie auf Berasco – weil Ihr Projekt nur das Beste verdient."
 
 [params.intro]
-title = "Ein Projekt mit Berasco realisieren bedeutet:"
-description = "Berasco bietet Ihnen umfassende Dienstleistungen im Bereich der Kommunikationstechnik inklusive Service, Wartung und Pflege"
+enable = true
+title = "Mit Berasco von der Vision zur Umsetzung."
+description = """Von der Planung bis zur Instandhaltung: Berasco ist Ihr
+zuverlässiger Partner für maßgeschneiderte Kommunikationstechnik."""
 
 [[params.intro.items]]
 title = "Kontaktaufnahme"
-description = "With years of experience in the sales and marketing industry, our team has a deep understanding of what works best for your needs."
+description = """Der erste Schritt zu Ihrem Bauprojekt: Unser Team steht
+bereit, Ihre Wünsche aufzunehmen und gemeinsam den Grundstein für Ihr
+Vorhaben zu legen."""
 
 [[params.intro.items]]
 title = "Individuelle Beratung"
-description = "We have established strong relationships with the leading sales and cable companies in the region"
+description = """Ihr Projekt, unser Know-how: In einer ausführlichen
+Beratung gehen wir auf Ihre individuellen Anforderungen ein und finden
+maßgeschneiderte Lösungen für Ihre Bauvorhaben."""
 
 [[params.intro.items]]
 title = "Planung"
-description = "We believe that every customer is unique, and their needs should be addressed accordingly"
+description = """Von der Idee zur Umsetzung: Unsere Experten erstellen
+eine detaillierte Planung, die Funktionalität, Effizienz und Ästhetik
+perfekt miteinander verbindet."""
 
 [[params.intro.items]]
 title = "Installation"
-description = "By leveraging our industry knowledge and network, we can help you make money on your solar and cable purchases"
+description = """Präzision und Zuverlässigkeit: Unsere erfahrenen
+Fachkräfte setzen Ihr Projekt professionell und termingerecht um – für
+Ergebnisse, die überzeugen."""
 
 [[params.intro.items]]
 title = "Service und Wartung"
-description = "We handle all the research, negotiations, and paperwork for you, making the process of finding"
+description = """Nachhaltige Betreuung: Auch nach der Fertigstellung
+stehen wir Ihnen zur Seite. Unser Service- und Wartungsteam sorgt dafür,
+dass alles reibungslos funktioniert."""
 
 
-[params.testt]
-enable = true
-
+############## ANGEBOT SECTION
 
 [params.angebot]
 enable = true
 title = "Fordern Sie Ihr individuelles Angebot an!"
-description = "Wie plant man ein Bauprojekt?  Wir unterstützen Sie von der ersten Idee bis zur Umsetzung. Teilen Sie uns Ihre Anforderungen mit, und wir erstellen Ihnen ein maßgeschneidertes Angebot – unverbindlich und transparent."
+description = """Sie planen ein Bauprojekt? Wir unterstützen Sie von der
+ersten Idee bis zur Umsetzung. Teilen Sie uns Ihre Anforderungen mit,
+und wir erstellen Ihnen ein maßgeschneidertes Angebot – unverbindlich
+und transparent."""
 button = "Angebot einfordern"
-img = "bagger.jpg"
-alt = "Baumaschine im Einsatz"
-
+cta = "Jetzt anfragen und gemeinsam starten!"
 
 
 # ########################################################################
@@ -461,69 +483,6 @@ alt = "Person3"
 # title = "Pflasterarbeiten"
 # description = "Beschreibungstext..."
 # icon = "icon-grid"
-
-
-###############################################################################
-# About section
-[params.about]
-enable = true
-title = "Über uns"
-
-# version2
-description =  "Wir sind mehr als nur Kollegen – wir sind ein Team, das gemeinsam Großes schafft. Mit Leidenschaft und Expertise entwickeln wir maßgeschneiderte Lösungen für unsere Kunden. Unser Ziel? Ihre Projekte zum Erfolg führen."
-
-# original version:
-# description =  "Eine gute Idee entsteht in kreativen Köpf.  Noch besser wird diese Idee, wenn sie in vielen Köpfen reift. Aus diesem Grund sind unsere Kollegen mehr als nur „Mitarbeiter“ – sie sind auch Mitdenker, die unternehmerisch handeln. Jeder Einzelne übernimmt Verantwortung, denn er hat stets das gute Gefühl, an unseren Arbeitsplatz an innovativen Lösungen mitzuarbeiten. Uns vereint der hohe Anspruch an die Qualität und das gemeinsame Ziel, unsere Kunden zufriedenzustellen."
-
-# NEU version1 -- Fokus auf Kreativität und Innovation
-# description = "Bei uns entstehen großartige Ideen nicht am Schreibtisch, sondern im Kopf. Unser Team aus kreativen Köpfen arbeitet Hand in Hand, um innovative Lösungen zu entwickeln. Jeder Einzelne zählt und trägt dazu bei, unsere Kunden zufriedenzustellen.“
-
-# NEU version2 --  Betonung der Zusammenarbeit und des gemeinsamen Ziels
-# description =  "Wir sind mehr als nur Kollegen – wir sind ein Team, das gemeinsam Großes schafft. Mit Leidenschaft und Expertise entwickeln wir maßgeschneiderte Lösungen für unsere Kunden. Unser Ziel? Ihre Projekte zum Erfolg führen."
-
-# NEU version3 --  Kurzer und prägnanter Slogan
-#description = "Kreative Köpfe, innovative Lösungen. Wir bauen Zukunft."
-
-
-[[params.about.item]]
-name = "Prokura"
-position = "Geschäftliche Vertretung"
-description = 'Sezer Seymen <br> K. Sliwa <br> R. Balci'
-### den kram hier drunter brauchen wir nicht, AUSSER wollen
-### Mitarbeiter-Fotos einfuegen, und so sachen wie deren persoenliche
-### facebook page etc. verlinken (das wollen wir HIER eher _NICHT_).
-#
-#img = "person1.jpg"
-#alt = "Person1"
-#social = [
-#["icon-twitter", "#"],
-#["icon-facebook", "#"],
-#["icon-linkedin", "#"]
-#]
-
-[[params.about.item]]
-name = "Controlling"
-position = "Planung, Steuerung und Kontrolle der Unternehmensbereiche"
-description= "K. Sliwa"
-# img = "person2.jpg"
-# alt = "Person2"
-# social = [
-# ["icon-twitter", "#"],
-# ["icon-facebook", "#"],
-# ["icon-github", "#"]
-# ]
-
-[[params.about.item]]
-name = "Ange Stellter"
-position = "Arbeiter"
-description = "Beschreibung..."
-img = "person3.jpg"
-alt = "Person3"
-social = [
-["icon-twitter", "#"],
-["icon-facebook", "#"],
-["icon-dribbble", "#"]
-]
 
 ########################################################################
 # SEKTION "BERASCO IN ZAHLEN" ...

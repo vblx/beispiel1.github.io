@@ -1,6 +1,7 @@
-<section id="fh5co-intro" class="bg-gray-50">
+<section id="fh5co-intro" data-section="intro" class="">
   <div class="container">
     <div class="intro-grid">
+
       <!-- Description Tile -->
       <div class="intro-description">
         <h3>{{ .Site.Params.intro.title }}</h3>
@@ -12,7 +13,7 @@
       <div class="intro-tile">
         <div class="tile-number">{{ printf "%02d" (add $index 1) }}</div>
         <h4>{{ .title }}</h4>
-        <p>{{ .description }}</p>
+        <p class="intro-text">{{ .description }}</p>
       </div>
       {{ end }}
     </div>
