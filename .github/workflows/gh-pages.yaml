@@ -29,11 +29,23 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Read .env
+        id: hugo-version
+        run: |
+          . ./.env
+          echo "HUGO_VERSION=${HUGO_VERSION}" >> "${GITHUB_OUTPUT}"
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: '${{ steps.hugo-version.outputs.HUGO_VERSION }}'
           extended: true
+
+      # - name: Setup Hugo
+      #   uses: peaceiris/actions-hugo@v3
+      #   with:
+      #     hugo-version: 'latest'
+      #     extended: true
 
       - name: Cache
         uses: actions/cache@v4
