@@ -1429,6 +1429,14 @@ style="width: 7vw; min-width: 100px" />
   transition: max-height 0.3s ease;
 }
 
+.hidden {
+  display: none;
+}
+
+.section-content.hidden {
+  display: none;
+}
+
 .work-section.active .arrow {
   transform: rotate(180deg);
 }
@@ -1436,6 +1444,18 @@ style="width: 7vw; min-width: 100px" />
 .work-section.active .section-content {
   max-height: 500px;
   padding-bottom: 1.5em;
+}
+
+.leistungen-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .leistungen-section {
@@ -1481,11 +1501,6 @@ style="width: 7vw; min-width: 100px" />
   background: #E5E7EB;
 }
 
-.leistungen-section .section-title {
-  font-weight: 500;
-  text-align: left;
-  color: #1a1a1a;
-}
 
 .leistungen-section svg {
   width: 24px;
@@ -1494,8 +1509,123 @@ style="width: 7vw; min-width: 100px" />
   transition: transform 0.2s;
 }
 
+.leistungen-row {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.reverse .leistungen-row {
+  flex-direction: row-reverse;
+}
+
+
+.leistungen-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px; /* optional corners */
+  /* If you want a specific fixed width:
+     width: 350px;
+     flex-shrink: 0;
+  */
+}
+
+.leistungen-image, .leistungen-text {
+  flex: 1;
+  min-width: 0; /* helps avoid overflow in flex layouts */
+}
+
+.leistungen-image {
+  position: relative; /* for absolute-positioned img */
+  /* If you want it *exactly* half the width,
+     you can also do: width: 50%;
+     but 'flex:1' usually suffices to share space with text. */
+}
+
+
+/*
+  The trick: a pseudo-element or an inline block to enforce
+  a 1:1 aspect ratio, i.e. square.
+  Option 1: Use a ::before with padding-top: 100%
+*/
+.leistungen-image::before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* 100% of container width = perfect square */
+}
+
+/*
+  Now the image is positioned absolutely to fill that square area.
+*/
+.leistungen-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* 'cover' will crop edges if the image ratio doesn’t match perfect square,
+     'contain' will letterbox the image if it’s not square. Choose whichever
+     you prefer.
+  */
+  object-fit: cover;
+}
+
+
+
+.leistungen-text ul {
+  list-style: none; /* remove default bullet */
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.leistungen-text li {
+  position: relative;
+  padding-left: 32px; /* space for checkmark */
+  margin-bottom: 0.5rem;
+}
+
+.leistungen-text li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  width: 24px;
+  height: 24px;
+  background: url("data:image/svg+xml;utf8,<svg ... fill='%23EE0000'/>") no-repeat center center;
+  background-size: contain;
+}
+
+/* Responsive: stack the columns on narrower screens */
+@media (max-width: 768px) {
+  .leistungen-row {
+    flex-wrap: wrap;
+  }
+  .leistungen-image, .leistungen-text {
+    width: 100%; /* stack full width */
+  }
+}
+
+
 .leistungen-section svg.rotate-180 {
   transform: rotate(180deg);
+}
+
+.leistungen-text {
+  flex: 1; /* let text container grow to fill remaining space */
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+.leistungen-toggle svg {
+  transition: transform 0.3s ease;
 }
 
 .leistungen-section .section-content {
@@ -1503,13 +1633,148 @@ style="width: 7vw; min-width: 100px" />
   max-height: 2000px;
   transition: all 0.3s ease-out;
   line-height: 1.6;
-  color: #4a4a4a;
+
 }
 
 .leistungen-section .hidden {
   display: none;
   max-height: 0;
 }
+
+.leistungen-list {
+  position: relative;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  //  color: #4a4a4a;
+  color: #000000;
+}
+
+
+/* Remove default bullets */
+.leistungen-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.leistungen-list ul {
+  /* some left padding so the checkmark doesn't overlap text */
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 8px;
+
+  list-style: none; /* remove default bullets */
+  padding-left: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+
+
+.leistungen-list li {
+  position: relative;
+  padding-left: 32px; /* space for the checkmark */
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+.leistungen-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  width: 24px;
+  height: 24px;
+  background: url("data:image/svg+xml;utf8,<svg width='24' height='23' viewBox='0 0 24 23' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M18.7099 6.90957C18.617 6.81975 18.5064 6.74845 18.3845 6.6998C18.2627 6.65115 18.132 6.6261 17.9999 6.6261C17.8679 6.6261 17.7372 6.65115 17.6154 6.6998C17.4935 6.74845 17.3829 6.81975 17.29 6.90957L9.83995 14.0587L6.70995 11.0496C6.61343 10.9602 6.49949 10.89 6.37463 10.8428C6.24978 10.7957 6.11645 10.7725 5.98227 10.7748C5.84809 10.777 5.71568 10.8045 5.5926 10.8558C5.46953 10.907 5.35819 10.981 5.26495 11.0735C5.17171 11.166 5.0984 11.2752 5.04919 11.3949C4.99999 11.5145 4.97586 11.6423 4.97818 11.7709C4.9805 11.8995 5.00923 12.0264 5.06272 12.1443C5.11622 12.2623 5.19343 12.369 5.28995 12.4583L9.12995 16.1383C9.22291 16.2281 9.33351 16.2994 9.45537 16.3481C9.57723 16.3967 9.70794 16.4218 9.83995 16.4218C9.97196 16.4218 10.1027 16.3967 10.2245 16.3481C10.3464 16.2994 10.457 16.2281 10.55 16.1383L18.7099 8.31832C18.8115 8.22858 18.8925 8.11967 18.9479 7.99844C19.0033 7.87721 19.0319 7.74629 19.0319 7.61395C19.0319 7.4816 19.0033 7.35069 18.9479 7.22946C18.8925 7.10823 18.8115 6.99931 18.7099 6.90957Z' fill='%23EE0000'/></svg>")
+    no-repeat center center;
+  background-size: contain;
+}
+
+
+.leistungen-list ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 23px;
+
+  background: url("data:image/svg+xml;utf8,<svg width='24' height='23' viewBox='0 0 24 23' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M18.7099 6.90957C18.617 6.81975 18.5064 6.74845 18.3845 6.6998C18.2627 6.65115 18.132 6.6261 17.9999 6.6261C17.8679 6.6261 17.7372 6.65115 17.6154 6.6998C17.4935 6.74845 17.3829 6.81975 17.29 6.90957L9.83995 14.0587L6.70995 11.0496C6.61343 10.9602 6.49949 10.89 6.37463 10.8428C6.24978 10.7957 6.11645 10.7725 5.98227 10.7748C5.84809 10.777 5.71568 10.8045 5.5926 10.8558C5.46953 10.907 5.35819 10.981 5.26495 11.0735C5.17171 11.166 5.0984 11.2752 5.04919 11.3949C4.99999 11.5145 4.97586 11.6423 4.97818 11.7709C4.9805 11.8995 5.00923 12.0264 5.06272 12.1443C5.11622 12.2623 5.19343 12.369 5.28995 12.4583L9.12995 16.1383C9.22291 16.2281 9.33351 16.2994 9.45537 16.3481C9.57723 16.3967 9.70794 16.4218 9.83995 16.4218C9.97196 16.4218 10.1027 16.3967 10.2245 16.3481C10.3464 16.2994 10.457 16.2281 10.55 16.1383L18.7099 8.31832C18.8115 8.22858 18.8925 8.11967 18.9479 7.99844C19.0033 7.87721 19.0319 7.74629 19.0319 7.61395C19.0319 7.4816 19.0033 7.35069 18.9479 7.22946C18.8925 7.10823 18.8115 6.99931 18.7099 6.90957Z' fill='%23EE0000'/></svg>")
+      no-repeat center center;
+  background-size: cover; /* or contain */
+}
+
+.leistungen-list-last-item {
+/* Berasco – Ihr Partner für hochwertige Tiefbaulösungen. */
+font-family: 'Poppins-Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 27px;
+color: #000000;
+}
+
+.leistungen-section  .section-title {
+  text-align: left;
+  color: #1a1a1a;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+}
+
+.section-title {
+  font-weight: 500;
+  text-align: left;
+  color: #1a1a1a;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.leistungen-checkmark-bullet{
+position: absolute;
+left: 46.19%;
+right: 52.05%;
+top: 11.3%;
+bottom: 88.15%;
+}
+
+
+
+/*************************************
+  Responsive Adjustments
+*************************************/
+@media screen and (max-width: 768px) {
+  .leistungen-row {
+    flex-wrap: wrap; /* let image + text stack on smaller screens */
+  }
+
+  .leistungen-image,
+  .leistungen-text {
+    width: 100%;
+  }
+
+  .leistungen-image img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+	scale: 50%;
+  }
+}
+
 
 .fh5co-person {
   border: 2px solid #f2f2f2;
@@ -1842,9 +2107,16 @@ style="width: 7vw; min-width: 100px" />
 
 .btn.btn-invert {
   background: #fff;
+  font-family: "Poppins-SemiBold", Arial, sans-serif;
+  font-size: 20px;
   color: #000;
-  border: none !important;
-  border: 2px solid transparent !important;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .btn.btn-primary:hover,

@@ -231,16 +231,23 @@ cta = "Jetzt anfragen und gemeinsam starten!"
 # Sektion 4b  -  -- NEUE SEKTION
 [params.leistungen]
 enable = true
-title = "Unsere Leistungen:"
+title = "Unsere Leistungen"
 navtitle = "LEISTUNGEN"
-subtitle = "Professionelle Baukompetenz für Ihre Projekte"
+subtitle = """Mit unserer professionellen Baukompetenz setzen wir Ihre
+Projekte zuverlässig, präzise und termingerecht um – von der Planung bis
+zur Fertigstellung."""
+
+
 
 [[params.leistungen.sections]]
 id = "tiefbau"
 title = "Tiefbau"
 subtitle = "- die Basis für jedes erfolgreiche Bauprojekt"
+image = "leistungen_tiefbau.jpg"
 navtitle = "Tiefbau"
-content = """- Grundstein für stabile und langlebige Bauwerke
+reverse = false
+content = """
+- Grundstein für stabile und langlebige Bauwerke
 - Errichtung von Fundamenten
 - Verlegung von Versorgungsleitungen
 - Bau von Straßen und Kanälen
@@ -254,8 +261,10 @@ contentLast="Berasco – Ihr Partner für hochwertige Tiefbaulösungen."
 [[params.leistungen.sections]]
 id = "strassenbau"
 title = "Straßenbau"
+image = "leistungen_strassenbau.png"
 subtitle = "– Verbindungen schaffen, die halten"
 navtitle = "Straßenbau"
+reverse = true
 content = """- Basis für Mobilität und Infrastruktur
 - Innovative Technologien und Materialien
 - Langlebige und sichere Straßen
@@ -273,6 +282,8 @@ id = "hochbau"
 title = "Hochbau"
 subtitle = "– Bauwerke, die begeistern"
 navtitle = "Hochbau"
+image = "leistungen_hochbau.png"
+reverse = false
 content = """- Planung und Bau von Gebäuden
 - Errichtung von Industrie- und Bürogebäuden
 - Modernisierung von Bauwerken
@@ -290,6 +301,8 @@ id = "kabel"
 title = "Kabel und Microrohr"
 subtitle = "– Präzision bis ins Detail"
 navtitle = "Kabel"
+image = "leistungen_kabel.png"
+reverse = true
 content = """- Rückgrat moderner Versorgungssysteme
 - Präzise und zukunftssichere Verlegung
 - Modernste Technologien im Einsatz
@@ -305,6 +318,8 @@ id = "pflaster"
 title = "Pflasterarbeiten"
 subtitle = "– Ästhetik und Funktionalität"
 navtitle = "Pflasterarbeiten"
+image = "leistungen_pflaster.png"
+reverse = false
 content = """- Langlebige und belastbare Flächen
 - Für Wege, Plätze, Einfahrten und Terrassen
 - Präzise und optisch ansprechende Ergebnisse
@@ -314,12 +329,13 @@ content = """- Langlebige und belastbare Flächen
 """
 contentLast="Berasco – Ihre Experten für Pflasterarbeiten mit Stil."
 
-
 [[params.leistungen.sections]]
 id = "sanierung"
 title = "Sanierungsarbeiten"
 subtitle = "– Werterhalt und Qualität"
 navtitle = "Sanierung"
+image = "leistungen_sanierung.png"
+reverse = true
 content = """- Fachgerechte Instandsetzung
 - Werterhalt und längere Lebensdauer
 - Sanierung von Fassaden, Dächern und Innenbereichen

@@ -1,0 +1,301 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1366px;
+  height: 4176px;
+  margin: 0 auto;
+  font-size: 0px;
+  background: #ffffff;
+  overflow: hidden;
+}
+.our-services {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 937px;
+  height: 80px;
+  margin: 148px 0 0 209px;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 83;
+}
+.professional-building-expertise {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 833px;
+  height: 60px;
+  margin: 9px 0 0 261px;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  z-index: 84;
+}
+.flex-row-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 1097px;
+  height: 80px;
+  margin: 56px 0 0 129px;
+  z-index: 12;
+}
+
+.civil-engineering {
+  flex-shrink: 0;
+  position: relative;
+  width: 441px;
+  height: 80px;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 39px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 2;
+}
+.civil-engineering-1 {
+  position: relative;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 39px;
+  text-align: left;
+}
+.foundation-for-successful-projects {
+  position: relative;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 39px;
+  text-align: left;
+}
+.right-arrow-outline {
+  flex-shrink: 0;
+  position: relative;
+  width: 49px;
+  height: 49px;
+  background: url(./assets/images/ab5b1fe2-2678-4bfe-a8b0-165763a3cece.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 12;
+  overflow: hidden;
+}
+.flex-row-bca {
+  position: relative;
+  width: 1017px;
+  height: 378px;
+  margin: 39px 0 0 129px;
+  z-index: 23;
+}
+.eov {
+  position: absolute;
+  width: 455px;
+  height: 378px;
+  top: 0;
+  left: 0;
+  background: url(./assets/images/f0b93e93458bbba46adbd5f924f63d20b0dc3df3.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 23;
+}
+.check-outline {
+  position: absolute;
+  width: 2.36%;
+  height: 6.08%;
+  top: 0;
+  left: 49.36%;
+  background: url(./assets/images/66753f06-0e4f-4c03-976b-5ec4618911bb.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 4;
+  overflow: hidden;
+}
+.foundation-for-stable-structures {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 431px;
+  height: 355px;
+  top: 0;
+  left: 547px;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+.check-outline-2 {
+  position: absolute;
+  width: 2.36%;
+  height: 6.08%;
+  top: 10.32%;
+  left: 49.36%;
+  background: url(./assets/images/b3d4bc84-1909-4610-b0f7-fd87e5da47a0.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 5;
+  overflow: hidden;
+}
+.check-outline-3 {
+  position: absolute;
+  width: 2.36%;
+  height: 6.35%;
+  top: 20.9%;
+  left: 49.46%;
+  background: url(./assets/images/46c35f6c-588a-44f2-af15-77ff7c5d90ea.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 6;
+  overflow: hidden;
+}
+.check-outline-4 {
+  position: absolute;
+  width: 2.36%;
+  height: 6.35%;
+  top: 30.69%;
+  left: 49.36%;
+  background: url(./assets/images/46d036e5-1459-4baf-b029-269dfdebf4e6.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 7;
+  overflow: hidden;
+}
+.check-outline-5 {
+  position: absolute;
+  width: 2.36%;
+  height: 6.08%;
+  top: 41.27%;
+  left: 49.36%;
+  background: url(./assets/images/80cba9d1-2814-43aa-8e04-929b3f7d685c.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 10;
+  overflow: hidden;
+}
+.check-outline-6 {
+  position: absolute;
+  width: 2.36%;
+  height: 6.08%;
+  top: 51.32%;
+  left: 49.36%;
+  background: url(./assets/images/f60e2201-b56f-4ca8-8e28-406a0494131b.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 11;
+  overflow: hidden;
+}
+.check-outline-7 {
+  position: absolute;
+  width: 2.36%;
+  height: 6.08%;
+  top: 61.9%;
+  left: 49.36%;
+  background: url(./assets/images/0bee2aa5-2fa9-415f-9310-c74d566ae880.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 8;
+  overflow: hidden;
+}
+.check-outline-8 {
+  position: absolute;
+  width: 2.36%;
+  height: 6.08%;
+  top: 72.22%;
+  left: 49.36%;
+  background: url(./assets/images/128aa71a-78e3-4764-b45c-dbd7b56028c4.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 9;
+  overflow: hidden;
+}
+.berasco-high-quality-civil-engineering-solutions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 27px;
+  top: 336px;
+  left: 506px;
+  color: #000000;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 1;
+}
+.flex-row-fd {
+  position: relative;
+  width: 1112px;
+  height: 110px;
+  margin: 31px 0 0 129px;
+  z-index: 78;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 42px;
+  position: absolute;
+  width: 1112px;
+  height: 110px;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #a6a6ab;
+  z-index: 14;
+}
+.strassenbau {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 39px;
+  top: 24px;
+  left: 0;
+  color: #212529;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 39px;
+  text-align: left;

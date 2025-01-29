@@ -1,31 +1,60 @@
 <section id="leistungen" data-section="leistungen">
   <div class="leistungen-section">
-	<h1>{{ .Site.Params.leistungen.title }}</h1>
-	<h2>{{ .Site.Params.leistungen.subtitle }}</h2>
-	<div>
-      {{ range .Site.Params.leistungen.sections }}
-      <div>
-		<button onclick="toggleSection('{{ .id }}')">
-          <span class="section-title">{{ .title }}</span>
-          <svg data-section="{{ .id }}" viewBox="0 0 24 24">
-			<path fill="currentColor" d="M7 10l5 5 5-5z"/>
-          </svg>
-		</button>
-		<div id="{{ .id }}-content" class="section-content hidden">
-          {{ .content | markdownify }}
-          {{ .contentLast | markdownify }}
-		</div>
-      </div>
-      {{ end }}
-	</div>
-  </div>
-  <script>
-	function toggleSection(sectionId) {
-		const content = document.getElementById(sectionId + '-content');
-		const arrow = document.querySelector(`svg[data-section="${sectionId}"]`);
-		content.classList.toggle('hidden');
-		arrow.classList.toggle('rotate-180');
-	}
-  </script>
-  <div class="slant"></div>
+
+	<h1 class="leistungen-section-title">{{ .Site.Params.leistungen.title }}</h1>
+    <h2 class="section-subtitle">{{ .Site.Params.leistungen.subtitle }}</h2>
+
+	{{ range $index, $section := .Site.Params.leistungen.sections }}
+
+
+	  <div class="leistungen-accordion-block {{ if eq (mod $index 2) 1 }} reverse{{ end }}">
+
+
+		  <button class="leistungen-toggle" onclick="toggleSection('{{ $section.id }}')">
+
+
+
+			<span class="section-title">{{ $section.title }}</span>
+
+			<svg data-section="{{ $section.id }}"
+				 width="49"
+				 height="49"
+				 viewBox="0 0 49 49"
+				 fill="none"
+				 xmlns="http://www.w3.org/2000/svg">
+			  <path d="M25.9497 30.278L34.6064 21.6213C34.7978 21.4315 34.9497 21.2057 35.0533 20.9569C35.157 20.7081 35.2103 20.4412 35.2103 20.1717C35.2103 19.9022 35.157 19.6353 35.0533 19.3865C34.9497 19.1377 34.7978 18.9119 34.6064 18.7221C34.2239 18.3419 33.7064 18.1284 33.167 18.1284C32.6277 18.1284 32.1102 18.3419 31.7277 18.7221L24.5002 25.9496L17.2727 18.7221C16.8901 18.3419 16.3727 18.1284 15.8333 18.1284C15.2939 18.1284 14.7764 18.3419 14.3939 18.7221C14.2047 18.9129 14.055 19.1391 13.9534 19.3879C13.8518 19.6366 13.8003 19.903 13.8018 20.1717C13.8003 20.4404 13.8518 20.7068 13.9534 20.9555C14.055 21.2043 14.2047 21.4305 14.3939 21.6213L23.0506 30.278C23.2404 30.4693 23.4662 30.6212 23.715 30.7249C23.9638 30.8285 24.2306 30.8819 24.5002 30.8819C24.7697 30.8819 25.0365 30.8285 25.2853 30.7249C25.5341 30.6212 25.7599 30.4693 25.9497 30.278Z" fill="#EE0000"/>
+			</svg>
+
+
+		  </button>
+
+
+
+		  <div id="{{ $section.id }}-content" class="section-content leistungen-list hidden">
+			<div class="leistungen-row">
+
+
+				<div class="leistungen-image">
+				  <img src="images/{{ $section.image }}" alt="{{ $section.title }}" />
+				</div>
+
+				<div class="leistungen-text">
+
+
+				  {{ $section.content | markdownify }}
+
+				  <span class="leistungen-list-last-item">
+
+
+
+
+					{{ $section.contentLast | markdownify }}
+				  </span>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  {{ end }}
+	  </div>
+	  <div class="slant"></div>
 </section>
