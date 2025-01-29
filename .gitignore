@@ -21,8 +21,8 @@
 go.work
 go.work.sum
 
-# env file
-.env
+# env file (needed, only contains version!!)
+#.env
 
 /public/
 /node_modules/
